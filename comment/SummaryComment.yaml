@@ -11,15 +11,9 @@ properties:
     description: The comment to be updated
     example: "This is a comment"
     readOnly: true
-  version:
-    type: number
-    description: The version of the comment
-    example: 1
-    readOnly: true
   user:
     $ref: "../user/SummaryUserView.yaml"
 required:
   - id
   - comment
-  - version
   - user
