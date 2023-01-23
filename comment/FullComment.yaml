@@ -1,4 +1,4 @@
-description: Intermediate selected view of a comment
+description: Full selected view of a comment
 type: object
 properties:
   id:
@@ -26,8 +26,14 @@ properties:
     description: The version of the comment
     example: 1
     readOnly: true
+  dateCreated:
+    type: string
+    description: The date the comment was created
+    example: "2019-01-01T00:00:00.000Z"
+    readOnly: true
   user:
     $ref: "../user/SummaryUserView.yaml"
+
 required:
   - id
   - postId
@@ -35,3 +41,4 @@ required:
   - tenant
   - version
   - user
+  - dateCreated

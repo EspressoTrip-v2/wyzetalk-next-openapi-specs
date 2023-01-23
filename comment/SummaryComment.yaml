@@ -18,3 +18,8 @@ properties:
     readOnly: true
   user:
     $ref: "../user/SummaryUserView.yaml"
+required:
+  - id
+  - comment
+  - version
+  - user
