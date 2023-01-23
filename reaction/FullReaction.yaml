@@ -1,0 +1,44 @@
+description: Full selected view of a reaction
+type: object
+properties:
+  id:
+    type: string
+    description: The reaction database id
+    example: "63b590409eb7f4187911329d"
+    readOnly: true
+  postId:
+    type: string
+    description: The posts database id
+    example: "63b590409eb7f4187911328c"
+    readOnly: true
+  user:
+      anyOf:
+        - type: string
+          example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
+        - $ref: "../user/SummaryUserView.yaml"
+
+  tenant:
+    type: string
+    description: The name of the tenant reaction belongs to
+    example: "mycompany"
+    readOnly: true
+
+  version:
+    type: number
+    description: The version of the reaction
+    example: 0
+    readOnly: true
+
+  dateCreated:
+    type: string
+    description: The date the reaction was created
+    example: "2019-01-01T00:00:00.000Z"
+    readOnly: true
+
+required:
+  - id
+  - postId
+  - user
+  - tenant
+  - version
+  - dateCreated

@@ -1,0 +1,24 @@
+description: Summary selected view of a reaction
+type: object
+properties:
+  id:
+    type: string
+    description: The reaction database id
+    example: "63b590409eb7f4187911329d"
+    readOnly: true
+  postId:
+    type: string
+    description: The posts database id
+    example: "63b590409eb7f4187911328c"
+    readOnly: true
+  user:
+    anyOf:
+      - type: string
+        example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
+      - $ref: "../user/SummaryUserView.yaml"
+
+
+required:
+  - id
+  - postId
+  - user
