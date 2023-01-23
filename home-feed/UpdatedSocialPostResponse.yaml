@@ -19,7 +19,7 @@ properties:
   tags:
     description: The tags of the feed item in a string format, used for text search in the feed database
     type: string
-    example: "#businessmindset,#businessonline,#businessclass,#businessgrowth,#businesscards,#businessonline,#businesscoach"
+    example: "businessmindset,businessonline,businessclass,businessgrowth,businesscards,businessonline,businesscoach"
     readOnly: true
   tenant:
     description: The tenant name that owns the feed item
