@@ -1,0 +1,33 @@
+description: Summary selected view of a grouping
+type: object
+properties:
+  id:
+    type: string
+    description: The database id of the grouping
+    example: "507f191e810c19729de860ea"
+    readOnly: true
+
+  audience:
+    description: The audience that will be allowed to view the post,
+    type: array
+    items:
+      type: string
+      example:
+        [
+          97b433fc-65e6-4f57-98fd-30e47cb270fb,
+          97b411fc-65e6-4f57-98fd-30e47cb270fb,
+          96c433fc-65e6-4f57-98fd-30e47cb270fb,
+          95c433fc-65e6-4f57-98fd-30e47cb270fb,
+        ]
+      readOnly: true
+
+  audienceCount:
+    description: The number of comments on the post, this is a virtual field
+    type: integer
+    example: 2
+    readOnly: true
+
+required:
+  - id
+  - audience
+  - audienceCount

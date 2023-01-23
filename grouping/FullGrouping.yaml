@@ -1,0 +1,62 @@
+description: Full selected view of a grouping
+type: object
+properties:
+  id:
+    type: string
+    description: The database id of the grouping
+    example: "507f191e810c19729de860ea"
+    readOnly: true
+  postId:
+    type: string
+    description: The database id of the post in the content database
+    example: "507f191e810c19729de860ea"
+    readOnly: true
+  tenant:
+    type: string
+    description: The name of the tenant the post belongs to
+    example: mycompany
+    readOnly: true
+  groupingType:
+    type: string
+    description: The type of grouping
+    example: once-off
+    readOnly: true
+  groupingName:
+    type: string
+    description: The name of the grouping
+    example: "eastern cape"
+    readOnly: true
+  audience:
+    description: The audience that will be allowed to view the post,
+    type: array
+    items:
+      type: string
+      example:
+        [
+          97b433fc-65e6-4f57-98fd-30e47cb270fb,
+          97b411fc-65e6-4f57-98fd-30e47cb270fb,
+          96c433fc-65e6-4f57-98fd-30e47cb270fb,
+          95c433fc-65e6-4f57-98fd-30e47cb270fb,
+        ]
+      readOnly: true
+
+  audienceCount:
+    description: The number of comments on the post, this is a virtual field
+    type: integer
+    example: 2
+    readOnly: true
+
+  version:
+    description: The version of the post
+    type: integer
+    example: 0
+    readOnly: true
+required:
+  - id
+  - postId
+  - tenant
+  - groupingType
+  - groupingName
+  - audience
+  - audienceCount
+  - version
