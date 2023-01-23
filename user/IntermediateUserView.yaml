@@ -1,4 +1,4 @@
-description: Summary selected view of the user
+description: Intermediate selected view of the user
 type: object
 nullable: true
 properties:
@@ -9,6 +9,10 @@ properties:
   firstName:
     type: string
     example: John
+    readOnly: true
+  tenant:
+    type: string
+    example: "mycompany"
     readOnly: true
   lastName:
     type: string
@@ -22,9 +26,14 @@ properties:
     type: string
     example: https://avatars.dicebear.com/api/avataaars/1234.svg
     readOnly: true
+  region:
+    type: string
+    example: eastern cape
+    readOnly: true
 required:
   - id
   - firstName
   - lastName
   - position
   - avatar
+  - region
