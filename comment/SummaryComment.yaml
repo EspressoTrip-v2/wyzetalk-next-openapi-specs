@@ -1,0 +1,20 @@
+description: Summary selected view of a comment
+type: object
+properties:
+  id:
+    type: string
+    description: The database id of the comment in the content service
+    example: 507f1f77bcf86cd799439011
+    readOnly: true
+  comment:
+    type: string
+    description: The comment to be updated
+    example: "This is a comment"
+    readOnly: true
+  version:
+    type: number
+    description: The version of the comment
+    example: 1
+    readOnly: true
+  user:
+    $ref: "../user/SummaryUserView.yaml"
