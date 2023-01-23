@@ -1,0 +1,63 @@
+description: Updated users social post response
+type: object
+properties:
+  userId:
+    description: The user id of the user allowed to see the feed item
+    type: string
+    example: 4015010e-deb1-4677-865b-3e50c3da73f0
+    readOnly: true
+  postId:
+    description: The content id of the feed item in the content service database
+    type: string
+    example: 63558f535a49bf5bfff16194
+    readOnly: true
+  title:
+    description: The title of the feed item
+    type: string
+    example: "Wyzetalk Next"
+    readOnly: true
+  tags:
+    description: The tags of the feed item in a string format, used for text search in the feed database
+    type: string
+    example: "#businessmindset,#businessonline,#businessclass,#businessgrowth,#businesscards,#businessonline,#businesscoach"
+    readOnly: true
+  tenant:
+    description: The tenant name that owns the feed item
+    type: string
+    example: mycompany
+    readOnly: true
+  category:
+    description: The category of the feed item
+    type: string
+    enum: [hr, safety, business, social]
+    readOnly: true
+  postImage:
+    description: Array of image urls for display in the users feed
+    type: array
+    minLength: 1
+    items:
+      type: string
+      example: ["https://fakeimg.pl/800/600/", "https://fakeimg.pl/800/600/"]
+    readOnly: true
+  dateCreated:
+    description: The date the feed item was created
+    type: string
+    format: date-time
+    example: "2021-01-01T00:00:00.000Z"
+    readOnly: true
+  postDescription:
+    description: The description of the feed item that will be displayed in the users feed
+    type: string
+    example: "Wyzetalk Next is a new platform that will allow you to create and share content with your team."
+    readOnly: true
+
+required:
+  - userId
+  - postId
+  - title
+  - tags
+  - tenant
+  - category
+  - postImage
+  - dateCreated
+  - postDescription
