@@ -1,0 +1,11 @@
+description: Not authorized error
+type: object
+properties:
+  "type":
+    type: string
+    example: not_authorized
+  error:
+    type: array
+    items:
+      type: string
+      example: "not authorized"

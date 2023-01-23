@@ -1,0 +1,11 @@
+description: Internal error
+type: object
+properties:
+  "type":
+    type: string
+    example: internal
+  error:
+    type: array
+    items:
+      type: string
+      example: "internal server error"

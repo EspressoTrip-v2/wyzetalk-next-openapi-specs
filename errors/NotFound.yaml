@@ -1,0 +1,11 @@
+description: Resource not found error
+type: object
+properties:
+  "type":
+    type: string
+    example: NOT_FOUND
+  error:
+    type: array
+    items:
+      type: string
+      example: "some resource not found error"

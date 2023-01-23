@@ -1,0 +1,11 @@
+description: Bad request error
+type: object
+properties:
+  "type":
+    type: string
+    example: "bad_request"
+  error:
+    type: array
+    items:
+      type: string
+      example: "some bad request error"
