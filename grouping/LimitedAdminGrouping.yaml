@@ -1,0 +1,25 @@
+description: Limited admin view of a grouping for search
+type: object
+properties:
+  id:
+    type: string
+    description: The database id of the grouping
+    example: "507f191e810c19729de860ea"
+    readOnly: true
+
+  groupingName:
+    type: string
+    description: The name of the grouping
+    example: "eastern cape"
+    readOnly: true
+
+  audienceCount:
+    description: The number of comments on the post, this is a virtual field
+    type: integer
+    example: 2
+    readOnly: true
+
+required:
+  - id
+  - groupingName
+  - audienceCount
