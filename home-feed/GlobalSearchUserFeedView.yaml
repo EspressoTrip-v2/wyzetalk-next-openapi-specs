@@ -25,11 +25,13 @@ properties:
   dateCreated:
     description: The date the post was created
     type: string
+    format: date-time
     example: "2020-01-01T00:00:00.000Z"
     readOnly: true
   postedDate:
     description: The date the post was posted
     type: string
+    format: date-time
     example: "2020-01-01T00:00:00.000Z"
     readOnly: true
 
