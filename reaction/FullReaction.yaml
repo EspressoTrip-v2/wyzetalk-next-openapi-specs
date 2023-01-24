@@ -12,15 +12,21 @@ properties:
     example: "63b590409eb7f4187911328c"
     readOnly: true
   user:
-      anyOf:
-        - type: string
-          example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
-        - $ref: "../user/SummaryUserView.yaml"
+    anyOf:
+      - type: string
+        example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
+      - $ref: "../user/SummaryUserView.yaml"
 
   tenant:
     type: string
     description: The name of the tenant reaction belongs to
     example: "mycompany"
+    readOnly: true
+
+  reaction:
+    description: The reaction
+    type: string
+    enum: [like, love, haha, sad, angry, celebrate]
     readOnly: true
 
   version:
@@ -41,4 +47,5 @@ required:
   - user
   - tenant
   - version
+  - reaction
   - dateCreated

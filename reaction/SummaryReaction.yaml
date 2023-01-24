@@ -16,9 +16,14 @@ properties:
       - type: string
         example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
       - $ref: "../user/SummaryUserView.yaml"
-
+  reaction:
+    description: The reaction
+    type: string
+    enum: [like, love, haha, sad, angry, celebrate]
+    readOnly: true
 
 required:
   - id
   - postId
   - user
+  - reaction
