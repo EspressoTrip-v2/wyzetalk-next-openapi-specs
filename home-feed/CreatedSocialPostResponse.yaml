@@ -75,12 +75,6 @@ required:
   - postImage
   - dateCreated
   - postDescription
-  - commentCount
-  - sad
-  - angry
-  - like
-  - love
-  - haha
-  - celebrate
+  - postInteraction
   - myReaction
   - version
