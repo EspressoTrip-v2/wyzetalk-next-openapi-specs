@@ -16,6 +16,11 @@ properties:
     type: string
     example: "Wyzetalk Next"
     readOnly: true
+  type:
+    description: The type of the feed item
+    type: string
+    enum: [update]
+    readOnly: true
   tags:
     description: The tags associated with this post
     type: array
@@ -46,11 +51,19 @@ properties:
       type: string
       example: ["https://fakeimg.pl/800/600/", "https://fakeimg.pl/800/600/"]
     readOnly: true
+
   dateCreated:
     description: The date the feed item was created
     type: string
     example: "2021-01-01T00:00:00.000Z"
     readOnly: true
+
+  postedDate:
+    description: The date the feed item was posted
+    type: string
+    example: "2021-01-01T00:00:00.000Z"
+    readOnly: true
+
   postDescription:
     description: The description of the feed item that will be displayed in the users feed
     type: string
@@ -83,6 +96,8 @@ required:
   - category
   - postImage
   - dateCreated
+  - postedDate
+  - type
   - postDescription
   - postInteraction
   - myReaction
