@@ -16,7 +16,6 @@ properties:
     type: array
     minLength: 1
     items:
-      type: string
       example: ["safety", "hr", "ceo"]
       readOnly: true
 
