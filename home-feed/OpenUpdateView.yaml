@@ -35,15 +35,9 @@ properties:
     enum: [update]
     readOnly: true
   author:
-    anyOf:
-      - type: string
-        example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
-      - $ref: "../user/IntermediateUserView.yaml"
+      $ref: "../user/IntermediateUserView.yaml"
   owner:
-    anyOf:
-      - type: string
-        example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
-      - $ref: "../user/IntermediateUserView.yaml"
+      ref: "../user/IntermediateUserView.yaml"
   postImage:
     description: Array of image urls to display in feed, more than one image will be displayed as a carousel
     type: array
