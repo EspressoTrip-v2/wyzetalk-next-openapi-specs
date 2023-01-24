@@ -37,7 +37,7 @@ properties:
   author:
       $ref: "../user/IntermediateUserView.yaml"
   owner:
-      ref: "../user/IntermediateUserView.yaml"
+      $ref: "../user/IntermediateUserView.yaml"
   postImage:
     description: Array of image urls to display in feed, more than one image will be displayed as a carousel
     type: array
