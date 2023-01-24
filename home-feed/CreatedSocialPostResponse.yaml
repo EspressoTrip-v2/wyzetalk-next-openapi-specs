@@ -17,10 +17,13 @@ properties:
     example: "Wyzetalk Next"
     readOnly: true
   tags:
-    description: The tags of the feed item in a string format, used for text search in the feed database
-    type: string
-    example: "businessmindset,businessonline,businessclass,businessgrowth,businesscards,businessonline,businesscoach"
-    readOnly: true
+    description: The tags associated with this post
+    type: array
+    minLength: 1
+    items:
+      type: string
+      example: ["safety", "hr", "ceo"]
+      readOnly: true
   tenant:
     description: The tenant name that owns the feed item
     type: string

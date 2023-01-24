@@ -19,6 +19,7 @@ properties:
       type: string
       example: ["safety", "hr", "ceo"]
       readOnly: true
+
   tenant:
     description: The name of the tenant the post belongs to
     type: string
