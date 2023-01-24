@@ -1,0 +1,50 @@
+description: Interaction object for a feed item
+type: object
+properties:
+  commentCount:
+
+    description: The number of comments on the feed item
+    type: number
+    example: 0
+    readOnly: true
+
+  sad:
+    description: The number of sad reactions on the feed item
+    type: number
+    example: 1
+    readOnly: true
+  angry:
+    description: The number of angry reactions on the feed item
+    type: number
+    example: 4
+    readOnly: true
+  like:
+    description: The number of likes on the feed item
+    type: number
+    example: 1
+    readOnly: true
+  love:
+    description: The number of loves on the feed item
+    type: number
+    example: 4
+    readOnly: true
+  haha:
+    description: The number of haha reactions on the feed item
+    type: number
+    example: 0
+    readOnly: true
+  celebrate:
+    description: The number of celebrate reactions on the feed item
+    type: number
+    example: 0
+    readOnly: true
+
+required:
+  - commentCount
+  - sad
+  - angry
+  - like
+  - love
+  - haha
+  - celebrate
+

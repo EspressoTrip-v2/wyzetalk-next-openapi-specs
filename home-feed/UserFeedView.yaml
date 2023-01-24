@@ -55,6 +55,17 @@ properties:
     minLength: 6
     example: A new safety document has been uploaded and is available in your explorer
     readOnly: true
+
+  postInteraction:
+    $ref: "./Interaction.yaml"
+
+  myReaction:
+    description: The type of reaction the user has given to the feed item
+    type: string
+    nullable: true
+    enum: [ like, love, haha, celebrate, sad, angry, null ]
+    readOnly: true
+
   dateCreated:
     description: The date the post was created
     type: string
