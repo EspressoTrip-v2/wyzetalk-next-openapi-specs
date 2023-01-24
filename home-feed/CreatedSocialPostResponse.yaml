@@ -24,6 +24,10 @@ properties:
       type: string
       example: ["safety", "hr", "ceo"]
       readOnly: true
+  owner:
+    $ref: ../user/IntermediateUserView.yaml
+  author:
+    $ref: ../user/IntermediateUserView.yaml
   tenant:
     description: The tenant name that owns the feed item
     type: string
