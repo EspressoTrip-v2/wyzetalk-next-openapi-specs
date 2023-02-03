@@ -4,7 +4,7 @@ properties:
   startDate:
     type: string
     description: User start date at the company
-    example: 2020-01-01
+    example: "2020-01-01"
   department:
     type: string
     description: The division in the department
@@ -12,7 +12,7 @@ properties:
   division:
     type: string
     description: User department
-    example: product
+    example: "product"
   region:
     type: string
     description: User region
@@ -20,15 +20,15 @@ properties:
   position:
     type: string
     description: User position in the division
-    example: developer
+    example: "developer"
   mobileNumber:
     type: string
     description: User mobile number starting with + or 00 and then the country code
-    example: +27821234567
+    example: "+27821234567"
   workPhoneNumber:
     type: string
     description: User work phone number starting with + or 00 and then the country code
-    example: +27821234567
+    example: "+27821234567"
   gender:
     type: string
     description: Users gender
@@ -36,7 +36,7 @@ properties:
   country:
     type: string
     description: User country in alpha 3 format
-    example: ZAF
+    example: "ZAF"
   city:
     type: string
     description: User city
@@ -44,7 +44,7 @@ properties:
   dateOfBirth:
     type: string
     description: User date of birth
-    example: 1990-01-01
+    example: "1990-01-01"
 
 required:
   - startDate
