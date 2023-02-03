@@ -1,0 +1,45 @@
+type: object
+properties:
+  id:
+    type: string
+    description: User ID
+    example: T1234-5567
+    readOnly: true
+  employeeId:
+    type: string
+    description: Unique employee number
+    example: T1234-5567
+    readOnly: true
+  tenant:
+    type: string
+    description: Tenant the user belongs to
+    example: woolworths
+    readOnly: true
+  firstName:
+    type: string
+    description: User first name
+    example: Jason
+    readOnly: true
+  lastName:
+    type: string
+    description: User last name
+    example: Peck
+    readOnly: true
+  avatar:
+    type: string
+    description: User avatar
+    example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+    readOnly: true
+  role:
+    type: string
+    description: User role
+    enum: [client:user, client:admin, client:owner]
+    readOnly: true
+  email:
+    type: string
+    description: User email
+    example: jason.peck@wyzetalk.com
+    readOnly: true
+
+  defaultGroups:
+    $ref: "./UserDefaultGroups.yaml"

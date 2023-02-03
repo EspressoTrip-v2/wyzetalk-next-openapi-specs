@@ -1,0 +1,33 @@
+type: object
+properties:
+  employeeId:
+    type: string
+    description: Unique employee number
+    example: T1234-5567
+  firstName:
+    type: string
+    description: User first name
+    example: Jason
+
+  lastName:
+    type: string
+    description: User last name
+    example: Peck
+
+  avatar:
+    type: string
+    description: User avatar
+    example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+
+  role:
+    type: string
+    description: User role
+    enum: [client:user, client:admin, client:owner]
+
+  email:
+    type: string
+    description: User email
+    example: jason.peck@wyzetalk.com
+
+  defaultGroups:
+    $ref: "./UserDefaultGroups.yaml"
