@@ -15,7 +15,7 @@ properties:
     anyOf:
       - type: string
         example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
-      - $ref: "../user/SummaryUserView.yaml"
+      - $ref: "../user/user-view/SummaryUserView.yaml"
 
   tenant:
     type: string
