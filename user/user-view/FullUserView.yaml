@@ -4,7 +4,7 @@ nullable: true
 properties:
   id:
     type: string
-    example: 97b433fc-65e6-4f57-98fd-30e47cb270fb
+    example: T1234-5567
     readOnly: true
   firstName:
     type: string
@@ -30,6 +30,14 @@ properties:
     type: string
     example: eastern cape
     readOnly: true
+
+  reportsTo:
+    anyOf:
+      - type: string
+        nullable: true
+        example: T1234-5567
+      - $ref: "../../user/user-view/IntermediateUserView.yaml"
+
   socialFilter:
     type: object
     properties:
