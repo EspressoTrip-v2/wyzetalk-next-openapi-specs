@@ -29,5 +29,5 @@ properties:
   owner:
     anyOf:
       - type: string
-        example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
+        example: T1234-5567
       - $ref: "../../user/user-view/IntermediateUserView.yaml"

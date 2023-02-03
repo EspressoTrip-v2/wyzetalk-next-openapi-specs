@@ -44,12 +44,12 @@ properties:
   author:
     description: The author object in string format if supplied during creation of the content, null if not supplied
     type: string
-    example: "{'id':'4015010e-deb1-4677-865b-3e50c3da73f0','firstName':'John','lastName':'Doe','avatar':'https://avatars.dicebear.com/api/avataaars/0.29266000844313833.svg'}"
+    example: "{'id':'T1234-5567','firstName':'John','lastName':'Doe','avatar':'https://avatars.dicebear.com/api/avataaars/0.29266000844313833.svg'}"
     readOnly: true
   owner:
     description: The author object in string format if supplied during creation of the content, null if not supplied
     type: string
-    example: "{'id':'4015010e-deb1-4677-865b-3e50c3da73f0','firstName':'John','lastName':'Doe','avatar':'https://avatars.dicebear.com/api/avataaars/0.29266000844313833.svg'}"
+    example: "{'id':'T1234-5567','firstName':'John','lastName':'Doe','avatar':'https://avatars.dicebear.com/api/avataaars/0.29266000844313833.svg'}"
     readOnly: true
   postImage:
     description: Array of image urls for display in the users feed
