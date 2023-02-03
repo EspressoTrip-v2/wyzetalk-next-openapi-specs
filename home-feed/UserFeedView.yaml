@@ -35,9 +35,9 @@ properties:
     enum: [update, page, article]
     readOnly: true
   author:
-    $ref: "../user/IntermediateUserView.yaml"
+    $ref: "../user/user-view/IntermediateUserView.yaml"
   owner:
-    $ref: "../user/IntermediateUserView.yaml"
+    $ref: "../user/user-view/IntermediateUserView.yaml"
   postImage:
     description: Array of image urls to display in feed, more than one image will be displayed as a carousel
     type: array
