@@ -11,9 +11,9 @@ properties:
     items:
       type: string
       example:
-        - "safety"
-        - "hr"
-        - "ceo"
+        - safety
+        - hr
+        - ceo
   postImage:
     description: Array of image urls to display in feed, more than one image will be displayed as a carousel
     type: array
