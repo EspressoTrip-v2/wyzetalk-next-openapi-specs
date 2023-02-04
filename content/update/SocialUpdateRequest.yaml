@@ -8,9 +8,9 @@ properties:
   tags:
     description: The tags associated with this post
     type: array
+    example: [ "safety", "hr", "ceo" ]
     items:
       type: string
-      example:  "safety", "hr", "ceo"
   postImage:
     description: Array of image urls to display in feed, more than one image will be displayed as a carousel
     type: array
