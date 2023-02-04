@@ -5,23 +5,23 @@ properties:
   approvers:
     description: The list of approvers that are allowed to approve the post
     type: array
+    example:
+      [
+        "97b433fc-65e6-4f57-98fd-30e47cb270fb",
+        "97b411fc-65e6-4f57-98fd-30e47cb270fb",
+      ]
     items:
       type: string
-      example:
-        [
-          "97b433fc-65e6-4f57-98fd-30e47cb270fb",
-          "97b411fc-65e6-4f57-98fd-30e47cb270fb",
-        ]
   approved:
     description: The list of approvers that have approve the post
     type: array
+    example:
+      [
+        "97b433fc-65e6-4f57-98fd-30e47cb270fb",
+        "97b411fc-65e6-4f57-98fd-30e47cb270fb",
+      ]
     items:
       type: string
-      example:
-        [
-          "97b433fc-65e6-4f57-98fd-30e47cb270fb",
-          "97b411fc-65e6-4f57-98fd-30e47cb270fb",
-        ]
   minApprovals:
     description: The minimum number of approvals required to publish the post
     type: integer

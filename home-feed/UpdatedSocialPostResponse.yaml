@@ -20,9 +20,9 @@ properties:
     description: The tags associated with this post
     type: array
     minLength: 1
+    example: ["safety", "hr", "ceo"]
     items:
       type: string
-      example: ["safety", "hr", "ceo"]
       readOnly: true
   tenant:
     description: The tenant name that owns the feed item
@@ -38,9 +38,9 @@ properties:
     description: Array of image urls for display in the users feed
     type: array
     minLength: 1
+    example: ["https://fakeimg.pl/800/600/", "https://fakeimg.pl/800/600/"]
     items:
       type: string
-      example: ["https://fakeimg.pl/800/600/", "https://fakeimg.pl/800/600/"]
     readOnly: true
   dateCreated:
     description: The date the feed item was created

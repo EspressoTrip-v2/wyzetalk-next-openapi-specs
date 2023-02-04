@@ -6,9 +6,9 @@ properties:
     example: api_validation
   error:
     type: array
+    example:
+      - ".body.level should be number"
+      - ".body.query.rules[0].operator should be equal to one of the allowed values: IN"
+      - ".body.query.rules[0].condition should have required property 'condition'"
     items:
       type: string
-      example:
-        - ".body.level should be number"
-        - ".body.query.rules[0].operator should be equal to one of the allowed values: IN"
-        - ".body.query.rules[0].condition should have required property 'condition'"

@@ -16,10 +16,10 @@ properties:
   tags:
     description: The tags associated with this post
     type: array
+    example: ["safety", "hr", "ceo"]
     minLength: 1
     items:
       type: string
-      example: ["safety", "hr", "ceo"]
       readOnly: true
 
   tenant:
@@ -49,13 +49,13 @@ properties:
   postImage:
     description: Array of image urls to display in feed, more than one image will be displayed as a carousel
     type: array
+    example:
+      [
+        "https://some-storage/images/et35339983hhdkdkd.png",
+        "https://some-storage/images/et35339983haaakdkd.png",
+      ]
     items:
       type: string
-      example:
-        [
-          "https://some-storage/images/et35339983hhdkdkd.png",
-          "https://some-storage/images/et35339983haaakdkd.png",
-        ]
       readOnly: true
 
   postDescription:

@@ -14,10 +14,10 @@ properties:
   tags:
     description: The tags associated with this post
     type: array
+    example: ["safety", "hr", "ceo"]
     minLength: 1
     items:
       type: string
-      example: ["safety", "hr", "ceo"]
       readOnly: true
 
   category:
