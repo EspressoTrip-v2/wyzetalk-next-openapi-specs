@@ -112,20 +112,3 @@ properties:
     type: integer
     example: 1
     readOnly: true
-required:
-  - id
-  - title
-  - tags
-  - tenant
-  - category
-  - type
-  - author
-  - owner
-  - postDescription
-  - grouping
-  - dateCreated
-  - publishedDate
-  - scheduled
-  - approvalState
-  - lastUpdated
-  - version
