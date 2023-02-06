@@ -1,3 +1,6 @@
-type: array
-items:
-  $ref: "./UserImportItem.yaml"
+type: object
+properties:
+  users:
+    type: array
+  items:
+    $ref: "./UserImportItem.yaml"
