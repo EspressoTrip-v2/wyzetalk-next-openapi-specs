@@ -3,4 +3,5 @@ properties:
   users:
     type: array
     items:
+      type: object
       $ref: "./UserImportItem.yaml"
