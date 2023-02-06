@@ -107,4 +107,22 @@ properties:
     type: integer
     example: 1
     readOnly: true
-
+required:
+  - id
+  - title
+  - tags
+  - tenant
+  - category
+  - type
+  - author
+  - owner
+  - postImage
+  - postDescription
+  - grouping
+  - dateCreated
+  - approval
+  - approvalState
+  - scheduled
+  - lastUpdated
+  - editing
+  - version
