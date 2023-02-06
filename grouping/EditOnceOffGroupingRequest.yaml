@@ -1,0 +1,20 @@
+description: Full selected view of a grouping
+type: object
+properties:
+  audience:
+    description: The audience that will be allowed to view the post,
+    type: array
+    example:
+      [
+        97b433fc-65e6-4f57-98fd-30e47cb270fb,
+        97b411fc-65e6-4f57-98fd-30e47cb270fb,
+        96c433fc-65e6-4f57-98fd-30e47cb270fb,
+        95c433fc-65e6-4f57-98fd-30e47cb270fb,
+      ]
+    items:
+      type: string
+      readOnly: true
+
+required:
+  - audience
+
