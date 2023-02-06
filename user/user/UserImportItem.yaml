@@ -22,7 +22,7 @@ properties:
   startDate:
     type: string
     description: User start date
-    example: 2019-01-01
+    example: "2019-01-01"
 
   department:
     type: string
@@ -71,7 +71,7 @@ properties:
   dateOfBirth:
     type: string
     description: User date of birth
-    example: 1990-01-01
+    example: "1990-01-01"
 
 required:
   - employeeId
