@@ -1,0 +1,91 @@
+type: object
+properties:
+  employeeId:
+    type: string
+    description: Unique employee number
+    example: T1234-5567
+  firstName:
+    type: string
+    description: User first name
+    example: Jason
+
+  lastName:
+    type: string
+    description: User last name
+    example: Peck
+
+  email:
+    type: string
+    description: User email
+    example: jason.peck@wyzetalk.com
+
+  startDate:
+    type: string
+    description: User start date
+    example: 2019-01-01
+
+  department:
+    type: string
+    description: User department
+    example: design
+
+  division:
+    type: string
+    description: User division in the department
+    example: product
+
+  position:
+    type: string
+    description: User position in the division
+    example: ux designer
+
+  region:
+    type: string
+    description: User region or state
+    example: eastern cape
+
+  mobileNumber:
+    type: string
+    description: User mobile number starting with + or 00 and country code
+    example: 0027820000000
+
+  workPhoneNumber:
+    type: string
+    description: User work phone number starting with + or 00 and country code
+    example: 0027820000000
+
+  gender:
+    type: string
+    enum: ["male", "female", "undisclosed"]
+
+  country:
+    type: string
+    description: User country in alpha-3 code
+    example: ZAF
+
+  city:
+    type: string
+    description: User city
+    example: port elizabeth
+
+  dateOfBirth:
+    type: string
+    description: User date of birth
+    example: 1990-01-01
+
+required:
+  - employeeId
+  - firstName
+  - lastName
+  - email
+  - startDate
+  - department
+  - division
+  - position
+  - region
+  - mobileNumber
+  - workPhoneNumber
+  - gender
+  - country
+  - city
+  - dateOfBirth

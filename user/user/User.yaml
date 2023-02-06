@@ -43,3 +43,14 @@ properties:
 
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
+
+required:
+  - id
+  - employeeId
+  - tenant
+  - firstName
+  - lastName
+  - avatar
+  - role
+  - email
+  - defaultGroups
