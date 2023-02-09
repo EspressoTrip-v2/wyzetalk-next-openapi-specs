@@ -3,13 +3,13 @@ properties:
   id:
     type: string
     description: User ID
-    pattern: "^[a-zA0-9-]+$"
+    pattern: "^[a-zA0-9-#]+$"
     example: t1234-5567
     readOnly: true
   employeeId:
     type: string
     description: Unique employee number
-    pattern: "^[a-zA0-9-]+$"
+    pattern: "^[a-zA0-9-#]+$"
     example: t1234-5567
     readOnly: true
   tenant:
