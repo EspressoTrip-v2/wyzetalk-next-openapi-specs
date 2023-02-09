@@ -10,3 +10,6 @@ properties:
     items:
       type: object
       $ref: "./UserImportItem.yaml"
+required:
+    - strategy
+    - users
