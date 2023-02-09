@@ -4,7 +4,8 @@ nullable: true
 properties:
   id:
     type: string
-    example: T1234-5567
+    pattern: "^[a-zA0-9-]+$"
+    example: t1234-5567
     readOnly: true
   firstName:
     type: string

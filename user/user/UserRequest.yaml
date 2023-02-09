@@ -3,7 +3,8 @@ properties:
   employeeId:
     type: string
     description: Unique employee number
-    example: T1234-5567
+    pattern: "^[a-zA0-9-]+$"
+    example: t1234-5567
   firstName:
     type: string
     description: User first name
