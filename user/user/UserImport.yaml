@@ -10,6 +10,13 @@ properties:
     items:
       type: object
       $ref: "./UserImportItem.yaml"
+
+  requiredActions:
+    type: array
+    items:
+      type: string
+      enum: [ UPDATE_PASSWORD, VERIFY_EMAIL ]
+
 required:
     - strategy
     - users

@@ -31,3 +31,18 @@ properties:
 
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
+
+  requiredActions:
+    type: array
+    items:
+      type: string
+      enum: [ UPDATE_PASSWORD, VERIFY_EMAIL ]
+
+required:
+  - employeeId
+  - firstName
+  - lastName
+  - avatar
+  - role
+  - email
+  - defaultGroups
