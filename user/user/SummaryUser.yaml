@@ -1,0 +1,53 @@
+type: object
+properties:
+  id:
+    type: string
+    description: User ID
+    pattern: "^[a-zA0-9-#]+$"
+    example: t1234-5567
+    readOnly: true
+  employeeId:
+    type: string
+    description: Unique employee number
+    pattern: "^[a-zA0-9-#]+$"
+    example: t1234-5567
+    readOnly: true
+
+  firstName:
+    type: string
+    description: User first name
+    example: Jason
+    readOnly: true
+  lastName:
+    type: string
+    description: User last name
+    example: Peck
+    readOnly: true
+
+  avatar:
+    type: string
+    description: User avatar
+    example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+    readOnly: true
+
+  enabled:
+    type: boolean
+    description: Whether the user is enabled
+    example: true
+    readOnly: true
+
+  importStatus:
+    type: string
+    description: The status of the import
+    enum: [pending, success, error]
+    readOnly: true
+
+
+required:
+  - id
+  - employeeId
+  - firstName
+  - lastName
+  - avatar
+  - enabled
+  - importStatus

@@ -40,18 +40,6 @@ properties:
     enum: [client:user, client:admin, client:owner]
     readOnly: true
 
-  email:
-    type: string
-    description: User email
-    example: jason.peck@wyzetalk.com
-    readOnly: true
-
-  emailVerified:
-    type: boolean
-    description: Whether the user has verified their email
-    example: true
-    readOnly: true
-
   enabled:
     type: boolean
     description: Whether the user is enabled
@@ -71,15 +59,6 @@ properties:
     enum: [pending, success, error]
     readOnly: true
 
-  reportsTo:
-    type: string
-    nullable: true
-    description: The user id of the user this user reports to
-    example: 507f191e810c19729de860ea
-    readOnly: true
-
-  defaultGroups:
-    $ref: "./UserDefaultGroups.yaml"
 
 required:
   - id
@@ -89,10 +68,6 @@ required:
   - lastName
   - avatar
   - role
-  - email
-  - defaultGroups
-  - emailVerified
   - enabled
   - importId
   - importStatus
-  - reportsTo
