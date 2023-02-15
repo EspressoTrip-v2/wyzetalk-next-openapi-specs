@@ -71,13 +71,6 @@ properties:
     enum: [pending, success, error]
     readOnly: true
 
-  reportsTo:
-    type: string
-    nullable: true
-    description: The user id of the user this user reports to
-    example: 507f191e810c19729de860ea
-    readOnly: true
-
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
 
@@ -95,4 +88,3 @@ required:
   - enabled
   - importId
   - importStatus
-  - reportsTo
