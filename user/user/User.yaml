@@ -68,7 +68,7 @@ properties:
   importStatus:
     type: string
     description: The status of the import
-    enum: [pending, success, error]
+    enum: [pending, completed, error]
     readOnly: true
 
   defaultGroups:

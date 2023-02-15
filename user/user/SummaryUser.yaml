@@ -39,7 +39,7 @@ properties:
   importStatus:
     type: string
     description: The status of the import
-    enum: [pending, success, error]
+    enum: [completed, success, error]
     readOnly: true
 
 
