@@ -43,7 +43,5 @@ required:
   - employeeId
   - firstName
   - lastName
-  - avatar
-  - role
   - email
   - defaultGroups
