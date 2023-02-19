@@ -1,6 +1,5 @@
 description: Intermediate selected view of the user
 type: object
-nullable: true
 properties:
   id:
     type: string
