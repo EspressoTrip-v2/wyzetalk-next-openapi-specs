@@ -15,7 +15,7 @@ properties:
     anyOf:
       - type: string
         example: T1234-5567
-      - $ref: "../user/user-view/SummaryUserView.yaml"
+      - $ref: "../user/user-view/IntermediateUserView.yaml"
   reaction:
     description: The reaction
     type: string

@@ -11,6 +11,11 @@ properties:
     type: string
     example: John
     readOnly: true
+  avatar:
+    type: string
+    example: https://avatars.dicebear.com/api/avataaars/1234.svg
+    readOnly: true
+
   tenant:
     type: string
     example: "mycompany"
@@ -19,13 +24,40 @@ properties:
     type: string
     example: Doe
     readOnly: true
+  city:
+    type: string
+    nullable: true
+    example: cape town
+    readOnly: true
+  country:
+    type: string
+    nullable: true
+    pattern: "^[A-Z]{3}$"
+    example: ZAF
+    readOnly: true
+  department:
+    type: string
+    nullable: true
+    example: development
+    readOnly: true
+  division:
+    type: string
+    nullable: true
+    example: blue
+    readOnly: true
+  email:
+    type: string
+    nullable: true
+    example: test@example.com
+  mobileNumber:
+    type: string
+    nullable: true
+    example: "0027821234567"
+    readOnly: true
   position:
     type: string
+    nullable: true
     example: developer
-    readOnly: true
-  avatar:
-    type: string
-    example: https://avatars.dicebear.com/api/avataaars/1234.svg
     readOnly: true
   region:
     type: string
@@ -38,3 +70,10 @@ required:
   - position
   - avatar
   - region
+  - department
+  - division
+  - mobileNumber
+  - country
+  - city
+  - email
+  - tenant

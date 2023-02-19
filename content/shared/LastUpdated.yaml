@@ -3,7 +3,7 @@ type: object
 properties:
   user:
     anyOf:
-      - $ref: "https://raw.githubusercontent.com/EspressoTrip-v2/wyzetalk-next-openapi-specs/master/user/user-view/SummaryUserView.yaml"
+      - $ref: "https://raw.githubusercontent.com/EspressoTrip-v2/wyzetalk-next-openapi-specs/master/user/user-view/IntermediateUserView.yaml"
       - type: string
         example: T1234-5567
   date:

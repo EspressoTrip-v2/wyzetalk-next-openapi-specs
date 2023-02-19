@@ -105,7 +105,7 @@ properties:
       - type: string
         nullable: true
         example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
-      - $ref: "../../user/user-view/SummaryUserView.yaml"
+      - $ref: "../../user/user-view/IntermediateUserView.yaml"
 
   version:
     description: The version of the post
