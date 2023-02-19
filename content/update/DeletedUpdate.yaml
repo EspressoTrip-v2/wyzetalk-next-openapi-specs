@@ -38,12 +38,12 @@ properties:
     anyOf:
       - type: string
         example: T1234-5567
-      - $ref: "../../user/user-view/IntermediateUserView.yaml"
+      - $ref: "../../user/user-view/IntermediateUserViewNoFilter.yaml"
   owner:
     anyOf:
       - type: string
         example: T1234-5567
-      - $ref: "../../user/user-view/IntermediateUserView.yaml"
+      - $ref: "../../user/user-view/IntermediateUserViewNoFilter.yaml"
   postImage:
     description: Array of image urls to display in feed, more than one image will be displayed as a carousel
     type: array
