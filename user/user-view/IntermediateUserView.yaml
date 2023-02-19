@@ -87,3 +87,4 @@ required:
   - city
   - email
   - tenant
+  - socialFilter
