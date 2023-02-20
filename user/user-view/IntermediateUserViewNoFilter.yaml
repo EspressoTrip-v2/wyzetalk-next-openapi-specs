@@ -36,12 +36,10 @@ properties:
     readOnly: true
   department:
     type: string
-    nullable: true
     example: development
     readOnly: true
   division:
     type: string
-    nullable: true
     example: blue
     readOnly: true
   email:
@@ -55,7 +53,6 @@ properties:
     readOnly: true
   position:
     type: string
-    nullable: true
     example: developer
     readOnly: true
   region:
@@ -65,6 +62,7 @@ properties:
 
   reportsTo:
     type: string
+    nullable: true
     example: t1234-5567
     readOnly: true
 
