@@ -63,6 +63,11 @@ properties:
     example: eastern cape
     readOnly: true
 
+  reportsTo:
+    type: string
+    example: t1234-5567
+    readOnly: true
+
   socialFilter:
     type: object
     properties:
