@@ -1,0 +1,26 @@
+type: object
+properties:
+  firstName:
+    type: string
+    description: User first name
+    example: Jason
+
+  lastName:
+    type: string
+    description: User last name
+    example: Peck
+
+  avatar:
+    type: string
+    description: User avatar
+    example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+
+  email:
+    type: string
+    description: User email
+    example: jason.peck@wyzetalk.com
+
+  defaultGroups:
+    $ref: "./UserDefaultGroups.yaml"
+
+
