@@ -1,5 +1,11 @@
 type: object
 properties:
+  employeeId:
+    type: string
+    description: Unique employee number
+    pattern: "^[a-z0-9-#]+$"
+    example: t1234-5567
+
   firstName:
     type: string
     description: User first name
@@ -23,4 +29,9 @@ properties:
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
 
-
+required:
+  - employeeId
+  - firstName
+  - lastName
+  - email
+  - defaultGroups
