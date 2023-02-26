@@ -7,11 +7,13 @@ properties:
     example: t1234-5567
   firstName:
     type: string
+    pattern: "^[A-Z]{1}[A-Za-z\s]+$"
     description: User first name
     example: Jason
 
   lastName:
     type: string
+    pattern: "^[A-Z]{1}[A-Za-z\s]+$"
     description: User last name
     example: Peck
 
