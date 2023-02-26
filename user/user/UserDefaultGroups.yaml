@@ -9,6 +9,7 @@ properties:
   department:
     type: string
     description: The division in the department
+    pattern: "^[a-z\s]+$"
     example: product
   division:
     type: string
@@ -17,10 +18,12 @@ properties:
   region:
     type: string
     description: User region
+    pattern: "^[a-z\s]+$"
     example: western cape
   position:
     type: string
     description: User position in the division
+    pattern: "^[a-z\s]+$"
     example: "developer"
   mobileNumber:
     type: string
@@ -44,6 +47,7 @@ properties:
   city:
     type: string
     description: User city
+    pattern: "^[a-z\s]+$"
     example: cape town
   dateOfBirth:
     type: string
