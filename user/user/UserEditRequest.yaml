@@ -9,13 +9,11 @@ properties:
   firstName:
     type: string
     description: User first name
-    pattern: "^[A-Z]{1}[A-Za-z\s]+$"
     example: Jason
 
   lastName:
     type: string
     description: User last name
-    pattern: "^[A-Z]{1}[A-Za-z\s]+$"
     example: Peck
 
   avatar:
