@@ -1,0 +1,74 @@
+type: object
+properties:
+
+  id:
+    type: string
+    description: User ID
+    pattern: "^[a-z0-9-#]+$"
+    example: t1234-5567
+    readOnly: true
+
+  employeeId:
+    type: string
+    description: Unique employee number
+    pattern: "^[a-z0-9-#]+$"
+    example: t1234-5567
+    readOnly: true
+
+  firstName:
+    type: string
+    description: User first name
+    example: Jason
+    readOnly: true
+  lastName:
+    type: string
+    description: User last name
+    example: Peck
+    readOnly: true
+
+  avatar:
+    type: string
+    description: User avatar
+    example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+    readOnly: true
+
+  role:
+    type: string
+    description: User role
+    enum: [client:user, client:admin, client:owner]
+    readOnly: true
+
+  email:
+    type: string
+    description: User email
+    example: jason.peck@wyzetalk.com
+    readOnly: true
+
+  editing:
+    type: string
+    nullable: true
+    description: The user id of the user who is currently editing the user
+    pattern: "^[a-z0-9-#]+$"
+    example: t1234-5567
+    readOnly: true
+
+  socialFilter:
+    $ref: "./UserSocialFilter.yaml"
+
+  showInfo:
+    $ref: "./UserShowInfo.yaml"
+
+  defaultGroups:
+    $ref: "./UserDefaultGroups.yaml"
+
+required:
+  - id
+  - employeeId
+  - firstName
+  - lastName
+  - avatar
+  - role
+  - email
+  - defaultGroups
+  - editing
+  - socialFilter
