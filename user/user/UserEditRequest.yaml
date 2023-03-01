@@ -26,6 +26,9 @@ properties:
     description: User email
     example: jason.peck@wyzetalk.com
 
+  showInfo:
+    $ref: "./UserShowInfo.yaml"
+
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
 

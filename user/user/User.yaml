@@ -79,6 +79,9 @@ properties:
     example: t1234-5567
     readOnly: true
 
+  showInfo:
+    $ref: "./UserShowInfo.yaml"
+
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
 
