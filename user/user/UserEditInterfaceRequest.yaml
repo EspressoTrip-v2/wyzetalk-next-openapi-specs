@@ -5,11 +5,6 @@ properties:
     description: User avatar
     example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
 
-  email:
-    type: string
-    description: User email
-    example: jason.peck@wyzetalk.com
-
   showInfo:
     $ref: "./UserShowInfo.yaml"
 
