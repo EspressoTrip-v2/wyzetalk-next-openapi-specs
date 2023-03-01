@@ -80,14 +80,7 @@ properties:
     readOnly: true
 
   socialFilter:
-    type: object
-    properties:
-      regions:
-        type: array
-        example: [eastern cape]
-        items:
-          type: string
-    readOnly: true
+    $ref: "./UserSocialFilter.yaml"
 
   showInfo:
     $ref: "./UserShowInfo.yaml"
