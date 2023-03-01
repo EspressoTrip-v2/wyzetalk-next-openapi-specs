@@ -14,8 +14,3 @@ properties:
   showInfo:
     $ref: "./UserShowInfo.yaml"
 
-
-required:
-  - avatar
-  - mobileNumber
-  - showInfo
