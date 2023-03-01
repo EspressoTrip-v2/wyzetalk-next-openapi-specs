@@ -5,15 +5,17 @@ properties:
     description: User avatar
     example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
 
+  mobileNumber:
+    type: string
+    description: User mobile number starting with + or 00 and then the country code
+    pattern: "^(00)[0-9]+$|^[+][0-9]+$"
+    example: "+27821234567"
+
   showInfo:
     $ref: "./UserShowInfo.yaml"
 
-  defaultGroups:
-    $ref: "./UserDefaultGroups.yaml"
 
 required:
-  - employeeId
-  - firstName
-  - lastName
-  - email
-  - defaultGroups
+  - avatar
+  - mobileNumber
+  - showInfo
