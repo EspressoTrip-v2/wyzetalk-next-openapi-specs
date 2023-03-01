@@ -79,6 +79,16 @@ properties:
     example: t1234-5567
     readOnly: true
 
+  socialFilter:
+    type: object
+    properties:
+      regions:
+        type: array
+        example: [eastern cape]
+        items:
+          type: string
+    readOnly: true
+
   showInfo:
     $ref: "./UserShowInfo.yaml"
 
@@ -99,3 +109,5 @@ required:
   - enabled
   - importId
   - importStatus
+  - editing
+  - socialFilter
