@@ -1,5 +1,6 @@
 description: Full selected view of a grouping
 type: object
+additionalProperties: false
 properties:
   audience:
     description: The audience that will be allowed to view the post,

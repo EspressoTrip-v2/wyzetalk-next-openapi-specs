@@ -1,5 +1,6 @@
 description: Updated users social post response
 type: object
+additionalProperties: false
 properties:
   userId:
     description: The user id of the user allowed to see the feed item

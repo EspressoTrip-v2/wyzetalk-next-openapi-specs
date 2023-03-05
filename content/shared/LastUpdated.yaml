@@ -1,5 +1,6 @@
 description: AThe last person to update the document
 type: object
+additionalProperties: false
 properties:
   user:
     anyOf:

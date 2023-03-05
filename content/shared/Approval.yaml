@@ -1,5 +1,6 @@
 description: Approval object for a post if approval is required
 type: object
+additionalProperties: false
 nullable: true
 properties:
   approvers:

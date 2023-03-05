@@ -1,5 +1,6 @@
 description: Interaction object for a feed item
 type: object
+additionalProperties: false
 properties:
   commentCount:
 

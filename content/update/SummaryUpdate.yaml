@@ -1,5 +1,6 @@
 description: Summary selected view of an update
 type: object
+additionalProperties: false
 properties:
   id:
     type: string
