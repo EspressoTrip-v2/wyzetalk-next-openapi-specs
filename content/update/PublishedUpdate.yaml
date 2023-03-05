@@ -1,6 +1,5 @@
 description: Published update post created by user, administrator or owner
 type: object
-additionalProperties: false
 properties:
   id:
     type: string

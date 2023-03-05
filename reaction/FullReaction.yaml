@@ -1,6 +1,5 @@
 description: Full selected view of a reaction
 type: object
-additionalProperties: false
 properties:
   id:
     type: string

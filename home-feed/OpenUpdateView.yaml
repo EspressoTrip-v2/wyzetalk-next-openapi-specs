@@ -1,6 +1,5 @@
 description: Opened update from user feed
 type: object
-additionalProperties: false
 properties:
   id:
     type: string

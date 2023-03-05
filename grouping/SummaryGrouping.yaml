@@ -1,6 +1,5 @@
 description: Summary selected view of a grouping
 type: object
-additionalProperties: false
 properties:
   id:
     type: string
