@@ -13,5 +13,4 @@ properties:
       enum: [ UPDATE_PASSWORD, VERIFY_EMAIL ]
 
 required:
-    - strategy
     - users
