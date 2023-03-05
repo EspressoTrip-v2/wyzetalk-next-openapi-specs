@@ -30,6 +30,11 @@ properties:
     description: User email
     example: jason.peck@wyzetalk.com
 
+  preferredEmergencyComm:
+    type: string
+    description: The preferred emergency communication method
+    enum: [ sms, email, notification ]
+
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
 

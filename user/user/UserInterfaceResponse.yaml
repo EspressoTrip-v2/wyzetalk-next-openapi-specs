@@ -58,6 +58,11 @@ properties:
       type: string
     readOnly: true
 
+  preferredEmergencyComm:
+    type: string
+    description: The preferred emergency communication method
+    enum: [ sms, email, notification ]
+
   showInfo:
     $ref: "./UserShowInfo.yaml"
 
@@ -75,3 +80,4 @@ required:
   - defaultGroups
   - editing
   - socialFilter
+  - preferredEmergencyComm

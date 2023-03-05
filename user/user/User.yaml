@@ -79,6 +79,12 @@ properties:
     example: t1234-5567
     readOnly: true
 
+  preferredEmergencyComm:
+    type: string
+    description: The preferred emergency communication method
+    enum: [sms, email, notification]
+    readOnly: true
+
   socialFilter:
     type: array
     example: [ eastern cape ]
@@ -108,3 +114,4 @@ required:
   - importStatus
   - editing
   - socialFilter
+  - preferredEmergencyComm
