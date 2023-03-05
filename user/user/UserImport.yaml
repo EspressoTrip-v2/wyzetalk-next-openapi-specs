@@ -1,10 +1,5 @@
 type: object
 properties:
-  strategy:
-    type: string
-    description: The strategy to use when bulk importing users
-    enum: ["SKIP","OVERWRITE"]
-    example: OVERWRITE
   users:
     type: array
     items:
