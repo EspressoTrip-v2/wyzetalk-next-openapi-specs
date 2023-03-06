@@ -2,6 +2,11 @@ description: Published update post created by user, administrator or owner
 type: object
 additionalProperties: false
 properties:
+  userId:
+    type: string
+    description: The database id of the user to which the feed view belongs
+    example: "dev0001"
+    readOnly: true
   postId:
     type: string
     description: The database id of the post in the content service
