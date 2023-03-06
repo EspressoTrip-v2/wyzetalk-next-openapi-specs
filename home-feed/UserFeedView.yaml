@@ -5,7 +5,7 @@ properties:
   userId:
     type: string
     description: The database id of the user to which the feed view belongs
-    example: "dev0001"
+    example: t1234-5567
     readOnly: true
   postId:
     type: string

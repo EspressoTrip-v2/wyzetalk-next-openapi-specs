@@ -38,13 +38,13 @@ properties:
   author:
     anyOf:
       - type: string
-        example: T1234-5567
+        example: t1234-5567
       - $ref: "../../user/user-view/IntermediateUserViewNoFilter.yaml"
 
   owner:
     anyOf:
       - type: string
-        example: T1234-5567
+        example: t1234-5567
       - $ref: "../../user/user-view/IntermediateUserViewNoFilter.yaml"
 
   postImage:

@@ -1,6 +1,5 @@
 description: Summary selected view of a reaction
 type: object
-additionalProperties: false
 properties:
   id:
     type: string
@@ -15,7 +14,7 @@ properties:
   user:
       anyOf:
         - type: string
-          example: T1234-5567
+          example: t1234-5567
         - $ref: "../user/user-view/IntermediateUserViewNoFilter.yaml"
   reaction:
     description: The reaction

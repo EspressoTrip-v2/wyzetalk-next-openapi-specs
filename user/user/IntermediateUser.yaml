@@ -58,7 +58,7 @@ properties:
     type: string
     nullable: true
     description: The user id of the user this user reports to
-    example: "dev0001"
+    example: t1234-5567
     readOnly: true
 
   importStatus:

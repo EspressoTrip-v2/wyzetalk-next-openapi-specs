@@ -5,7 +5,7 @@ properties:
     anyOf:
       - $ref: "https://raw.githubusercontent.com/EspressoTrip-v2/wyzetalk-next-openapi-specs/master/user/user-view/IntermediateUserView.yaml"
       - type: string
-        example: T1234-5567
+        example: t1234-5567
   date:
     description: Date when the post was created
     type: string
