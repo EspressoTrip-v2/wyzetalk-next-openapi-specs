@@ -1,5 +1,6 @@
-description: SOcial update post created by user, administrator or owner
+description: Social update post created by user, administrator or owner
 type: object
+additionalProperties: false
 properties:
   title:
     description: Title of the update
