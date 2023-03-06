@@ -12,9 +12,9 @@ properties:
     example: "63b590409eb7f4187911328c"
     readOnly: true
   user:
-      anyOf:
-        - type: string
-          example: t1234-5567
+#      anyOf:
+#        - type: string
+#          example: t1234-5567
         - $ref: "../user/user-view/IntermediateUserViewNoFilter.yaml"
   reaction:
     description: The reaction
