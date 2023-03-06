@@ -105,6 +105,12 @@ properties:
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
 
+  version:
+    type: integer
+    description: The version of the user document
+    example: 1
+    readOnly: true
+
 required:
   - id
   - employeeId
