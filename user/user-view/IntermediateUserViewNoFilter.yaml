@@ -67,7 +67,6 @@ properties:
     readOnly: true
 
 required:
-  - id
   - firstName
   - lastName
   - avatar
