@@ -128,3 +128,6 @@ required:
   - editing
   - socialFilter
   - preferredEmergencyComm
+  - reportsTo
+  - showInfo
+  - version
