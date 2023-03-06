@@ -85,7 +85,7 @@ properties:
     enum: [null]
     readOnly: true
 
-  edited:
+  editing:
     description: The edited state of the post set to null
     type: string
     nullable: true
