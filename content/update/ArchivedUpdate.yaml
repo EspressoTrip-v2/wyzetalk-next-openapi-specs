@@ -85,6 +85,13 @@ properties:
     enum: [null]
     readOnly: true
 
+  edited:
+    description: The edited state of the post set to null
+    type: string
+    nullable: true
+    enum: [ null ]
+    readOnly: true
+
   lastUpdated:
     $ref: "../shared/LastUpdated.yaml"
 
