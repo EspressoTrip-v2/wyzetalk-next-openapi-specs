@@ -1,4 +1,5 @@
 type: object
+additionalProperties: false
 properties:
   id:
     type: string
@@ -53,6 +54,13 @@ properties:
     example: 507f191e810c19729de860ea
     readOnly: true
 
+  reportsTo:
+    type: string
+    nullable: true
+    description: The user id of the user this user reports to
+    example: "dev0001"
+    readOnly: true
+
   importStatus:
     type: string
     description: The status of the import
@@ -71,3 +79,4 @@ required:
   - enabled
   - importId
   - importStatus
+  - reportsTo
