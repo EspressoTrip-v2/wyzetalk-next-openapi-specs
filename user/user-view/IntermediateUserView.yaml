@@ -65,6 +65,7 @@ properties:
 
   reportsTo:
     type: string
+    nullable: true
     example: t1234-5567
     readOnly: true
 

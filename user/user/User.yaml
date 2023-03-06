@@ -92,6 +92,12 @@ properties:
       type: string
     readOnly: true
 
+  reportsTo:
+    type: string
+    nullable: true
+    example: t1234-5567
+    readOnly: true
+
   showInfo:
     $ref: "./UserShowInfo.yaml"
 

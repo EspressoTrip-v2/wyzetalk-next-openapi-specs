@@ -63,6 +63,12 @@ properties:
     description: The preferred emergency communication method
     enum: [ sms, email, notification ]
 
+  reportsTo:
+    type: string
+    nullable: true
+    example: t1234-5567
+    readOnly: true
+
   showInfo:
     $ref: "./UserShowInfo.yaml"
 
