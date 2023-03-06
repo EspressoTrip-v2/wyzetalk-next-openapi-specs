@@ -26,15 +26,22 @@ properties:
     example: development
     readOnly: true
 
-  division:
+  position:
     type: string
-    example: blue
+    nullable: true
+    example: developer
+    readOnly: true
+
+  reportsTo:
+    type: string
+    nullable: true
+    example: t1234-5567
     readOnly: true
 
 required:
-  - id
   - firstName
   - lastName
   - avatar
   - department
-  - division
+  - position
+  - reportsTo
