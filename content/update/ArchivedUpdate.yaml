@@ -95,6 +95,12 @@ properties:
   lastUpdated:
     $ref: "../shared/LastUpdated.yaml"
 
+  archiveType:
+    description: The type action that caused the archive process
+    type: string
+    enum: [moved, expired, manual]
+    readOnly: true
+
   version:
     description: The version of the post
     type: integer
