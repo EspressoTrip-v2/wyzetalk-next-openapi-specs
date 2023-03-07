@@ -75,6 +75,11 @@ properties:
     example: "2020-01-01T00:00:00.000Z"
     readOnly: true
 
+  persistent:
+    description: Marks the post as persistent so any new users feed will include this post, it can only be 'false' for archived posts
+    type: boolean
+    enum: [false]
+
   approval:
     $ref: "../shared/Approval.yaml"
 

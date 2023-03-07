@@ -20,7 +20,7 @@ properties:
   groupingType:
     type: string
     description: The type of grouping
-    example: once-off
+    enum: [once-off, admin-saved, social-saved, persistent-saved]
     readOnly: true
   groupingName:
     type: string

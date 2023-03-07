@@ -63,6 +63,11 @@ properties:
     example: A new safety document has been uploaded and is available in your explorer
     readOnly: true
 
+  persistent:
+    description: Marks the post as persistent so any new users feed will include this post, it can only be 'false' for deleted posts
+    type: boolean
+    enum: [false]
+
   approval:
     $ref: "../shared/Approval.yaml"
 
