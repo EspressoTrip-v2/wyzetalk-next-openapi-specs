@@ -80,7 +80,7 @@ properties:
     example: t1234-5567
     readOnly: true
 
-  preferredEmergencyComm:
+  preferredComm:
     type: string
     description: The preferred emergency communication method
     enum: [sms, email, notification]

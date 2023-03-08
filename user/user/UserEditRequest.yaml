@@ -27,9 +27,9 @@ properties:
     description: User email
     example: jason.peck@wyzetalk.com
 
-  preferredEmergencyComm:
+  preferredComm:
     type: string
-    description: The preferred emergency communication method
+    description: The preferred communication method
     enum: [sms, email, notification]
 
   showInfo:

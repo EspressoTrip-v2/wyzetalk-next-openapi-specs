@@ -58,9 +58,9 @@ properties:
       type: string
     readOnly: true
 
-  preferredEmergencyComm:
+  preferredComm:
     type: string
-    description: The preferred emergency communication method
+    description: The preferred communication method
     enum: [ sms, email, notification ]
 
   reportsTo:
