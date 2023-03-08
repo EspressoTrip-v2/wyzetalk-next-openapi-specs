@@ -86,4 +86,4 @@ required:
   - defaultGroups
   - editing
   - socialFilter
-  - preferredEmergencyComm
+  - preferredComm

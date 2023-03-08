@@ -127,7 +127,7 @@ required:
   - importStatus
   - editing
   - socialFilter
-  - preferredEmergencyComm
+  - preferredComm
   - reportsTo
   - showInfo
   - version
