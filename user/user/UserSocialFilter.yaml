@@ -3,8 +3,4 @@ type: object
 additionalProperties:
     type: string
     description: Social filters with grouping id
-    example: {
-               eastern cape: "507f191e810c19729de860ea"
-    }
-
 
