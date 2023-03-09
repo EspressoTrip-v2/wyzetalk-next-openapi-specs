@@ -89,7 +89,7 @@ properties:
 
 required:
   - userId
-  - postId
+  - groupingId
   - title
   - tags
   - tenant
