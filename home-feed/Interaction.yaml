@@ -2,6 +2,14 @@ description: Interaction object for a feed item
 type: object
 additionalProperties: false
 properties:
+  userReactions:
+    description: The reactions the user has made on the feed item
+    type:
+    items:
+      type: string
+      enum: [sad, angry, like, love, haha, celebrate]
+    example: ["sad", "angry", "like", "love", "haha", "celebrate"]
+    readOnly: true
   commentCount:
     description: The number of comments on the feed item
     type: number
