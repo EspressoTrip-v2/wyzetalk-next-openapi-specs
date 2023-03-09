@@ -87,8 +87,6 @@ properties:
     readOnly: true
 
   socialFilter:
-    example:
-      - eastern cape: "507f191e810c19729de860ea"
     $ref: "./UserSocialFilter.yaml"
 
   reportsTo:
