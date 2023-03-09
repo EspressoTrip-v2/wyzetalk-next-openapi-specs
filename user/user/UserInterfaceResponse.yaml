@@ -52,9 +52,11 @@ properties:
     readOnly: true
 
   socialFilter:
-    example:
-      - eastern cape: "507f191e810c19729de860ea"
-    $ref: "./UserSocialFilter.yaml"
+    type: array
+    example: [ eastern cape ]
+    items:
+      type: string
+    readOnly: true
 
   preferredComm:
     type: string

@@ -70,7 +70,11 @@ properties:
     readOnly: true
 
   socialFilter:
-    $ref: "../user/UserSocialFilter.yaml"
+    type: array
+    example: [ eastern cape ]
+    items:
+      type: string
+    readOnly: true
 
 required:
   - id
