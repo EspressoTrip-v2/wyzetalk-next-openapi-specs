@@ -3,7 +3,6 @@ type: object
 example:
   t1234-5567: "like"
   t1234-5564: "love"
-
 additionalProperties:
   type: string
 
