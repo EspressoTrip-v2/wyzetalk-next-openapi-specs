@@ -2,11 +2,12 @@ description: Updated users social post response
 type: object
 additionalProperties: false
 properties:
-  userId:
-    description: The user id of the user allowed to see the feed item
+  groupingId:
     type: string
-    example: 4015010e-deb1-4677-865b-3e50c3da73f0
+    description: The grouping id used to build out the feed
+    example: "social:eastern cape"
     readOnly: true
+
   postId:
     description: The content id of the feed item in the content service database
     type: string
