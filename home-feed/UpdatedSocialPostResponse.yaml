@@ -56,7 +56,7 @@ properties:
     readOnly: true
 
 required:
-  - userId
+  - groupingId
   - postId
   - title
   - tags
