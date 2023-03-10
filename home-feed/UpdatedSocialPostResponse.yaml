@@ -2,9 +2,9 @@ description: Updated users social post response
 type: object
 additionalProperties: false
 properties:
-  groupingId:
+  feedId:
     type: string
-    description: The grouping id used to build out the feed
+    description: The grouping id or name used to build out the feed
     example: "social:eastern cape"
     readOnly: true
 
@@ -56,7 +56,7 @@ properties:
     readOnly: true
 
 required:
-  - groupingId
+  - feedId
   - postId
   - title
   - tags

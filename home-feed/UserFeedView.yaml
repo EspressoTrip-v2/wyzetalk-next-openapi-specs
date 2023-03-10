@@ -3,9 +3,9 @@ type: object
 additionalProperties: false
 properties:
 
-  groupingId:
+  feedId:
     type: string
-    description: The grouping id used to build out the feed
+    description: The grouping id or name used to build out the feed
     example: "social:eastern cape"
     readOnly: true
 
