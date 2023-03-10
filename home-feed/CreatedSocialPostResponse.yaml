@@ -2,11 +2,6 @@ description: Updated users social post response
 type: object
 additionalProperties: false
 properties:
-  feedId:
-    type: string
-    description: The grouping id or name used to build out the feed
-    example: "social:eastern cape"
-    readOnly: true
   postId:
     description: The content id of the feed item in the content service database
     type: string
@@ -87,7 +82,6 @@ properties:
     readOnly: true
 
 required:
-  - feedId
   - title
   - tags
   - tenant

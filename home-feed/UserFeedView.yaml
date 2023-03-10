@@ -2,13 +2,6 @@ description: Published update post created by user, administrator or owner
 type: object
 additionalProperties: false
 properties:
-
-  feedId:
-    type: string
-    description: The grouping id or name used to build out the feed
-    example: "social:eastern cape"
-    readOnly: true
-
   postId:
     type: string
     description: The database id of the post in the content service
