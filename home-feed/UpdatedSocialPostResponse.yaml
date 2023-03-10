@@ -50,7 +50,6 @@ properties:
     readOnly: true
 
 required:
-  - feedId
   - postId
   - title
   - tags
