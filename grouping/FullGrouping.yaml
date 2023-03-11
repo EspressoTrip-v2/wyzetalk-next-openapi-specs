@@ -7,6 +7,13 @@ properties:
     description: The database id of the grouping
     example: "507f191e810c19729de860ea"
     readOnly: true
+
+  feedIdentity:
+    type: string
+    description: The feed identifier used to accees the feed built from the grouping, can be a mongo id or <tenant>:<social>:<social_subscription>
+    example: "507f191e810c19729de860ea"
+    readOnly: true
+
   postId:
     type: string
     description: The database id of the post in the content database

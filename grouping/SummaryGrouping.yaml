@@ -8,6 +8,12 @@ properties:
     example: "507f191e810c19729de860ea"
     readOnly: true
 
+  feedIdentity:
+    type: string
+    description: The feed identifier used to accees the feed built from the grouping, can be a mongo id or <tenant>:<social>:<social_subscription>
+    example: "507f191e810c19729de860ea"
+    readOnly: true
+
   audience:
     description: The audience that will be allowed to view the post,
     type: array
