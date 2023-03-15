@@ -27,7 +27,7 @@ properties:
     type: string
     minLength: 6
     example: A new social post
-  subscription:
+  subscriptions:
     description: The audience filter for the post, this is based off the users allowed social post subscription filters
     type: array
     example: ["eastern cape", "gauteng"]
