@@ -2,8 +2,6 @@ description: Interaction object for a feed item
 type: object
 additionalProperties: false
 properties:
-  userReactions:
-    $ref: "./UserReactions.yaml"
 
   commentCount:
     description: The number of comments on the feed item
