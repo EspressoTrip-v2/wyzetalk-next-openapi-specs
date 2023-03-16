@@ -15,8 +15,8 @@ properties:
   tags:
     description: The tags associated with this post
     type: array
-    minLength: 1
     example: ["safety", "hr", "ceo"]
+    minLength: 1
     items:
       type: string
       readOnly: true
@@ -56,21 +56,18 @@ properties:
     items:
       type: string
       readOnly: true
-
   postDescription:
     description: A description for the post in the feed
     type: string
     minLength: 6
     example: A new safety document has been uploaded and is available in your explorer
     readOnly: true
-
   grouping:
     description: The audience that will be allowed to view the post,
     anyOf:
-      - type: string
-        nullable: true
-        example: "507f191e810c19729de860ea"
       - $ref: "../../grouping/SummaryGrouping.yaml"
+      - type: string
+        example: "507f191e810c19729de860ea"
     readOnly: true
 
   dateCreated:
@@ -79,8 +76,16 @@ properties:
     example: "2020-01-01T00:00:00.000Z"
     readOnly: true
 
-  approval:
-    $ref: "../shared/Approval.yaml"
+  publishedDate:
+    description: The date the post was published
+    type: string
+    example: "2020-01-01T00:00:00.000Z"
+    readOnly: true
+
+  scheduled:
+    description: Whether the post was a scheduled content item
+    type: boolean
+    readOnly: true
 
   approvalState:
     description: The approval state of the post
@@ -89,15 +94,13 @@ properties:
     enum: [notRequired, pending, rejected, null]
     readOnly: true
 
-  scheduled:
-    description: Whether the post was a scheduled content item
-    type: boolean
-    readOnly: true
-
   persistent:
     description: Marks the post as persistent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
     type: boolean
-    readOnly: true
+    enum: [true, false]
+
+  approval:
+    $ref: "../shared/Approval.yaml"
 
   lastUpdated:
     $ref: "../shared/LastUpdated.yaml"
@@ -107,7 +110,7 @@ properties:
     anyOf:
       - type: string
         nullable: true
-        example: t1234-5567
+        example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
       - $ref: "../../user/user-view/IntermediateUserView.yaml"
 
   version:
@@ -115,22 +118,3 @@ properties:
     type: integer
     example: 1
     readOnly: true
-required:
-  - id
-  - title
-  - tags
-  - tenant
-  - category
-  - type
-  - author
-  - owner
-  - postImage
-  - postDescription
-  - grouping
-  - dateCreated
-  - approval
-  - approvalState
-  - scheduled
-  - lastUpdated
-  - editing
-  - version
