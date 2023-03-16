@@ -56,12 +56,14 @@ properties:
     items:
       type: string
       readOnly: true
+
   postDescription:
     description: A description for the post in the feed
     type: string
     minLength: 6
     example: A new safety document has been uploaded and is available in your explorer
     readOnly: true
+
   grouping:
     description: The audience that will be allowed to view the post,
     anyOf:
@@ -95,7 +97,7 @@ properties:
   persistent:
     description: Marks the post as persistent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
     type: boolean
-    enum: [true, false]
+    readOnly: true
 
   lastUpdated:
     $ref: "../shared/LastUpdated.yaml"
@@ -105,7 +107,7 @@ properties:
     anyOf:
       - type: string
         nullable: true
-        example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
+        example: t1234-5567
       - $ref: "../../user/user-view/IntermediateUserView.yaml"
 
   version:
