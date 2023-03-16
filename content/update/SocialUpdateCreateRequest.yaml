@@ -31,7 +31,7 @@ properties:
     description: The audience filter for the post, this is based off the users allowed social post subscription filters
     type: array
     example: ["eastern cape", "gauteng"]
-    minLength: 1
+    minItems: 1
     items:
       type: string
 required:
