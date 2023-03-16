@@ -67,10 +67,10 @@ properties:
   grouping:
     description: The audience that will be allowed to view the post,
     anyOf:
-      - $ref: "../../grouping/SummaryGrouping.yaml"
       - type: string
         nullable: true
         example: "507f191e810c19729de860ea"
+      - $ref: "../../grouping/SummaryGrouping.yaml"
     readOnly: true
 
   dateCreated:
