@@ -116,6 +116,7 @@ required:
   - owner
   - postImage
   - postDescription
+  - persistent
   - approval
   - approvalState
   - dateCreated

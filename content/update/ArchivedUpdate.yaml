@@ -111,6 +111,7 @@ properties:
     type: integer
     example: 1
     readOnly: true
+
 required:
   - id
   - title
@@ -123,6 +124,7 @@ required:
   - postImage
   - postDescription
   - dateCreated
+  - persistent
   - dateArchived
   - approval
   - approvalState
