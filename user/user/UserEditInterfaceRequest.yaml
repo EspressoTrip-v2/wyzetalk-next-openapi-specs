@@ -5,6 +5,11 @@ properties:
     type: string
     description: User avatar
     example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+  preferredComm:
+    type: string
+    description: User preferred communication method
+    enum: [email, sms, notification]
+    example: email
 
   mobileNumber:
     type: string
