@@ -3,6 +3,7 @@ additionalProperties: false
 properties:
   users:
     type: array
+    maxItems: 100000
     items:
       type: object
       $ref: "./UserImportItem.yaml"
