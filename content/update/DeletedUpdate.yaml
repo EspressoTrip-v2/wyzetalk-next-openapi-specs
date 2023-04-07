@@ -63,8 +63,8 @@ properties:
     example: A new safety document has been uploaded and is available in your explorer
     readOnly: true
 
-  persistent:
-    description: Marks the post as persistent so any new users feed will include this post, it can only be 'false' for deleted posts
+  permanent:
+    description: Marks the post as permanent so any new users feed will include this post, it can only be 'false' for deleted posts
     type: boolean
     enum: [false]
 
@@ -116,7 +116,7 @@ required:
   - owner
   - postImage
   - postDescription
-  - persistent
+  - permanent
   - approval
   - approvalState
   - dateCreated

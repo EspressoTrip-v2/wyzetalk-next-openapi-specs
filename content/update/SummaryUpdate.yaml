@@ -21,8 +21,8 @@ properties:
       type: string
       readOnly: true
 
-  persistent:
-    description: Marks the post as persistent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
+  permanent:
+    description: Marks the post as permanent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
     type: boolean
     enum: [true, false]
 

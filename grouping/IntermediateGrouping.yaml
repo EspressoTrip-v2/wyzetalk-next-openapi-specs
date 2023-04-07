@@ -25,7 +25,7 @@ properties:
   groupingType:
     type: string
     description: The type of grouping
-    enum: [once-off, admin-saved, social-saved, persistent-saved]
+    enum: [once-off, admin, system]
     readOnly: true
   groupingName:
     type: string
