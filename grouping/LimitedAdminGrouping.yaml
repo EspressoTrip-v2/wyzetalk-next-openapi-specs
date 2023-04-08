@@ -20,6 +20,19 @@ properties:
     example: "eastern cape"
     readOnly: true
 
+  groupingDescription:
+    type: string
+    nullable: true
+    description: Optional description of the grouping
+    example: "This is a description of the grouping"
+    readOnly: true
+
+  active:
+    type: boolean
+    description: Whether the grouping is active or not
+    example: true
+    readOnly: true
+
   audienceCount:
     description: The number of comments on the post, this is a virtual field
     type: integer
