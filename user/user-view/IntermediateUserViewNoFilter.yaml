@@ -39,7 +39,6 @@ required:
   - firstName
   - lastName
   - avatar
-  - region
   - tenant
   - position
   - reportsTo
