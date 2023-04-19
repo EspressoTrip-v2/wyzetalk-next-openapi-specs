@@ -1,4 +1,4 @@
-description: Published update post created by user, administrator or owner
+description: Draft post created by user, administrator or owner
 type: object
 additionalProperties: false
 properties:
@@ -8,9 +8,9 @@ properties:
     example: "507f191e810c19729de860ea"
     readOnly: true
   title:
-    description: Title of the update
+    description: Title of the post
     type: string
-    example: "New safety update"
+    example: "New safety post"
     readOnly: true
   tags:
     description: The tags associated with this post
@@ -33,7 +33,7 @@ properties:
   type:
     description: The type of content
     type: string
-    enum: [update]
+    enum: [post]
     readOnly: true
   author:
     anyOf:
@@ -62,13 +62,28 @@ properties:
     minLength: 6
     example: A new safety document has been uploaded and is available in your explorer
     readOnly: true
-  grouping:
-    description: The audience that will be allowed to view the post,
-    anyOf:
-      - $ref: "../../grouping/SummaryGrouping.yaml"
-      - type: string
-        example: "507f191e810c19729de860ea"
+
+  permanent:
+    description: Marks the post as permanent so any new users feed will include this post, it can only be 'false' for deleted posts
+    type: boolean
+    enum: [false]
+
+  approval:
+    $ref: "../shared/Approval.yaml"
+
+  approvalState:
+    description: The approval state of the post
+    type: string
+    nullable: true
+    enum: [null]
     readOnly: true
+
+  editing:
+     description: The edited state of the post set to null
+     type: string
+     nullable: true
+     enum: [ null ]
+     readOnly: true
 
   dateCreated:
     description: The date the post was created
@@ -76,49 +91,20 @@ properties:
     example: "2020-01-01T00:00:00.000Z"
     readOnly: true
 
-  publishedDate:
-    description: The date the post was published
+  dateDeleted:
+    description: The date the post was deleted
     type: string
     example: "2020-01-01T00:00:00.000Z"
     readOnly: true
 
-  scheduled:
-    description: Whether the post was a scheduled content item
-    type: boolean
-    readOnly: true
-
-  approvalState:
-    description: The approval state of the post
-    type: string
-    nullable: true
-    enum: [notRequired, pending, rejected, null]
-    readOnly: true
-
-  permanent:
-    description: Marks the post as permanent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
-    type: boolean
-    enum: [true, false]
-
-  approval:
-    $ref: "../shared/Approval.yaml"
-
   lastUpdated:
     $ref: "../shared/LastUpdated.yaml"
-
-  editing:
-    description: User currently editing the post
-    anyOf:
-      - type: string
-        nullable: true
-        example: "97b411fc-65e6-4f57-98fd-30e47cb270fb"
-      - $ref: "../../user/user-view/IntermediateUserView.yaml"
 
   version:
     description: The version of the post
     type: integer
     example: 1
     readOnly: true
-
 required:
   - id
   - title
@@ -130,12 +116,10 @@ required:
   - owner
   - postImage
   - postDescription
-  - grouping
-  - dateCreated
+  - permanent
   - approval
   - approvalState
-  - scheduled
-  - permanent
+  - dateCreated
+  - dateDeleted
   - lastUpdated
-  - editing
   - version

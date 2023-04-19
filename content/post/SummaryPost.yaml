@@ -1,4 +1,4 @@
-description: Summary selected view of an update
+description: Summary selected view of an post
 type: object
 additionalProperties: false
 properties:
@@ -8,9 +8,9 @@ properties:
     example: "507f191e810c19729de860ea"
     readOnly: true
   title:
-    description: Title of the update
+    description: Title of the post
     type: string
-    example: "New safety update"
+    example: "New safety post"
     readOnly: true
   tags:
     description: The tags associated with this post

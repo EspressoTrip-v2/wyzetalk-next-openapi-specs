@@ -1,4 +1,4 @@
-description: Intermediate selected view of an update
+description: Draft post created by user, administrator or owner
 type: object
 additionalProperties: false
 properties:
@@ -7,46 +7,44 @@ properties:
     description: The database id of the post in the content service
     example: "507f191e810c19729de860ea"
     readOnly: true
-
   title:
-    description: Title of the update
+    description: Title of the post
     type: string
-    example: "New safety update"
+    example: "New safety post"
     readOnly: true
-
   tags:
     description: The tags associated with this post
     type: array
-    example: ["safety", "hr", "ceo"]
     minLength: 1
+    example: ["safety", "hr", "ceo"]
     items:
       type: string
       readOnly: true
-
   tenant:
     description: The name of the tenant the post belongs to
     type: string
     example: "mycompany"
     readOnly: true
-
   category:
     description: The main content category for the post
     type: string
     enum: [hr, safety, business, social]
     readOnly: true
-
+  type:
+    description: The type of content
+    type: string
+    enum: [post]
+    readOnly: true
   author:
     anyOf:
       - type: string
         example: t1234-5567
       - $ref: "../../user/user-view/IntermediateUserViewNoFilter.yaml"
-
   owner:
     anyOf:
       - type: string
         example: t1234-5567
       - $ref: "../../user/user-view/IntermediateUserViewNoFilter.yaml"
-
   postImage:
     description: Array of image urls to display in feed, more than one image will be displayed as a carousel
     type: array
@@ -58,7 +56,6 @@ properties:
     items:
       type: string
       readOnly: true
-
   postDescription:
     description: A description for the post in the feed
     type: string
@@ -66,24 +63,53 @@ properties:
     example: A new safety document has been uploaded and is available in your explorer
     readOnly: true
 
-  grouping:
-    description: The audience that will be allowed to view the post,
-    anyOf:
-      - $ref: "../../grouping/SummaryGrouping.yaml"
-      - type: string
-        example: "507f191e810c19729de860ea"
+  dateCreated:
+    description: The date the post was created
+    type: string
+    example: "2020-01-01T00:00:00.000Z"
     readOnly: true
 
-  scheduled:
-    description: Whether the post was a scheduled content item
-    type: boolean
+  dateArchived:
+    description: The date the post was archived
+    type: string
+    example: "2020-01-01T00:00:00.000Z"
     readOnly: true
+
+  permanent:
+    description: Marks the post as permanent so any new users feed will include this post, it can only be 'false' for archived posts
+    type: boolean
+    enum: [false]
+
+  approval:
+    $ref: "../shared/Approval.yaml"
 
   approvalState:
     description: The approval state of the post
     type: string
     nullable: true
-    enum: [notRequired, pending, rejected, null]
+    enum: [null]
+    readOnly: true
+
+  editing:
+    description: The edited state of the post set to null
+    type: string
+    nullable: true
+    enum: [ null ]
+    readOnly: true
+
+  lastUpdated:
+    $ref: "../shared/LastUpdated.yaml"
+
+  archiveType:
+    description: The type action that caused the archive process
+    type: string
+    enum: [moved, expired, manual]
+    readOnly: true
+
+  version:
+    description: The version of the post
+    type: integer
+    example: 1
     readOnly: true
 
 required:
@@ -95,5 +121,12 @@ required:
   - type
   - author
   - owner
+  - postImage
   - postDescription
-  - grouping
+  - dateCreated
+  - permanent
+  - dateArchived
+  - approval
+  - approvalState
+  - lastUpdated
+  - version

@@ -15,7 +15,7 @@ properties:
   type:
     description: The type of the feed item
     type: string
-    enum: [update]
+    enum: [post]
     readOnly: true
   tags:
     description: The tags associated with this post
