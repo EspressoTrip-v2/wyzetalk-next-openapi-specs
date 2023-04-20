@@ -14,8 +14,8 @@ properties:
     type: number
     example: 1
     readOnly: true
-  angry:
-    description: The number of angry reactions on the feed item
+  wow:
+    description: The number of wow reactions on the feed item
     type: number
     example: 4
     readOnly: true
@@ -43,7 +43,7 @@ properties:
 required:
   - commentCount
   - sad
-  - angry
+  - wow
   - like
   - love
   - haha
