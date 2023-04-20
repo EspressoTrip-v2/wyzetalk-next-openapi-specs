@@ -70,7 +70,7 @@ properties:
     description: The type of reaction the user has given to the feed item
     type: string
     nullable: true
-    enum: [ like, love, haha, celebrate, sad, angry, null ]
+    enum: [ like, love, haha, celebrate, sad, wow, null ]
     readOnly: true
 
   dateCreated:
