@@ -19,7 +19,7 @@ properties:
   reaction:
     description: The reaction
     type: string
-    enum: [like, love, haha, sad, angry, celebrate]
+    enum: [like, love, haha, sad, wow, celebrate]
     readOnly: true
   tenant:
     type: string
