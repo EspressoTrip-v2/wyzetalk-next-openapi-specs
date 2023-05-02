@@ -1,0 +1,85 @@
+description: Full notification
+type: object
+additionalProperties: false
+properties:
+  id:
+    type: string
+    description: The database id of the grouping
+    example: "507f191e810c19729de860ea"
+    readOnly: true
+
+  userId:
+    type: string
+    description: The user the notification belongs to
+    example: "dev0001"
+    readOnly: true
+
+  senderId:
+    type: string
+    nullable: true
+    description: The user that sent the notification
+    example: "ui0001"
+    readOnly: true
+  tenant:
+    type: string
+    description: The name of the tenant the post belongs to
+    example: mycompany
+    readOnly: true
+  type:
+    type: string
+    description: The type of notification
+    enum: [ "delete","archive","moderate","alert","edit-request","approval","ownership-request"]
+    readOnly: true
+
+  description:
+    type: string
+    description: The message of the notification
+    example: "This is a notification to request approval for a post"
+    readOnly: true
+
+  dateCreated:
+    type: string
+    description: The date the notification was created
+    example: "2019-01-01T00:00:00.000Z"
+    readOnly: true
+
+  action:
+    type: array
+    description: Array of button text and webhook urls
+    example:
+      [
+        {
+          "buttonText": "Approve",
+          "buttonUrl": "https://mycompany.com/api/v1/approve"
+        },
+        {
+          "buttonText": "Reject",
+          "buttonUrl": "https://mycompany.com/api/v1/reject"
+        }
+      ]
+    items:
+      type: object
+      properties:
+        buttonText:
+          type: string
+          description: The text to display on the button
+          example: "Approve"
+          readOnly: true
+        buttonUrl:
+          type: string
+          description: The webhook url to call when the button is clicked
+          example: "https://mycompany.com/api/v1/approve"
+          readOnly: true
+    readOnly: true
+
+required:
+  - id
+  - userId
+  - tenant
+  - type
+  - description
+  - dateCreated
+  - origin
+  - action
+  - version
+  - senderId
