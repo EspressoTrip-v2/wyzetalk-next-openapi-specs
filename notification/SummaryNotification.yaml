@@ -80,7 +80,5 @@ required:
   - type
   - description
   - dateCreated
-  - origin
   - action
-  - version
   - senderId
