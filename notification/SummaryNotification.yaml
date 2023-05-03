@@ -28,7 +28,7 @@ properties:
   type:
     type: string
     description: The type of notification
-    enum: [ "delete","archive","moderate","alert","edit-request","approval","ownership-request"]
+    enum: [ "delete","archive","moderate","alert","edit-request","approval","ownership-request","info"]
     example: "approval"
     readOnly: true
 
