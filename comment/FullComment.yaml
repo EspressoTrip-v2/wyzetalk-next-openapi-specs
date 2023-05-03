@@ -26,10 +26,11 @@ properties:
     description: The version of the comment
     example: 1
     readOnly: true
+
   dateCreated:
-    type: string
-    description: The date the comment was created
-    example: "2019-01-01T00:00:00.000Z"
+    type: number
+    description: The date the comment was created in milliseconds
+    example: 1683115573509
     readOnly: true
   user:
     anyOf:
