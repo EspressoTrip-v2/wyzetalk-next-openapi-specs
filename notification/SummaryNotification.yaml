@@ -38,6 +38,11 @@ properties:
     example: "This is a notification to request approval for a post"
     readOnly: true
 
+  readStatus:
+    type: boolean
+    description: The read status of the notification
+    readOnly: true
+
   dateCreated:
     type: string
     description: The date the notification was created
@@ -78,6 +83,7 @@ required:
   - userId
   - tenant
   - type
+  - readStatus
   - description
   - dateCreated
   - action

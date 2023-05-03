@@ -78,6 +78,10 @@ properties:
           readOnly: true
     readOnly: true
 
+  readStatus:
+    type: boolean
+    description: The read status of the notification
+    readOnly: true
 
   version:
     description: The version of the post
@@ -92,6 +96,7 @@ required:
   - description
   - dateCreated
   - origin
+  - readStatus
   - action
   - version
   - senderId
