@@ -78,9 +78,9 @@ properties:
     readOnly: true
 
   publishedDate:
-    description: The date the post was published
-    type: string
-    example: "2020-01-01T00:00:00.000Z"
+    description: The date the post was published in milliseconds
+    type: number
+    example: 1683115573509
     readOnly: true
 
   scheduled:

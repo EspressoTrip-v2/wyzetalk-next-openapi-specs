@@ -37,3 +37,15 @@ properties:
       - type: string
         example: t1234-5567
       - $ref: "../../user/user-view/IntermediateUserViewNoFilter.yaml"
+
+  approvalState:
+    description: The approval state of the post
+    type: string
+    nullable: true
+    enum: [notRequired, pending, rejected, null]
+    readOnly: true
+
+  scheduled:
+    description: Whether the post was a scheduled content item
+    type: boolean
+    readOnly: true
