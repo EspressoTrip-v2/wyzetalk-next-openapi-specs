@@ -49,15 +49,15 @@ properties:
     readOnly: true
 
   dateCreated:
-    description: The date the feed item was created
-    type: string
-    example: "2021-01-01T00:00:00.000Z"
+    description: The date the feed item was created in milliseconds
+    type: number
+    example: 1683115573509
     readOnly: true
 
   postedDate:
-    description: The date the feed item was posted
-    type: string
-    example: "2021-01-01T00:00:00.000Z"
+    description: The date the feed item was posted in milliseconds
+    type: number
+    example: 1683115573509
     readOnly: true
 
   postDescription:

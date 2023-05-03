@@ -36,9 +36,9 @@ properties:
     readOnly: true
 
   dateCreated:
-    type: string
-    description: The date the reaction was created
-    example: "2019-01-01T00:00:00.000Z"
+    description: The date the reaction was created in milliseconds
+    type: number
+    example: 1683115573509
     readOnly: true
 
 required:

@@ -24,16 +24,15 @@ properties:
     readOnly: true
 
   dateCreated:
-    description: The date the post was created
-    type: string
-    format: date-time
-    example: "2020-01-01T00:00:00.000Z"
+    description: The date the feed item was created in milliseconds
+    type: number
+    example: 1683115573509
     readOnly: true
+
   postedDate:
-    description: The date the post was posted
-    type: string
-    format: date-time
-    example: "2020-01-01T00:00:00.000Z"
+    description: The date the feed item was posted in milliseconds
+    type: number
+    example: 1683115573509
     readOnly: true
 
 required:

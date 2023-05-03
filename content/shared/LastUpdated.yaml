@@ -7,6 +7,6 @@ properties:
       - type: string
         example: t1234-5567
   date:
-    description: Date when the post was created
-    type: string
-    example: 2022-10-03 12:44:10
+    description: Date when the post was created in milliseconds
+    type: number
+    example: 1683115573509

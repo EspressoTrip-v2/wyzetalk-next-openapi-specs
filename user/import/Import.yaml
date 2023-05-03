@@ -45,9 +45,9 @@ properties:
     readOnly: true
 
   importDate:
-    type: string
-    description: Date of import
-    example: "2019-01-01"
+    description: The import date in milliseconds
+    type: number
+    example: 1683115573509
     readOnly: true
 
 
