@@ -49,3 +49,12 @@ properties:
     description: Whether the post was a scheduled content item
     type: boolean
     readOnly: true
+
+  dateCreated:
+    description: The date the post was created in milliseconds
+    type: number
+    example: 1683115573509
+    readOnly: true
+
+  lastUpdated:
+    $ref: "../shared/LastUpdated.yaml"
