@@ -77,12 +77,6 @@ properties:
     example: 1683115573509
     readOnly: true
 
-  publishedDate:
-    description: The date the post was published in milliseconds
-    type: number
-    example: 1683115573509
-    readOnly: true
-
   scheduled:
     description: Whether the post was a scheduled content item
     type: boolean

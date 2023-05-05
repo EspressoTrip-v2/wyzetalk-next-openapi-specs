@@ -1,0 +1,61 @@
+description: Draft post created by user, administrator or owner
+type: object
+additionalProperties: false
+properties:
+  id:
+    type: string
+    description: The database id of the post in the content service
+    example: "507f191e810c19729de860ea"
+    readOnly: true
+  title:
+    description: Title of the post
+    type: string
+    example: "New safety post"
+    readOnly: true
+  tags:
+    description: The tags associated with this post
+    type: array
+    minLength: 1
+    example: ["safety", "hr", "ceo"]
+    items:
+      type: string
+      readOnly: true
+  tenant:
+    description: The name of the tenant the post belongs to
+    type: string
+    example: "mycompany"
+    readOnly: true
+  type:
+    description: The type of content
+    type: string
+    enum: [post]
+    readOnly: true
+  owner:
+    anyOf:
+      - type: string
+        example: t1234-5567
+      - $ref: "../../user/user-view/IntermediateUserViewNoFilter.yaml"
+
+  dateArchived:
+    description: The date the post was archived in milliseconds
+    type: number
+    example: 1683115573509
+    readOnly: true
+
+  archiveType:
+    description: The type action that caused the archive process
+    type: string
+    enum: [moved, expired, manual]
+    readOnly: true
+
+
+required:
+  - id
+  - title
+  - tags
+  - tenant
+  - category
+  - type
+  - owner
+  - dateArchived
+  - archiveType
