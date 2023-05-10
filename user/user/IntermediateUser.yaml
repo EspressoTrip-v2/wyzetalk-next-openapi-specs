@@ -1,5 +1,5 @@
+description: Intermediate view of user
 type: object
-additionalProperties: false
 properties:
   id:
     type: string
