@@ -1,6 +1,13 @@
 description: Intermediate view of user
 type: object
+additionalProperties: false
 properties:
+  _id:
+    type: string
+    description: Database id that gets added to a paginated return not used for anything else
+    example: t1234-5567
+    readOnly: true
+
   id:
     type: string
     description: User ID
