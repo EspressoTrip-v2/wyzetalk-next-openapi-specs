@@ -8,6 +8,12 @@ properties:
     example: t1234-5567
     readOnly: true
 
+  tenant:
+    type: string
+    description: Tenant the user belongs to
+    example: mycompany
+    readOnly: true
+
   user:
     type: string
     description: Unique employee number
@@ -89,6 +95,7 @@ properties:
 required:
   - id
   - user
+  - tenant
   - addedImports
   - totalImports
   - importStrategy
