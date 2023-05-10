@@ -1,6 +1,6 @@
 description: Full notification
 type: object
-additionalProperties: false
+
 properties:
   id:
     type: string

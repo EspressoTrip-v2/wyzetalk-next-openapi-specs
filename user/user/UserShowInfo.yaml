@@ -1,6 +1,6 @@
 description: User default groups that are required on import or creation
 type: object
-additionalProperties: false
+
 properties:
   mobileNumber:
     type: boolean

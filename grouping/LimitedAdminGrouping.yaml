@@ -1,6 +1,6 @@
 description: Limited admin view of a grouping for search
 type: object
-additionalProperties: false
+
 properties:
   id:
     type: string

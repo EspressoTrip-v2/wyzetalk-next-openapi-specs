@@ -1,6 +1,6 @@
 description: Updated users social post response
 type: object
-additionalProperties: false
+
 properties:
   postId:
     description: The content id of the feed item in the content service database

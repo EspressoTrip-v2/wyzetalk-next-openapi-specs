@@ -1,6 +1,6 @@
 description: Summary selected view of an post
 type: object
-additionalProperties: false
+
 properties:
   id:
     type: string

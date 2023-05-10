@@ -1,6 +1,5 @@
 description: Intermediate selected view of a comment
 type: object
-additionalProperties: false
 properties:
   id:
     type: string
