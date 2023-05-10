@@ -43,6 +43,20 @@ properties:
     example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
     readOnly: true
 
+  defaultGroups:
+    type: object
+    additionalProperties: false
+    properties:
+      department:
+        type: string
+        description: The division in the department
+        example: product
+      position:
+        type: string
+        description: User position in the division
+        example: "developer"
+    readOnly: true
+
   role:
     type: string
     description: User role
@@ -62,12 +76,6 @@ properties:
     example: 507f191e810c19729de860ea
     readOnly: true
 
-  reportsTo:
-    type: string
-    nullable: true
-    description: The user id of the user this user reports to
-    example: t1234-5567
-    readOnly: true
 
   importStatus:
     type: string
