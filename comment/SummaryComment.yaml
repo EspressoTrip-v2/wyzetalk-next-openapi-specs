@@ -2,6 +2,12 @@ description: Summary selected view of a comment
 type: object
 additionalProperties: false
 properties:
+  # _id is a key that is added in the lean process during pagination in mongodb, bug in pagination library
+  _id:
+    type: string
+    description: Database id that gets added to a paginated return not used for anything else
+    readOnly: true
+  # ----------------------------------------------------------------------------------------------------
   id:
     type: string
     description: The database id of the comment in the content service
