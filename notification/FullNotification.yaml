@@ -9,17 +9,19 @@ properties:
     readOnly: true
 
   userId:
-    type: string
-    description: The user the notification belongs to
-    example: "dev0001"
-    readOnly: true
+    anyOf:
+      - type: string
+        nullable: true
+        example: t1234-5567
+      - $ref: "../user/user-view/SummaryUserViewNotification.yaml"
 
   senderId:
-    type: string
-    nullable: true
-    description: The user that sent the notification
-    example: "ui0001"
-    readOnly: true
+    anyOf:
+      - type: string
+        nullable: true
+        example: t1234-5567
+      - $ref: "../user/user-view/SummaryUserViewNotification.yaml"
+
   tenant:
     type: string
     description: The name of the tenant the post belongs to

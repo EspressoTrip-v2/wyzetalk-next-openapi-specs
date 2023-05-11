@@ -19,12 +19,13 @@ properties:
       - type: string
         nullable: true
         example: t1234-5567
-      - $ref: "../user/user-view/SummaryUserView.yaml"
+      - $ref: "../user/user-view/SummaryUserViewNotification.yaml"
   tenant:
     type: string
     description: The name of the tenant the post belongs to
     example: mycompany
     readOnly: true
+
   type:
     type: string
     description: The type of notification

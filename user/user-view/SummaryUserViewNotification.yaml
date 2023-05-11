@@ -1,0 +1,28 @@
+description: Notification user view
+type: object
+properties:
+  id:
+    type: string
+    pattern: "^[a-z0-9-#]+$"
+    example: t1234-5567
+    readOnly: true
+  firstName:
+    type: string
+    example: John
+    readOnly: true
+
+  lastName:
+    type: string
+    example: Doe
+    readOnly: true
+
+  avatar:
+    type: string
+    example: https://avatars.dicebear.com/api/avataaars/1234.svg
+    readOnly: true
+
+required:
+  - id
+  - firstName
+  - lastName
+  - avatar
