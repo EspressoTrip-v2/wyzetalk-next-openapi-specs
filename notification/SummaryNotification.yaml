@@ -11,7 +11,7 @@ properties:
   userId:
     type: string
     description: The user the notification belongs to
-    example: "dev0001"
+    example: t1234-5567
     readOnly: true
 
   senderId:
