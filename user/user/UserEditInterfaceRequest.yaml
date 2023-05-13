@@ -11,6 +11,13 @@ properties:
     enum: [email, sms, notification]
     example: email
 
+  applicationLanguage:
+    type: string
+    description: The language the user has selected for the application
+    enum: [en, af, de, fr, nl]
+    readOnly: true
+
+
   mobileNumber:
     type: string
     description: User mobile number starting with + or 00 and then the country code
