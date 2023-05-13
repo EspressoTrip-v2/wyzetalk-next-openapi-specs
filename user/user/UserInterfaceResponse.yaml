@@ -75,6 +75,12 @@ properties:
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
 
+  applicationLanguage:
+    type: string
+    description: The language the user has selected for the application
+    enum: [en, af, de, fr, nl]
+    readOnly: true
+
 required:
   - id
   - employeeId
@@ -87,3 +93,5 @@ required:
   - editing
   - socialFilter
   - preferredComm
+  - applicationLanguage
+  - reportsTo

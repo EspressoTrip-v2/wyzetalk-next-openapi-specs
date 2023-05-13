@@ -139,4 +139,5 @@ required:
   - preferredComm
   - reportsTo
   - showInfo
+  - application
   - version
