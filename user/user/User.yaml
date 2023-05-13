@@ -105,6 +105,15 @@ properties:
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
 
+  application:
+    type: object
+    properties:
+      language:
+        type: string
+        description: The language the user has selected
+        enum: [en, af, de, fr, nl]
+        readOnly: true
+
   version:
     type: integer
     description: The version of the user document
