@@ -1,0 +1,11 @@
+description: User application settings
+type: object
+properties:
+    language:
+      type: string
+      description: The language the user has selected
+      enum: [en, af, de, fr, nl]
+      readOnly: true
+required:
+  - language
+
