@@ -14,7 +14,6 @@ properties:
   application:
     $ref: "./ApplicationSettings.yaml"
 
-
   mobileNumber:
     type: string
     description: User mobile number starting with + or 00 and then the country code
@@ -23,4 +22,3 @@ properties:
 
   showInfo:
     $ref: "./UserShowInfo.yaml"
-
