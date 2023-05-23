@@ -4,6 +4,6 @@ properties:
   language:
     type: string
     description: The language the user has selected
-    enum: [en, af, de, fr, nl]
+    enum: [en, af, de, fr, nl, xh, zu]
 required:
   - language
