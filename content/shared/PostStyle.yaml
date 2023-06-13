@@ -1,0 +1,22 @@
+description: The styling for the post
+type: object
+properties:
+  backgroundColor:
+    description: The background color to be used for this post
+    type: string
+    example: "#FFFFFF"
+  fontColor:
+    description: The font color to be used for this post
+    type: string
+    example: "#000000"
+  alignment:
+    description: The alignment to be used for this post
+    type: string
+    enum: [left, center]
+  title:
+    type: object
+    properties:
+      fontSize:
+        description: The font size to be used for this post
+        type: string
+        enum: [h1, h2, h3, h4, normal]

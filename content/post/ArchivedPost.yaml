@@ -106,6 +106,22 @@ properties:
     enum: [moved, expired, manual]
     readOnly: true
 
+
+  formId:
+    description: The id of the form associated with this post
+    type: string
+    nullable: true
+    example: null
+
+  template:
+    description: The type of template to be used for this post
+    type: string
+    enum: [ image, text, video, link, poll ]
+
+
+  styling:
+    $ref: "../shared/PostStyle.yaml"
+
   version:
     description: The version of the post
     type: integer
@@ -129,4 +145,8 @@ required:
   - approval
   - approvalState
   - lastUpdated
+  - archiveType
+  - formId
+  - template
+  - styling
   - version

@@ -1,4 +1,4 @@
-description: AThe last person to post the document
+description: The last person to post the document
 type: object
 properties:
   user:
