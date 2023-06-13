@@ -136,7 +136,7 @@ required:
   - type
   - author
   - owner
-  - postImage
+  - content
   - postDescription
   - dateCreated
   - permanent

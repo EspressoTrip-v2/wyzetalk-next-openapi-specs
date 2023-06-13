@@ -57,6 +57,6 @@ required:
   - tags
   - tenant
   - category
-  - postImage
+  - content
   - dateCreated
   - postDescription

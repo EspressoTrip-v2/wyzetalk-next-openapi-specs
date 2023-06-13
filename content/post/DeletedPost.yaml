@@ -129,7 +129,7 @@ required:
   - type
   - author
   - owner
-  - postImage
+  - content
   - postDescription
   - permanent
   - approval

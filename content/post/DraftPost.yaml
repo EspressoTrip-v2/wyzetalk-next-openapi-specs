@@ -138,7 +138,7 @@ required:
   - type
   - author
   - owner
-  - postImage
+  - content
   - postDescription
   - grouping
   - dateCreated
