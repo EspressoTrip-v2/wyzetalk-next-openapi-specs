@@ -45,13 +45,12 @@ properties:
     $ref: "../user/user-view/IntermediateUserViewNoFilter.yaml"
   owner:
     $ref: "../user/user-view/IntermediateUserViewNoFilter.yaml"
-  postImage:
-    description: Array of image urls to display in feed, more than one image will be displayed as a carousel
+  content:
+    description: Content that will be displayed in the post, video or multiple image links
     type: array
     example:
       [
         "https://some-storage/images/et35339983hhdkdkd.png",
-        "https://some-storage/images/et35339983haaakdkd.png",
       ]
     items:
       type: string

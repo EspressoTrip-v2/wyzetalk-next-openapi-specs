@@ -39,7 +39,7 @@ properties:
     type: string
     enum: [hr, safety, business, social]
     readOnly: true
-  postImage:
+  content:
     description: Array of image urls for display in the users feed
     type: array
     example: ["https://fakeimg.pl/800/600/", "https://fakeimg.pl/800/600/"]
