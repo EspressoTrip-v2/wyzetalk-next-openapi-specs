@@ -12,6 +12,12 @@ properties:
     example: [ "fun", "product", "social" ]
     items:
       type: string
+
+  template:
+    description: The type of template to be used for this post
+    type: string
+    enum: [ image, text, video ]
+
   content:
     description: Content that will be displayed in the post, video or multiple image links
     type: array
@@ -29,5 +35,6 @@ properties:
 
 required:
   - title
+  - template
   - postDescription
   - tags
