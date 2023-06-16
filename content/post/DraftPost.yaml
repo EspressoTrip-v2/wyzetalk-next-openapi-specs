@@ -17,7 +17,7 @@ properties:
     description: If template is type 'link' then this is required
     type: string
     nullable: true
-    enum: [ document, folder, url, video, audio, image ]
+    enum: [ document, folder, url, video, audio, image, null ]
     example: "url"
     readOnly: true
 
