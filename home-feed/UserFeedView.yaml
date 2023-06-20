@@ -62,7 +62,7 @@ properties:
     example: A new safety document has been uploaded and is available in your explorer
     readOnly: true
 
-  postInteraction:
+  interaction:
     $ref: "./Interaction.yaml"
 
   myReaction:

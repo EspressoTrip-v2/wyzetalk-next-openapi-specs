@@ -65,7 +65,7 @@ properties:
     type: string
     example: "Wyzetalk Next is a new platform that will allow you to create and share content with your team."
     readOnly: true
-  postInteraction:
+  interaction:
     $ref: ./Interaction.yaml
 
   myReaction:
@@ -93,6 +93,6 @@ required:
   - postedDate
   - type
   - postDescription
-  - postInteraction
+  - interaction
   - myReaction
   - version
