@@ -67,10 +67,10 @@ properties:
     readOnly: true
 
   interaction:
-    $ref: ./Interaction.yaml
+    $ref: "./Interaction.yaml"
 
   styling:
-    $ref: "../shared/PostStyle.yaml"
+    $ref: ".PostStyle.yaml"
 
   myReaction:
     description: The type of reaction the user has given to the feed item
