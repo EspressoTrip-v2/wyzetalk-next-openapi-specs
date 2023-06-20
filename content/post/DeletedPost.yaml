@@ -17,7 +17,7 @@ properties:
     description: If template is type 'link' then this is required
     type: string
     nullable: true
-    enum: [ document, folder, url, video, audio, image, null ]
+    enum: [document, folder, url, video, audio, image, null]
     example: "url"
     readOnly: true
 
@@ -57,10 +57,7 @@ properties:
   content:
     description: Content that will be displayed in the post, video or multiple image links
     type: array
-    example:
-      [
-        "https://some-storage/images/et35339983hhdkdkd.png",
-      ]
+    example: ["https://some-storage/images/et35339983hhdkdkd.png"]
     items:
       type: string
       readOnly: true
@@ -87,11 +84,11 @@ properties:
     readOnly: true
 
   editing:
-     description: The edited state of the post set to null
-     type: string
-     nullable: true
-     enum: [ null ]
-     readOnly: true
+    description: The edited state of the post set to null
+    type: string
+    nullable: true
+    enum: [null]
+    readOnly: true
 
   dateCreated:
     description: The date the post was created in milliseconds
@@ -108,7 +105,6 @@ properties:
   lastUpdated:
     $ref: "../shared/LastUpdated.yaml"
 
-
   formId:
     description: The id of the form associated with this post
     type: string
@@ -118,11 +114,10 @@ properties:
   template:
     description: The type of template to be used for this post
     type: string
-    enum: [ image, text, video, link, poll ]
-
+    enum: [image, text, video, link, poll]
 
   styling:
-    $ref: "../shared/PostStyle.yaml"
+    $ref: "../../style/PostStyle.yaml"
 
   version:
     description: The version of the post

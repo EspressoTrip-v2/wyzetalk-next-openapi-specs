@@ -33,6 +33,10 @@ properties:
     minLength: 6
     example: A new social post
 
+  styling:
+    $ref: "../../style/PostStyle.yaml"
+
+
 required:
   - title
   - template

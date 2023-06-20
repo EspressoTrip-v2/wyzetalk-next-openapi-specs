@@ -26,9 +26,9 @@ properties:
       type: string
       readOnly: true
   owner:
-    $ref: ../user/user-view/IntermediateUserViewNoFilter.yaml
+    $ref: "../user/user-view/IntermediateUserViewNoFilter.yaml"
   author:
-    $ref: ../user/user-view/IntermediateUserViewNoFilter.yaml
+    $ref: "../user/user-view/IntermediateUserViewNoFilter.yaml"
   tenant:
     description: The tenant name that owns the feed item
     type: string

@@ -130,7 +130,7 @@ properties:
 
 
   styling:
-    $ref: "../shared/PostStyle.yaml"
+    $ref: "../../style/PostStyle.yaml"
 
   version:
     description: The version of the post
