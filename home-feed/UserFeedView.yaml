@@ -8,11 +8,6 @@ properties:
     example: "507f191e810c19729de860ea"
     readOnly: true
 
-  userId:
-    type: string
-    description: The database id of the user to which the feed view belongs
-    example: t1234-5567
-    readOnly: true
   title:
     description: Title of the post
     type: string
@@ -84,11 +79,27 @@ properties:
     example: 1683115573509
     readOnly: true
 
+  formId:
+    description: The id of the form associated with this post
+    type: string
+    nullable: true
+    example: null
+
+  template:
+    description: The type of template to be used for this post
+    type: string
+    enum: [ image, text, video, link, poll ]
+
+
+  styling:
+    $ref: "../shared/PostStyle.yaml"
+
   version:
     description: The version of the post
     type: integer
     example: 1
     readOnly: true
+
 required:
   - postId
   - title
@@ -98,6 +109,11 @@ required:
   - type
   - author
   - owner
+  - content
+  - interaction
+  - myReaction
+  - styling
+  - template
   - postDescription
   - dateCreated
   - postedDate
