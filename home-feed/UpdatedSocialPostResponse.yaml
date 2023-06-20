@@ -45,6 +45,15 @@ properties:
     example: 1683115573509
     readOnly: true
 
+  template:
+    description: The type of template to be used for this post
+    type: string
+    enum: [ image, text, video, link, poll ]
+
+
+  styling:
+    $ref: "./PostStyle.yaml"
+
   postDescription:
     description: The description of the feed item that will be displayed in the users feed
     type: string
@@ -58,5 +67,7 @@ required:
   - tenant
   - category
   - content
+  - template
+  - styling
   - dateCreated
   - postDescription
