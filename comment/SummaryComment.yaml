@@ -20,7 +20,7 @@ properties:
     anyOf:
       - type: string
         example: t1234-5567
-      - $ref: "../user/user-view/IntermediateUserViewNoFilter.yaml"
+      - $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
 required:
   - id
   - comment

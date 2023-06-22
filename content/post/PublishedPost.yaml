@@ -40,12 +40,12 @@ properties:
     anyOf:
       - type: string
         example: t1234-5567
-      - $ref: "../../user/user-view/IntermediateUserViewNoFilter.yaml"
+      - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
   owner:
     anyOf:
       - type: string
         example: t1234-5567
-      - $ref: "../../user/user-view/IntermediateUserViewNoFilter.yaml"
+      - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
   content:
     description: Content that will be displayed in the post, video or multiple image links
     type: array

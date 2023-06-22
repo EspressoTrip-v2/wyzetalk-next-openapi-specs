@@ -40,7 +40,7 @@ properties:
     anyOf:
       - type: string
         example: t1234-5567
-      - $ref: "../../user/user-view/IntermediateUserViewNoFilter.yaml"
+      - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
 
   publishedDate:
     description: The date the post was published in milliseconds

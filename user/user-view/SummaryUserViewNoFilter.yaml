@@ -32,11 +32,6 @@ properties:
     example: developer
     readOnly: true
 
-  reportsTo:
-    type: string
-    nullable: true
-    example: t1234-5567
-    readOnly: true
 
 required:
   - firstName
@@ -44,4 +39,3 @@ required:
   - avatar
   - department
   - position
-  - reportsTo

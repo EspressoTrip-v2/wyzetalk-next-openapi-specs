@@ -37,9 +37,9 @@ properties:
     enum: [post, page, article]
     readOnly: true
   author:
-    $ref: "../user/user-view/IntermediateUserViewNoFilter.yaml"
+    $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
   owner:
-    $ref: "../user/user-view/IntermediateUserViewNoFilter.yaml"
+    $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
   content:
     description: Content that will be displayed in the post, video or multiple image links
     type: array
