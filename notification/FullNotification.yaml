@@ -9,18 +9,12 @@ properties:
     readOnly: true
 
   userId:
-    anyOf:
-      - type: string
-        nullable: true
-        example: t1234-5567
-      - $ref: "../user/user-view/SummaryUserViewNotification.yaml"
+      type: string
+      nullable: true
+      example: t1234-5567
 
   senderId:
-    anyOf:
-      - type: string
-        nullable: true
-        example: t1234-5567
-      - $ref: "../user/user-view/SummaryUserViewNotification.yaml"
+      $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
 
   tenant:
     type: string
