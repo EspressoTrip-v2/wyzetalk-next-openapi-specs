@@ -9,16 +9,16 @@ properties:
     readOnly: true
 
   userId:
-      type: string
-      nullable: true
-      example: t1234-5567
+    type: string
+    nullable: true
+    example: t1234-5567
 
   senderId:
     anyOf:
-        - type: string
-          nullable: true
-          example: null
-        - $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
+      - type: string
+        nullable: true
+        example: null
+      - $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
   tenant:
     type: string
     description: The name of the tenant the post belongs to
@@ -27,7 +27,17 @@ properties:
   type:
     type: string
     description: The type of notification
-    enum: [ "delete","archive","moderate","alert","edit-request","approval","ownership-request"]
+    enum:
+      [
+        "info",
+        "delete",
+        "archive",
+        "moderate",
+        "alert",
+        "edit-request",
+        "approval",
+        "ownership-request",
+      ]
     readOnly: true
 
   description:
@@ -45,7 +55,7 @@ properties:
   origin:
     type: string
     description: The service origin of the notification
-    enum: [ "content", "grouping","profile", "import", "interface"]
+    enum: ["content", "grouping", "profile", "import", "interface"]
     readOnly: true
 
   action:
@@ -55,12 +65,12 @@ properties:
       [
         {
           "buttonText": "Approve",
-          "buttonUrl": "https://mycompany.com/api/v1/approve"
+          "buttonUrl": "https://mycompany.com/api/v1/approve",
         },
         {
           "buttonText": "Reject",
-          "buttonUrl": "https://mycompany.com/api/v1/reject"
-        }
+          "buttonUrl": "https://mycompany.com/api/v1/reject",
+        },
       ]
     items:
       type: object
