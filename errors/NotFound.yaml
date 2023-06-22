@@ -3,7 +3,7 @@ type: object
 properties:
   "type":
     type: string
-    example: NOT_FOUND
+    example: not_found
   error:
     type: array
     items:
