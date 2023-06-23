@@ -134,7 +134,6 @@ required:
   - tags
   - tenant
   - category
-  - linkIcon
   - type
   - author
   - owner
