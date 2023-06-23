@@ -98,6 +98,4 @@ required:
   - type
   - styling
   - postDescription
-  - interaction
-  - myReaction
   - version
