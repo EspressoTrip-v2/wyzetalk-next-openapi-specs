@@ -13,14 +13,6 @@ properties:
     example: "New safety post"
     readOnly: true
 
-  linkIcon:
-    description: If template is type 'link' then this is required
-    type: string
-    nullable: true
-    enum: [ document, folder, url, video, audio, image, null ]
-    example: "url"
-    readOnly: true
-
   tags:
     description: The tags associated with this post
     type: array
@@ -143,7 +135,6 @@ required:
   - title
   - tags
   - tenant
-  - linkIcon
   - category
   - type
   - author

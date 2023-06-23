@@ -79,14 +79,6 @@ properties:
     example: 1683115573509
     readOnly: true
 
-  linkIcon:
-    description: If template is type 'link' then this is required
-    type: string
-    nullable: true
-    enum: [ document, folder, url, video, audio, image, null ]
-    example: "url"
-    readOnly: true
-
   formId:
     description: The id of the form associated with this post
     type: string
@@ -121,7 +113,6 @@ required:
   - content
   - interaction
   - myReaction
-  - linkIcon
   - formId
   - styling
   - template

@@ -51,14 +51,6 @@ properties:
     example: "Wyzetalk Next is a new platform that will allow you to create and share content with your team."
     readOnly: true
 
-  linkIcon:
-    description: If template is type 'link' then this is required
-    type: string
-    nullable: true
-    enum: [ document, folder, url, video, audio, image, null ]
-    example: "url"
-    readOnly: true
-
   formId:
     description: The id of the form associated with this post
     type: string
