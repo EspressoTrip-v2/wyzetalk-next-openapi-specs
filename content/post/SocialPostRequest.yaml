@@ -36,9 +36,3 @@ properties:
   styling:
     $ref: "../../style/PostStyle.yaml"
 
-
-required:
-  - title
-  - template
-  - postDescription
-  - tags
