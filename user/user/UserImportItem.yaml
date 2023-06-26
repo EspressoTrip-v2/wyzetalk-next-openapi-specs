@@ -82,7 +82,7 @@ properties:
   language:
     type: string
     description: User language
-    enum: [en, af, de, es, nl, pt, xh, zu]
+    enum: [en, af, de, es, nl, pt, xh, zu, fr]
     example: en
 
 required:
