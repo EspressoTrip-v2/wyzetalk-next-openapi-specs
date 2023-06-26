@@ -105,9 +105,6 @@ properties:
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
 
-  application:
-    $ref: "./ApplicationSettings.yaml"
-
   version:
     type: integer
     description: The version of the user document
@@ -133,5 +130,4 @@ required:
   - preferredComm
   - reportsTo
   - showInfo
-  - application
   - version

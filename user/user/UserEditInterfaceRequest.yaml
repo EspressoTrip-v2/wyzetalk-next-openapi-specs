@@ -11,9 +11,6 @@ properties:
     enum: [email, sms, notification]
     example: email
 
-  application:
-    $ref: "./ApplicationSettings.yaml"
-
   mobileNumber:
     type: string
     description: User mobile number starting with + or 00 and then the country code

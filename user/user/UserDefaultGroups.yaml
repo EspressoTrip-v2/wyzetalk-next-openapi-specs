@@ -52,6 +52,12 @@ properties:
     pattern: "[0-9]{4}-[0-9]{2}-[0-9]{2}"
     example: "1990-01-01"
 
+  language:
+    type: string
+    description: User language
+    enum: [en, af, de, es, nl, pt, xh, zu]
+    example: en
+
 required:
   - startDate
   - department
@@ -62,5 +68,6 @@ required:
   - workPhoneNumber
   - gender
   - country
+  - language
   - city
   - dateOfBirth
