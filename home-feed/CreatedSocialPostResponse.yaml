@@ -29,6 +29,7 @@ properties:
     $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
   author:
     $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
+
   tenant:
     description: The tenant name that owns the feed item
     type: string
@@ -54,8 +55,8 @@ properties:
     example: 1683115573509
     readOnly: true
 
-  postedDate:
-    description: The date the feed item was posted in milliseconds
+  publishedDate:
+    description: The date the feed item was published in milliseconds
     type: number
     example: 1683115573509
     readOnly: true
@@ -72,12 +73,10 @@ properties:
   styling:
     $ref: "../style/PostStyle.yaml"
 
-  myReaction:
-    description: The type of reaction the user has given to the feed item
+  template:
+    description: The type of template to be used for this post
     type: string
-    nullable: true
-    enum: [like, love, haha, celebrate, sad, wow, null]
-    readOnly: true
+    enum: [ image, text, video, link ]
 
   version:
     description: The version of the feed item
@@ -94,8 +93,9 @@ required:
   - category
   - content
   - dateCreated
-  - postedDate
+  - publishedDate
   - type
   - styling
+  - template
   - postDescription
   - version

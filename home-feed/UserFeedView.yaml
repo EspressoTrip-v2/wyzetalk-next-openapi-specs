@@ -73,7 +73,7 @@ properties:
     example: 1683115573509
     readOnly: true
 
-  postedDate:
+  publishedDate:
     description: The date the feed item was posted in milliseconds
     type: number
     example: 1683115573509
