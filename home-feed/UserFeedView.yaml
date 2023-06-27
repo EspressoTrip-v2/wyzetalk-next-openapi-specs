@@ -118,5 +118,5 @@ required:
   - template
   - postDescription
   - dateCreated
-  - postedDate
+  - publishedDate
   - version
