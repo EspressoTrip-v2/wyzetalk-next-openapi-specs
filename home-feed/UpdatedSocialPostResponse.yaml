@@ -39,12 +39,6 @@ properties:
       type: string
     readOnly: true
 
-  dateCreated:
-    description: The date the post was created in milliseconds
-    type: number
-    example: 1683115573509
-    readOnly: true
-
   postDescription:
     description: The description of the feed item that will be displayed in the users feed
     type: string
@@ -74,5 +68,4 @@ required:
   - content
   - template
   - styling
-  - dateCreated
   - postDescription
