@@ -21,6 +21,7 @@ properties:
     description: The tenant the comment belongs to
     example: "mycompany"
     readOnly: true
+
   version:
     type: number
     description: The version of the comment
@@ -32,11 +33,31 @@ properties:
     description: The date the comment was created in milliseconds
     example: 1683115573509
     readOnly: true
+
   user:
     anyOf:
       - type: string
         example: t1234-5567
       - $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
+
+  mentions:
+    type: array
+    description: The mentions in the comment
+    items:
+      type: object
+      properties:
+        user:
+          type: string
+          description: The user id of the mentioned user
+          example: t1234-5567
+        start:
+          type: number
+          description: The start index of the mention in the comment
+          example: 0
+        length:
+          type: number
+          description: The length of the mention in the comment
+          example: 7
 
 required:
   - id
@@ -46,3 +67,4 @@ required:
   - version
   - user
   - dateCreated
+  - mentions
