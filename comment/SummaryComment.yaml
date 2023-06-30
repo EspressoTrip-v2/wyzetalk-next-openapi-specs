@@ -6,11 +6,19 @@ properties:
     description: The database id of the comment in the content service
     example: 507f1f77bcf86cd799439011
     readOnly: true
+
   postId:
     type: string
     description: The database id of the post in the content service
     example: 507f1f77bcf86cd799439011
     readOnly: true
+
+  tenant:
+    type: string
+    description: The tenant the comment belongs to
+    example: "mycompany"
+    readOnly: true
+
   comment:
     type: string
     description: The comment to be updated
@@ -33,4 +41,5 @@ required:
   - comment
   - user
   - postId
+  - tenant
   - dateCreated
