@@ -16,6 +16,13 @@ properties:
     description: The comment to be updated
     example: "This is a comment"
     readOnly: true
+
+  dateCreated:
+    type: number
+    description: The date the comment was created in milliseconds
+    example: 1683115573509
+    readOnly: true
+
   user:
     anyOf:
       - type: string
@@ -26,3 +33,4 @@ required:
   - comment
   - user
   - postId
+  - dateCreated
