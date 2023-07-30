@@ -18,6 +18,7 @@ properties:
 
   avatar:
     type: string
+    nullable: true
     example: https://avatars.dicebear.com/api/avataaars/1234.svg
     readOnly: true
 

@@ -32,6 +32,7 @@ properties:
 
   avatar:
     type: string
+    nullable: true
     description: User avatar
     example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
     readOnly: true
