@@ -2,7 +2,6 @@ type: object
 properties:
   users:
     type: array
-    maxItems: 60000
     items:
       type: object
       $ref: "./UserImportItem.yaml"
