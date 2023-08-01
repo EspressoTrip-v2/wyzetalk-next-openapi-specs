@@ -46,13 +46,6 @@ properties:
     type: boolean
     readOnly: true
 
-  approvalState:
-    description: The approval state of the post
-    type: string
-    nullable: true
-    enum: [notRequired, pending, rejected, null]
-    readOnly: true
-
   permanent:
     description: Marks the post as permanent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
     type: boolean
@@ -70,7 +63,6 @@ required:
   - category
   - type
   - owner
-  - approvalState
   - scheduled
   - permanent
   - lastUpdated

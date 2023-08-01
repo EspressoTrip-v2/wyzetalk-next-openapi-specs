@@ -35,7 +35,6 @@ properties:
         "moderate",
         "alert",
         "edit-request",
-        "approval",
         "ownership-request",
       ]
     readOnly: true
@@ -43,7 +42,7 @@ properties:
   description:
     type: string
     description: The message of the notification
-    example: "This is a notification to request approval for a post"
+    example: "This is a notification to request editing ownership for a post"
     readOnly: true
 
   dateCreated:

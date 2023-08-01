@@ -65,16 +65,6 @@ properties:
     type: boolean
     enum: [false]
 
-  approval:
-    $ref: "../shared/Approval.yaml"
-
-  approvalState:
-    description: The approval state of the post
-    type: string
-    nullable: true
-    enum: [null]
-    readOnly: true
-
   editing:
     description: The edited state of the post set to null
     type: string
@@ -128,8 +118,6 @@ required:
   - content
   - postDescription
   - permanent
-  - approval
-  - approvalState
   - dateCreated
   - dateDeleted
   - lastUpdated
