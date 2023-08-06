@@ -60,18 +60,25 @@ properties:
     example: true
     readOnly: true
 
-  importId:
-    type: string
-    nullable: true
-    description: The associated import id if the user was imported
-    example: 507f191e810c19729de860ea
-    readOnly: true
-
-  importStatus:
-    type: string
-    description: The status of the import
-    enum: [pending, completed, error]
-    readOnly: true
+  import:
+    type: object
+    description: The import details when the user was created
+    properties:
+      importId:
+        type: string
+        description: The associated import id if the user was imported
+        example: 507f191e810c19729de860ea
+        readOnly: true
+      importStatus:
+        type: string
+        description: The status of the import
+        enum: [pending, completed, error]
+        readOnly: true
+      skipped:
+        type: array
+        description: If user was skipped in any other import, the importId will be added to this array
+        items:
+          type: string
 
   editing:
     type: string
@@ -115,8 +122,7 @@ required:
   - defaultGroups
   - emailVerified
   - enabled
-  - importId
-  - importStatus
+  - import
   - editing
   - socialFilter
   - preferredComm
