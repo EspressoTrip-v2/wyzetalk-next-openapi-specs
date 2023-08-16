@@ -40,9 +40,11 @@ properties:
     readOnly: true
 
   description:
-    type: string
     description: The message of the notification
-    example: "This is a notification to request editing ownership for a post"
+    type: array
+    example: ["This is a notification to request editing ownership for a post"]
+    items:
+      type: string
     readOnly: true
 
   dateCreated:
