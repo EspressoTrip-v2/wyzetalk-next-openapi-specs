@@ -24,20 +24,6 @@ properties:
     description: The name of the tenant the post belongs to
     example: mycompany
     readOnly: true
-  type:
-    type: string
-    description: The type of notification
-    enum:
-      [
-        "info",
-        "delete",
-        "archive",
-        "moderate",
-        "alert",
-        "edit-request",
-        "ownership-request",
-      ]
-    readOnly: true
 
   description:
     description: The message of the notification
@@ -102,7 +88,6 @@ required:
   - id
   - userId
   - tenant
-  - type
   - description
   - dateCreated
   - origin
