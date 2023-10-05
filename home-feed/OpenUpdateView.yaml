@@ -28,7 +28,7 @@ properties:
   category:
     description: The main content category for the post
     type: string
-    enum: [hr, safety, business, social]
+    enum: [ "announcements", "health & wellness", "safety & security", "hr",  "leadership", "learning & growth", "spot light", "success stories",  "workplace & events" ]
     readOnly: true
   type:
     description: The type of content

@@ -28,7 +28,7 @@ properties:
   category:
     description: The category of the feed item
     type: string
-    enum: [hr, safety, business, social]
+    enum: [ "announcements", "health & wellness", "safety & security", "hr",  "leadership", "learning & growth", "spot light", "success stories",  "workplace & events" ]
     readOnly: true
   content:
     description: Array of image urls for display in the users feed
