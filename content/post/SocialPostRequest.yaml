@@ -9,22 +9,19 @@ properties:
   tags:
     description: The tags associated with this post
     type: array
-    example: [ "fun", "product", "social" ]
+    example: ["fun", "product", "social"]
     items:
       type: string
 
   template:
     description: The type of template to be used for this post
     type: string
-    enum: [ image, text, video ]
+    enum: [image, text, video]
 
   content:
     description: Content that will be displayed in the post, video or multiple image links
     type: array
-    example:
-      [
-        "https://some-storage/images/et35339983hhdkdkd.png",
-      ]
+    example: ["https://some-storage/images/et35339983hhdkdkd.png"]
     items:
       type: string
   postDescription:

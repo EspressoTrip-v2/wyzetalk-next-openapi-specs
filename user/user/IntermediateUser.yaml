@@ -82,7 +82,6 @@ properties:
         items:
           type: string
 
-
 required:
   - id
   - employeeId

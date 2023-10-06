@@ -10,7 +10,7 @@ properties:
     type: array
     items:
       type: string
-      enum: [ UPDATE_PASSWORD, VERIFY_EMAIL ]
+      enum: [UPDATE_PASSWORD, VERIFY_EMAIL]
 
 required:
-    - users
+  - users

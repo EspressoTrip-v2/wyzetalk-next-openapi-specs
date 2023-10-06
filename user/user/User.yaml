@@ -96,7 +96,7 @@ properties:
 
   socialFilter:
     type: array
-    example: [ eastern cape ]
+    example: [eastern cape]
     items:
       type: string
     readOnly: true

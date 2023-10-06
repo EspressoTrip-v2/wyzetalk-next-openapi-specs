@@ -2,7 +2,6 @@ description: Interaction object for a feed item
 type: object
 
 properties:
-
   commentCount:
     description: The number of comments on the feed item
     type: number

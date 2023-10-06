@@ -28,12 +28,23 @@ properties:
   category:
     description: The main content category for the post
     type: string
-    enum: [ "business", "social" ]
+    enum: ["business", "social"]
     readOnly: true
   subCategory:
     description: The main content sub category for the post
     type: string
-    enum: [ "social","announcements", "health & wellness", "safety & security", "hr",  "leadership", "learning & growth", "spot light", "success stories",  "workplace & events" ]
+    enum:
+      [
+        "announcements",
+        "health & wellness",
+        "safety & security",
+        "hr",
+        "leadership",
+        "learning & growth",
+        "spot light",
+        "success stories",
+        "workplace & events",
+      ]
     readOnly: true
 
   type:
@@ -42,16 +53,13 @@ properties:
     enum: [post]
     readOnly: true
   author:
-      $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
+    $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
   owner:
-      $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
+    $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
   content:
     description: Content that will be displayed in the post, video or multiple image links
     type: array
-    example:
-      [
-        "https://some-storage/images/et35339983hhdkdkd.png",
-      ]
+    example: ["https://some-storage/images/et35339983hhdkdkd.png"]
     items:
       type: string
       readOnly: true
@@ -83,7 +91,7 @@ properties:
   template:
     description: The type of template to be used for this post
     type: string
-    enum: [ image, text, video, link, poll ]
+    enum: [image, text, video, link, poll]
 
   styling:
     $ref: "../style/PostStyle.yaml"

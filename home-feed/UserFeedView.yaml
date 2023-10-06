@@ -29,12 +29,23 @@ properties:
   category:
     description: The main content category for the post
     type: string
-    enum: [ "business", "social" ]
+    enum: ["business", "social"]
     readOnly: true
   subCategory:
     description: The main content sub category for the post
     type: string
-    enum: [ "social","announcements", "health & wellness", "safety & security", "hr",  "leadership", "learning & growth", "spot light", "success stories",  "workplace & events" ]
+    enum:
+      [
+        "announcements",
+        "health & wellness",
+        "safety & security",
+        "hr",
+        "leadership",
+        "learning & growth",
+        "spot light",
+        "success stories",
+        "workplace & events",
+      ]
     readOnly: true
 
   type:
@@ -49,10 +60,7 @@ properties:
   content:
     description: Content that will be displayed in the post, video or multiple image links
     type: array
-    example:
-      [
-        "https://some-storage/images/et35339983hhdkdkd.png",
-      ]
+    example: ["https://some-storage/images/et35339983hhdkdkd.png"]
     items:
       type: string
       readOnly: true
@@ -70,7 +78,7 @@ properties:
     description: The type of reaction the user has given to the feed item
     type: string
     nullable: true
-    enum: [ like, love, haha, celebrate, sad, wow, null ]
+    enum: [like, love, haha, celebrate, sad, wow, null]
     readOnly: true
 
   dateCreated:
@@ -94,7 +102,7 @@ properties:
   template:
     description: The type of template to be used for this post
     type: string
-    enum: [ image, text, video, link, poll ]
+    enum: [image, text, video, link, poll]
 
   styling:
     $ref: "../style/PostStyle.yaml"
@@ -104,8 +112,6 @@ properties:
     type: integer
     example: 1
     readOnly: true
-
-
 
 required:
   - postId

@@ -35,7 +35,7 @@ properties:
   preferredComm:
     type: string
     description: The preferred communication method
-    enum: [ sms, email, notification ]
+    enum: [sms, email, notification]
 
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
@@ -44,7 +44,7 @@ properties:
     type: array
     items:
       type: string
-      enum: [ UPDATE_PASSWORD, VERIFY_EMAIL ]
+      enum: [UPDATE_PASSWORD, VERIFY_EMAIL]
 
 required:
   - employeeId

@@ -28,12 +28,23 @@ properties:
   category:
     description: The main content category for the post
     type: string
-    enum: [ "business", "social" ]
+    enum: ["business", "social"]
     readOnly: true
   subCategory:
     description: The main content sub category for the post
     type: string
-    enum: [ "social","announcements", "health & wellness", "safety & security", "hr",  "leadership", "learning & growth", "spot light", "success stories",  "workplace & events" ]
+    enum:
+      [
+        "announcements",
+        "health & wellness",
+        "safety & security",
+        "hr",
+        "leadership",
+        "learning & growth",
+        "spot light",
+        "success stories",
+        "workplace & events",
+      ]
     readOnly: true
 
   content:
@@ -60,7 +71,7 @@ properties:
   template:
     description: The type of template to be used for this post
     type: string
-    enum: [ image, text, video, link, poll ]
+    enum: [image, text, video, link, poll]
 
   styling:
     $ref: "../style/PostStyle.yaml"

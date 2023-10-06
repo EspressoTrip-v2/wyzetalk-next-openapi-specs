@@ -54,7 +54,7 @@ properties:
 
   socialFilter:
     type: array
-    example: [ eastern cape ]
+    example: [eastern cape]
     items:
       type: string
     readOnly: true
@@ -62,11 +62,10 @@ properties:
   preferredComm:
     type: string
     description: The preferred communication method
-    enum: [ sms, email, notification ]
+    enum: [sms, email, notification]
 
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
-
 
 required:
   - id

@@ -28,12 +28,23 @@ properties:
   category:
     description: The main content category for the post
     type: string
-    enum: [ "business", "social" ]
+    enum: ["business", "social"]
     readOnly: true
   subCategory:
     description: The main content sub category for the post
     type: string
-    enum: [ "social","announcements", "health & wellness", "safety & security", "hr",  "leadership", "learning & growth", "spot light", "success stories",  "workplace & events" ]
+    enum:
+      [
+        "announcements",
+        "health & wellness",
+        "safety & security",
+        "hr",
+        "leadership",
+        "learning & growth",
+        "spot light",
+        "success stories",
+        "workplace & events",
+      ]
     readOnly: true
 
   type:
@@ -58,7 +69,6 @@ properties:
     description: Marks the post as permanent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
     type: boolean
     enum: [true, false]
-
 
 required:
   - id

@@ -48,7 +48,6 @@ properties:
     enum: [moved, expired, manual]
     readOnly: true
 
-
 required:
   - id
   - title

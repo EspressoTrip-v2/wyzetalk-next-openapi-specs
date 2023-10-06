@@ -33,7 +33,6 @@ properties:
     example: developer
     readOnly: true
 
-
 required:
   - id
   - firstName
