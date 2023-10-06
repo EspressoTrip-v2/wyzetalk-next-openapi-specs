@@ -1,4 +1,4 @@
-description: Published post created by user, administrator or owner
+description: Published social post created by user
 type: object
 
 properties:
