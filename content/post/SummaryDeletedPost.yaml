@@ -28,8 +28,14 @@ properties:
   category:
     description: The main content category for the post
     type: string
-    enum: [ "announcements", "health & wellness", "safety & security", "hr",  "leadership", "learning & growth", "spot light", "success stories",  "workplace & events" ]
+    enum: [ "business", "social" ]
     readOnly: true
+  subCategory:
+    description: The main content sub category for the post
+    type: string
+    enum: [ "social","announcements", "health & wellness", "safety & security", "hr",  "leadership", "learning & growth", "spot light", "success stories",  "workplace & events" ]
+    readOnly: true
+
   type:
     description: The type of content
     type: string
@@ -54,6 +60,7 @@ required:
   - tags
   - tenant
   - category
+  - subCategory
   - type
   - owner
   - dateDeleted

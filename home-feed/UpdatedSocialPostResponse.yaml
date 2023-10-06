@@ -26,10 +26,16 @@ properties:
     example: mycompany
     readOnly: true
   category:
-    description: The category of the feed item
+    description: The main content category for the post
     type: string
-    enum: [ "announcements", "health & wellness", "safety & security", "hr",  "leadership", "learning & growth", "spot light", "success stories",  "workplace & events" ]
+    enum: [ "business", "social" ]
     readOnly: true
+  subCategory:
+    description: The main content sub category for the post
+    type: string
+    enum: [ "social","announcements", "health & wellness", "safety & security", "hr",  "leadership", "learning & growth", "spot light", "success stories",  "workplace & events" ]
+    readOnly: true
+
   content:
     description: Array of image urls for display in the users feed
     type: array
@@ -65,6 +71,7 @@ required:
   - tags
   - tenant
   - category
+  - subCategory
   - content
   - template
   - styling
