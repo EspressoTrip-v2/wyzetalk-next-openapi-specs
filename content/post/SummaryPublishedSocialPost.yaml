@@ -1,4 +1,4 @@
-description: Summary selected view of an post
+description: Published post created by user, administrator or owner
 type: object
 
 properties:
@@ -20,32 +20,29 @@ properties:
     items:
       type: string
       readOnly: true
-
-  permanent:
-    description: Marks the post as permanent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
-    type: boolean
-    enum: [true, false]
-
+  tenant:
+    description: The name of the tenant the post belongs to
+    type: string
+    example: "mycompany"
+    readOnly: true
   category:
     description: The main content category for the post
     type: string
-    enum: ["business", "social"]
+    enum: ["social"]
     readOnly: true
   subCategory:
     description: The main content sub category for the post
     type: string
     enum:
       [
-        "announcements",
-        "health & wellness",
-        "safety & security",
-        "hr",
-        "leadership",
-        "learning & growth",
-        "spot light",
-        "success stories",
-        "workplace & events",
+        "social",
       ]
+    readOnly: true
+
+  type:
+    description: The type of content
+    type: string
+    enum: [post]
     readOnly: true
 
   owner:
@@ -54,16 +51,25 @@ properties:
         example: t1234-5567
       - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
 
-  scheduled:
-    description: Whether the post was a scheduled content item
-    type: boolean
-    readOnly: true
-
-  dateCreated:
-    description: The date the post was created in milliseconds
+  publishedDate:
+    description: The date the post was published in milliseconds
     type: number
     example: 1683115573509
     readOnly: true
 
-  lastUpdated:
-    $ref: "../shared/LastUpdated.yaml"
+  permanent:
+    description: Marks the post as permanent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
+    type: boolean
+    enum: [true, false]
+
+required:
+  - id
+  - title
+  - tags
+  - tenant
+  - category
+  - subCategory
+  - type
+  - owner
+  - permanent
+  - publishedDate
