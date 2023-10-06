@@ -28,7 +28,7 @@ properties:
   category:
     description: The main content category for the post
     type: string
-    enum: ["business", "social"]
+    enum: ["business"]
     readOnly: true
   subCategory:
     description: The main content sub category for the post

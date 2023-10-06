@@ -30,6 +30,28 @@ properties:
     type: string
     enum: [post]
     readOnly: true
+  category:
+    description: The main content category for the post
+    type: string
+    enum: ["business"]
+    readOnly: true
+  subCategory:
+    description: The main content sub category for the post
+    type: string
+    enum:
+      [
+        "announcements",
+        "health & wellness",
+        "safety & security",
+        "hr",
+        "leadership",
+        "learning & growth",
+        "spot light",
+        "success stories",
+        "workplace & events",
+      ]
+    readOnly: true
+
   owner:
     anyOf:
       - type: string
@@ -54,6 +76,7 @@ required:
   - tags
   - tenant
   - category
+  - subCategory
   - type
   - owner
   - dateArchived
