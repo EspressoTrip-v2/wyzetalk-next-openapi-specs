@@ -38,22 +38,14 @@ properties:
   category:
     description: The main content category for the post
     type: string
-    enum: ["business", "social"]
+    enum: ["social"]
     readOnly: true
   subCategory:
     description: The main content sub category for the post
     type: string
     enum:
       [
-        "announcements",
-        "health & wellness",
-        "safety & security",
-        "hr",
-        "leadership",
-        "learning & growth",
-        "spot light",
-        "success stories",
-        "workplace & events",
+        "social",
       ]
     readOnly: true
 
