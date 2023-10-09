@@ -1,0 +1,135 @@
+description: Published post created by user, administrator or owner
+type: object
+
+properties:
+  postId:
+    type: string
+    description: The database id of the post in the content service
+    example: "507f191e810c19729de860ea"
+    readOnly: true
+
+  title:
+    description: Title of the post
+    type: string
+    example: "New safety post"
+    readOnly: true
+  tags:
+    description: The tags associated with this post
+    type: array
+    example: ["safety", "hr", "ceo"]
+    minLength: 1
+    items:
+      readOnly: true
+
+  tenant:
+    description: The name of the tenant the post belongs to
+    type: string
+    example: "mycompany"
+    readOnly: true
+  category:
+    description: The main content category for the post
+    type: string
+    enum: ["business"]
+    readOnly: true
+  subCategory:
+    description: The main content sub category for the post
+    type: string
+    enum:
+      [
+        "announcements",
+        "health & wellness",
+        "safety & security",
+        "hr",
+        "leadership",
+        "learning & growth",
+        "spot light",
+        "success stories",
+        "workplace & events",
+      ]
+    readOnly: true
+
+  type:
+    description: The type of content
+    type: string
+    enum: [post, page, article]
+    readOnly: true
+  author:
+    $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
+  owner:
+    $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
+  content:
+    description: Content that will be displayed in the post, video or multiple image links
+    type: array
+    example: ["https://some-storage/images/et35339983hhdkdkd.png"]
+    items:
+      type: string
+      readOnly: true
+  postDescription:
+    description: A description for the post in the feed
+    type: string
+    minLength: 6
+    example: A new safety document has been uploaded and is available in your explorer
+    readOnly: true
+
+  interaction:
+    $ref: "./Interaction.yaml"
+
+  myReaction:
+    description: The type of reaction the user has given to the feed item
+    type: string
+    nullable: true
+    enum: [like, love, haha, celebrate, sad, wow, null]
+    readOnly: true
+
+  dateCreated:
+    description: The date the post was created in milliseconds
+    type: number
+    example: 1683115573509
+    readOnly: true
+
+  publishedDate:
+    description: The date the feed item was posted in milliseconds
+    type: number
+    example: 1683115573509
+    readOnly: true
+
+  formId:
+    description: The id of the form associated with this post
+    type: string
+    nullable: true
+    example: null
+
+  template:
+    description: The type of template to be used for this post
+    type: string
+    enum: [image, text, video, link, poll]
+
+  styling:
+    $ref: "../style/PostStyle.yaml"
+
+  version:
+    description: The version of the post
+    type: integer
+    example: 1
+    readOnly: true
+
+required:
+  - postId
+  - title
+  - tags
+  - tenant
+  - category
+  - subCategory
+  - type
+  - author
+  - owner
+  - content
+  - interaction
+  - myReaction
+  - formId
+  - styling
+  - template
+  - postDescription
+  - dateCreated
+  - publishedDate
+  - version
