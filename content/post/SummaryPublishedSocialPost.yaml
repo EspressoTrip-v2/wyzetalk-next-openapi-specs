@@ -33,10 +33,7 @@ properties:
   subCategory:
     description: The main content sub category for the post
     type: string
-    enum:
-      [
-        "social",
-      ]
+    enum: ["social"]
     readOnly: true
 
   type:
