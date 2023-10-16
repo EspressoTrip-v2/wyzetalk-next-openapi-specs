@@ -50,13 +50,13 @@ properties:
   mobileNumber:
     type: string
     description: User mobile number starting with + or 00 and then the country code
-    pattern: "^(00)[0-9]+$|^[+][0-9]+$"
+    pattern: "^(00|0)[0-9]+$|^[+][0-9]+$"
     example: "+27821234567"
 
   workPhoneNumber:
     type: string
     description: User work phone number starting with + or 00 and then the country code
-    pattern: "^(00)[0-9]+$|^[+][0-9]+$"
+    pattern: "^(00|0)[0-9]+$|^[+][0-9]+$"
     example: "+27821234567"
 
   gender:
