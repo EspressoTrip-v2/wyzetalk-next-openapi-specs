@@ -1,0 +1,37 @@
+type: object
+
+properties:
+  employeeId:
+    type: string
+    description: Unique employee number
+    pattern: "^[a-z0-9-#]+$"
+    example: t1234-5567
+  firstName:
+    type: string
+    description: User first name
+    example: Jason
+
+  lastName:
+    type: string
+    description: User last name
+    example: Peck
+
+  email:
+    type: string
+    description: User email
+    example: jason.peck@wyzetalk.com
+
+  preferredComm:
+    type: string
+    description: The preferred communication method
+    enum: [sms, email, notification]
+
+  defaultGroups:
+    $ref: "./UserDefaultGroups.yaml"
+
+required:
+  - employeeId
+  - firstName
+  - lastName
+  - email
+  - defaultGroups
