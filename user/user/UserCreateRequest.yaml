@@ -50,5 +50,4 @@ required:
   - employeeId
   - firstName
   - lastName
-  - email
   - defaultGroups

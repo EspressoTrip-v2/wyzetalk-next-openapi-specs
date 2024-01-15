@@ -89,7 +89,6 @@ required:
   - employeeId
   - firstName
   - lastName
-  - email
   - startDate
   - department
   - division
