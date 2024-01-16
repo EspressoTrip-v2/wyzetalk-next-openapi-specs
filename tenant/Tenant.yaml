@@ -39,6 +39,13 @@ properties:
     example: 200
     readOnly: true
 
+  logo:
+    type: string
+    nullable: true
+    description: Tenant logo
+    example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+    readOnly: true
+
   address:
     type: object
     properties:
@@ -97,6 +104,7 @@ required:
     - id
     - tenantName
     - fullName
+    - logo
     - industry
     - numberEmployees
     - address
