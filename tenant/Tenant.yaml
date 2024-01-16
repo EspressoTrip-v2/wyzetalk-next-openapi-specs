@@ -25,12 +25,12 @@ properties:
       main:
         type: string
         description: The main industry
-        enum: [agriculture, transportation and logistics, education, manufacturing, retail, automotive, energy, food and beverage, construction, technology, mining, services, finance, health care, entertainment and media, tourism and hospitality, sales, fashion, real estate, trade]
+        enum: [agriculture, transportation and logistics, education, manufacturing, retail, automotive, energy, food and beverage, construction, technology, mining, services, finance, health care, entertainment and media, tourism and hospitality, sales, fashion, real estate, trade, null]
         readOnly: true
       focus:
         type: string
         description: The focus of the main industry
-        enum: [agriculture, transportation and logistics, education, manufacturing, retail, automotive, energy, food and beverage, construction, technology, mining, services, finance, health care, entertainment and media, tourism and hospitality, sales, fashion, real estate, trade]
+        enum: [agriculture, transportation and logistics, education, manufacturing, retail, automotive, energy, food and beverage, construction, technology, mining, services, finance, health care, entertainment and media, tourism and hospitality, sales, fashion, real estate, trade, null]
         readOnly: true
 
   numberEmployees:
