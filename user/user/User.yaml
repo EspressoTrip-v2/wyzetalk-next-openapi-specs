@@ -118,7 +118,6 @@ required:
   - lastName
   - avatar
   - role
-  - email
   - defaultGroups
   - emailVerified
   - enabled
