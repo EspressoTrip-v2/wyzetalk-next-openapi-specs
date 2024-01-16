@@ -1,0 +1,47 @@
+type: object
+properties:
+  color:
+    type: object
+    properties:
+      primary:
+        type: string
+        description: Primary color
+        example: "#000000"
+        readOnly: true
+      secondary:
+        type: string
+        description: Secondary color
+        example: "#000000"
+        readOnly: true
+      tertiary:
+        type: string
+        description: Tertiary color
+        example: "#000000"
+        readOnly: true
+  font:
+    type: object
+    properties:
+      family:
+        type: string
+        description: Primary font
+        enum: [Work Sans,Poppins,Lora,Source Sans Pro]
+        readOnly: true
+  logo:
+    type: string
+    description: Tenant logo
+    example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+  button:
+    type: object
+    properties:
+      style:
+        type: string
+        description: Button style for tenant application
+        enum: [default, round]
+        readOnly: true
+
+required:
+    - color
+    - font
+    - logo
+    - button
+
