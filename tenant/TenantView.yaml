@@ -19,28 +19,6 @@ properties:
     example: Woolworths PTY Ltd
     readOnly: true
 
-  industry:
-    type: object
-    properties:
-      main:
-        type: string
-        nullable: true
-        description: The main industry
-        enum: [null, agriculture, transportation and logistics, education, manufacturing, retail, automotive, energy, food and beverage, construction, technology, mining, services, finance, health care, entertainment and media, tourism and hospitality, sales, fashion, real estate, trade]
-        readOnly: true
-      focus:
-        type: string
-        nullable: true
-        description: The focus of the main industry
-        enum: [null, agriculture, transportation and logistics, education, manufacturing, retail, automotive, energy, food and beverage, construction, technology, mining, services, finance, health care, entertainment and media, tourism and hospitality, sales, fashion, real estate, trade]
-        readOnly: true
-
-  numberEmployees:
-    type: number
-    description: The total number of employees
-    example: 200
-    readOnly: true
-
   address:
     type: object
     properties:
@@ -79,17 +57,6 @@ properties:
   theming:
     $ref: "./Theming.yaml"
 
-  payPerUse:
-    type: object
-    description: The pay per use details of the tenant
-    additionalProperties: true
-
-  dateCreated:
-    type: number
-    description: The date the post was created in milliseconds
-    example: 1683115573509
-    readOnly: true
-
   version:
     type: integer
     description: The version of the user document
@@ -100,9 +67,6 @@ required:
     - id
     - tenantName
     - fullName
-    - industry
-    - numberEmployees
     - address
     - theming
-    - dateCreated
     - version
