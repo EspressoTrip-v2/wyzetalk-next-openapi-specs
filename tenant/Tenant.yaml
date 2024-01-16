@@ -44,27 +44,32 @@ properties:
     properties:
       street:
         type: string
+        nullable: true
         description: Street address of tenant
         example: 123 main street
         readOnly: true
       city:
         type: string
+        nullable: true
         description: City of tenant
         example: cape town
         readOnly: true
       region:
         type: string
+        nullable: true
         description: Region of tenant
         example: western cape
         readOnly: true
       country:
         type: string
+        nullable: true
         description: Country of tenant in alpha 3 format
         pattern: "^[A-Z]{3}$"
         example: "ZAF"
         readOnly: true
       zipCode:
         type: string
+        nullable: true
         description: Zip code of tenant
         example: 8000
         readOnly: true
