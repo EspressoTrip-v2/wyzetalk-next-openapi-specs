@@ -89,10 +89,15 @@ properties:
     readOnly: true
 
   preferredComm:
-    type: string
-    description: The preferred emergency communication method
-    enum: [sms, email, notification]
-    readOnly: true
+    type: object
+    description: The preferred communication methods
+    properties:
+      email:
+        type: boolean
+        example: true
+      push:
+        type: boolean
+        example: true
 
   socialFilter:
     type: array
