@@ -8,10 +8,15 @@ properties:
     example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
 
   preferredComm:
-    type: string
-    description: User preferred communication method
-    enum: [email, sms, notification]
-    example: email
+    type: object
+    description: The preferred communication methods
+    properties:
+      email:
+        type: boolean
+        example: true
+      push:
+        type: boolean
+        example: true
 
   language:
     type: string
