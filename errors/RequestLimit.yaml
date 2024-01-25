@@ -1,0 +1,11 @@
+description: Request limit error
+type: object
+properties:
+  "type":
+    type: string
+    example: "request_limit"
+  error:
+    type: array
+    items:
+      type: string
+      example: "some request limit error"
