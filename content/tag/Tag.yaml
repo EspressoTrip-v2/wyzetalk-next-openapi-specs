@@ -1,0 +1,45 @@
+type: object
+properties:
+  id:
+    type: string
+    description: The database id of the comment in the content service
+    example: 507f1f77bcf86cd799439011
+    readOnly: true
+  name:
+    type: string
+    description: The name of the tag
+    example: "love"
+    readOnly: true
+
+  tenant:
+    type: string
+    description: The tenant the comment belongs to
+    example: "mycompany"
+    readOnly: true
+
+  usage:
+    type: number
+    description: The number of times the tag has been used in published posts
+    example: 1
+    readOnly: true
+
+  draftCount:
+    type: number
+    description: The number of times the tag has been used in draft posts
+    example: 1
+    readOnly: true
+
+  version:
+    type: number
+    description: The version of the comment
+    example: 1
+    readOnly: true
+
+
+required:
+  - id
+  - name
+  - tenant
+  - usage
+  - draftCount
+  - version
