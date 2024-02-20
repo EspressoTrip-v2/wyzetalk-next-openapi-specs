@@ -64,9 +64,9 @@ properties:
     readOnly: true
 
 required:
-    - id
-    - tenantName
-    - fullName
-    - address
-    - theming
-    - version
+  - id
+  - tenantName
+  - fullName
+  - address
+  - theming
+  - version

@@ -24,7 +24,7 @@ properties:
       family:
         type: string
         description: Primary font
-        enum: [Work Sans,Poppins,Lora,Source Sans Pro]
+        enum: [Work Sans, Poppins, Lora, Source Sans Pro]
         readOnly: true
   logo:
     type: string
@@ -41,8 +41,7 @@ properties:
         readOnly: true
 
 required:
-    - color
-    - font
-    - logo
-    - button
-
+  - color
+  - font
+  - logo
+  - button

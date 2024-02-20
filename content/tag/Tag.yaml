@@ -35,7 +35,6 @@ properties:
     example: 1
     readOnly: true
 
-
 required:
   - id
   - name

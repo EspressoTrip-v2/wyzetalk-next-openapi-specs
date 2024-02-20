@@ -40,15 +40,21 @@ properties:
     type: string
     enum:
       [
+        "csr",
+        "finance",
         "announcements",
-        "health & wellness",
-        "safety & security",
+        "health",
         "hr",
-        "leadership",
-        "learning & growth",
-        "spot light",
-        "success stories",
-        "workplace & events",
+        "business strategy",
+        "opportunities",
+        "legal",
+        "risk management",
+        "recognitions",
+        "customer success",
+        "events",
+        "insights",
+        "technology",
+        "social",
       ]
     readOnly: true
 
