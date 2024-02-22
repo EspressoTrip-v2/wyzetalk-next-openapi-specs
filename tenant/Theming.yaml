@@ -4,19 +4,108 @@ properties:
     type: object
     properties:
       primary:
-        type: string
+        type: object
         description: Primary color
-        example: "#000000"
+        properties:
+          50:
+            type: string
+            description: 50% tint of primary color
+            example: "#F9FAFB"
+          100:
+            type: string
+            description: 100% tint of primary color
+            example: "#F3F4F6"
+          200:
+              type: string
+              description: 200% tint of primary color
+              example: "#E5E7EB"
+
+          300:
+              type: string
+              description: 300% tint of primary color
+              example: "#D1D5DB"
+
+          400:
+              type: string
+              description: 400% tint of primary color
+              example: "#9CA3AF"
+          500:
+              type: string
+              description: 500% tint of primary color
+              example: "#6B7280"
+          600:
+            type: string
+            description: 300% tint of primary color
+            example: "#4B5563"
+
+          700:
+            type: string
+            description: 400% tint of primary color
+            example: "#374151"
+          800:
+            type: string
+            description: 500% tint of primary color
+            example: "#1F2937"
+          900:
+            type: string
+            description: 500% tint of primary color
+            example: "#111827"
+          950:
+            type: string
+            description: 500% tint of primary color
+            example: "#030712"
         readOnly: true
       secondary:
-        type: string
-        description: Secondary color
-        example: "#000000"
-        readOnly: true
-      tertiary:
-        type: string
-        description: Tertiary color
-        example: "#000000"
+        type: object
+        description: Primary color
+        properties:
+          50:
+            type: string
+            description: 50% tint of primary color
+            example: "#F9FAFB"
+          100:
+            type: string
+            description: 100% tint of primary color
+            example: "#F3F4F6"
+          200:
+            type: string
+            description: 200% tint of primary color
+            example: "#E5E7EB"
+
+          300:
+            type: string
+            description: 300% tint of primary color
+            example: "#D1D5DB"
+
+          400:
+            type: string
+            description: 400% tint of primary color
+            example: "#9CA3AF"
+          500:
+            type: string
+            description: 500% tint of primary color
+            example: "#6B7280"
+          600:
+            type: string
+            description: 300% tint of primary color
+            example: "#4B5563"
+
+          700:
+            type: string
+            description: 400% tint of primary color
+            example: "#374151"
+          800:
+            type: string
+            description: 500% tint of primary color
+            example: "#1F2937"
+          900:
+            type: string
+            description: 500% tint of primary color
+            example: "#111827"
+          950:
+            type: string
+            description: 500% tint of primary color
+            example: "#030712"
         readOnly: true
   font:
     type: object
