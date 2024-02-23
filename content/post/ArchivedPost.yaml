@@ -37,20 +37,15 @@ properties:
     type: string
     enum:
       [
-        "csr",
-        "finance",
         "announcements",
         "health",
         "hr",
         "business strategy",
         "opportunities",
-        "legal",
         "risk management",
         "recognitions",
         "customer success",
         "events",
-        "insights",
-        "technology",
         "social",
       ]
     readOnly: true
