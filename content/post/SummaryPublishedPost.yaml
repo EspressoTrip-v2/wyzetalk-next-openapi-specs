@@ -12,14 +12,6 @@ properties:
     type: string
     example: "New safety post"
     readOnly: true
-  tags:
-    description: The tags associated with this post
-    type: array
-    example: ["safety", "hr", "ceo"]
-    minLength: 1
-    items:
-      type: string
-      readOnly: true
   tenant:
     description: The name of the tenant the post belongs to
     type: string
@@ -28,7 +20,7 @@ properties:
   category:
     description: The main content category for the post
     type: string
-    enum: ["business"]
+    enum: ["business", "social"]
     readOnly: true
   subCategory:
     description: The main content sub category for the post
@@ -55,15 +47,25 @@ properties:
     readOnly: true
 
   owner:
-    anyOf:
-      - type: string
-        example: t1234-5567
-      - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
+    type: string
+    example: t1234-5567
+    readOnly: true
+
+  author:
+    type: string
+    example: t1234-5567
+    readOnly: true
 
   publishedDate:
     description: The date the post was published in milliseconds
     type: number
     example: 1683115573509
+    readOnly: true
+
+  grouping:
+    description: The grouping database ID
+    type: string
+    example: "507f191e810c19729de860ea"
     readOnly: true
 
   permanent:
@@ -74,11 +76,12 @@ properties:
 required:
   - id
   - title
-  - tags
   - tenant
   - category
   - subCategory
   - type
   - owner
+  - author
   - permanent
+  - grouping
   - publishedDate

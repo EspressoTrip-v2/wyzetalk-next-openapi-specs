@@ -12,14 +12,7 @@ properties:
     type: string
     example: "New safety post"
     readOnly: true
-  tags:
-    description: The tags associated with this post
-    type: array
-    example: ["safety", "hr", "ceo"]
-    minLength: 1
-    items:
-      type: string
-      readOnly: true
+
   tenant:
     description: The name of the tenant the post belongs to
     type: string
@@ -53,15 +46,15 @@ properties:
     type: string
     enum: [post]
     readOnly: true
-  owner:
-    anyOf:
-      - type: string
-        example: t1234-5567
-      - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
 
-  scheduled:
-    description: Whether the post was a scheduled content item
-    type: boolean
+  owner:
+    type: string
+    example: t1234-5567
+    readOnly: true
+
+  author:
+    type: string
+    example: t1234-5567
     readOnly: true
 
   permanent:
@@ -69,18 +62,27 @@ properties:
     type: boolean
     enum: [true, false]
 
-  lastUpdated:
-    $ref: "../shared/LastUpdated.yaml"
+  dateCreated:
+    description: The date the post was created in milliseconds
+    type: number
+    example: 1683115573509
+    readOnly: true
+
+  grouping:
+    description: The grouping database ID
+    type: string
+    example: "507f191e810c19729de860ea"
+    readOnly: true
 
 required:
   - id
   - title
-  - tags
   - tenant
   - category
   - subCategory
   - type
   - owner
-  - scheduled
+  - author
   - permanent
-  - lastUpdated
+  - dateCreated
+  - grouping

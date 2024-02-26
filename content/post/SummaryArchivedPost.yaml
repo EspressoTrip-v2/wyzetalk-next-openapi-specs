@@ -12,14 +12,7 @@ properties:
     type: string
     example: "New safety post"
     readOnly: true
-  tags:
-    description: The tags associated with this post
-    type: array
-    minLength: 1
-    example: ["safety", "hr", "ceo"]
-    items:
-      type: string
-      readOnly: true
+
   tenant:
     description: The name of the tenant the post belongs to
     type: string
@@ -54,10 +47,14 @@ properties:
     readOnly: true
 
   owner:
-    anyOf:
-      - type: string
-        example: t1234-5567
-      - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
+    type: string
+    example: t1234-5567
+    readOnly: true
+
+  author:
+    type: string
+    example: t1234-5567
+    readOnly: true
 
   dateArchived:
     description: The date the post was archived in milliseconds
@@ -74,11 +71,11 @@ properties:
 required:
   - id
   - title
-  - tags
   - tenant
   - category
   - subCategory
   - type
   - owner
+  - author
   - dateArchived
   - archiveType

@@ -12,19 +12,13 @@ properties:
     type: string
     example: "New safety post"
     readOnly: true
-  tags:
-    description: The tags associated with this post
-    type: array
-    example: ["safety", "hr", "ceo"]
-    minLength: 1
-    items:
-      type: string
-      readOnly: true
+
   tenant:
     description: The name of the tenant the post belongs to
     type: string
     example: "mycompany"
     readOnly: true
+
   category:
     description: The main content category for the post
     type: string
@@ -55,10 +49,14 @@ properties:
     readOnly: true
 
   owner:
-    anyOf:
-      - type: string
-        example: t1234-5567
-      - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
+    type: string
+    example: t1234-5567
+    readOnly: true
+
+  author:
+    type: string
+    example: t1234-5567
+    readOnly: true
 
   dateDeleted:
     description: The date the post was deleted in milliseconds
@@ -69,10 +67,10 @@ properties:
 required:
   - id
   - title
-  - tags
   - tenant
   - category
   - subCategory
   - type
   - owner
+  - author
   - dateDeleted
