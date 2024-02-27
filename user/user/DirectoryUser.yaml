@@ -58,5 +58,5 @@ required:
   - lastName
   - avatar
   - position
-  - division
+  - department
   - enabled
