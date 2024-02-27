@@ -39,9 +39,9 @@ properties:
     example: "developer"
     readOnly: true
 
-  division:
+  department:
     type: string
-    description: User division
+    description: User department
     example: "development"
     readOnly: true
 
