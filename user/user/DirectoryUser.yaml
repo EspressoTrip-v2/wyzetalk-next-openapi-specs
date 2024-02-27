@@ -1,0 +1,62 @@
+description: Directory view of user
+type: object
+
+properties:
+  id:
+    type: string
+    description: User ID
+    pattern: "^[a-z0-9-#]+$"
+    example: t1234-5567
+    readOnly: true
+
+  tenant:
+    type: string
+    description: Tenant the user belongs to
+    example: woolworths
+    readOnly: true
+
+  firstName:
+    type: string
+    description: User first name
+    example: Jason
+    readOnly: true
+  lastName:
+    type: string
+    description: User last name
+    example: Peck
+    readOnly: true
+
+  avatar:
+    type: string
+    nullable: true
+    description: User avatar
+    example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+    readOnly: true
+
+  position:
+    type: string
+    description: User position in the division
+    example: "developer"
+    readOnly: true
+
+  division:
+    type: string
+    description: User division
+    example: "development"
+    readOnly: true
+
+  enabled:
+    type: boolean
+    description: Whether the user is enabled
+    example: true
+    readOnly: true
+
+required:
+  - id
+  - tenant
+  - firstName
+  - lastName
+  - avatar
+  - position
+  - division
+  - enabled
