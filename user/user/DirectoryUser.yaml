@@ -20,6 +20,7 @@ properties:
     description: User first name
     example: Jason
     readOnly: true
+
   lastName:
     type: string
     description: User last name
@@ -57,6 +58,4 @@ required:
   - firstName
   - lastName
   - avatar
-  - position
-  - department
   - enabled
