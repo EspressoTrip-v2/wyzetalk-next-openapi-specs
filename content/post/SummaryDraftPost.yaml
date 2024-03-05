@@ -52,12 +52,14 @@ properties:
       - type: string
         example: t1234-5567
       - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
+      - $ref: "../../user/user-view/NotFoundUserView.yaml"
 
   author:
     anyOf:
       - type: string
         example: t1234-5567
       - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
+      - $ref: "../../user/user-view/NotFoundUserView.yaml"
 
   permanent:
     description: Marks the post as permanent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type

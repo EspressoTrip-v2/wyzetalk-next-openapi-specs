@@ -51,12 +51,14 @@ properties:
       - type: string
         example: t1234-5567
       - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
+      - $ref: "../../user/user-view/NotFoundUserView.yaml"
 
   author:
     anyOf:
       - type: string
         example: t1234-5567
       - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
+      - $ref: "../../user/user-view/NotFoundUserView.yaml"
 
   dateArchived:
     description: The date the post was archived in milliseconds

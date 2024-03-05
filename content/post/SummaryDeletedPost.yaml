@@ -53,12 +53,14 @@ properties:
       - type: string
         example: t1234-5567
       - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
+      - $ref: "../../user/user-view/NotFoundUserView.yaml"
 
   author:
     anyOf:
       - type: string
         example: t1234-5567
       - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
+      - $ref: "../../user/user-view/NotFoundUserView.yaml"
 
   dateDeleted:
     description: The date the post was deleted in milliseconds
