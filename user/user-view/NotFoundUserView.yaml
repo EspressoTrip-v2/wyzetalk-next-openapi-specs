@@ -7,28 +7,28 @@ properties:
     readOnly: true
   firstName:
     type: string
-    enum: [Previous]
+    example: Previous
     readOnly: true
 
   lastName:
     type: string
-    enum: [Employee]
+    example: Employee
     readOnly: true
 
   avatar:
     type: string
     nullable: true
-    enum: [null]
+    example: null
     readOnly: true
 
   department:
     type: string
-    enum: [-]
+    example: "-"
     readOnly: true
 
   position:
     type: string
-    enum: [-]
+    example: "-"
     readOnly: true
 
 required:
