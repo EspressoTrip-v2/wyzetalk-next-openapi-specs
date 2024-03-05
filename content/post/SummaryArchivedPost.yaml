@@ -47,14 +47,16 @@ properties:
     readOnly: true
 
   owner:
-    type: string
-    example: t1234-5567
-    readOnly: true
+    anyOf:
+      - type: string
+        example: t1234-5567
+      - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
 
   author:
-    type: string
-    example: t1234-5567
-    readOnly: true
+    anyOf:
+      - type: string
+        example: t1234-5567
+      - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
 
   dateArchived:
     description: The date the post was archived in milliseconds

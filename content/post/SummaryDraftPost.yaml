@@ -48,14 +48,16 @@ properties:
     readOnly: true
 
   owner:
-    type: string
-    example: t1234-5567
-    readOnly: true
+    anyOf:
+      - type: string
+        example: t1234-5567
+      - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
 
   author:
-    type: string
-    example: t1234-5567
-    readOnly: true
+    anyOf:
+      - type: string
+        example: t1234-5567
+      - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
 
   permanent:
     description: Marks the post as permanent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
