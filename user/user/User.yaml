@@ -48,6 +48,24 @@ properties:
     example: jason.peck@wyzetalk.com
     readOnly: true
 
+  invite:
+    type: object
+    description: The invite details when the user was created
+    properties:
+      status:
+        type: boolean
+        example: false
+        readOnly: true
+      date:
+        type: number
+        example: 1709642564833
+        readOnly: true
+      by:
+        anyOf:
+          - type: string
+            example: t1234-5567
+          - $ref: "../user-view/SummaryUserViewNoFilter.yaml"
+
   emailVerified:
     type: object
     description: The email verification details

@@ -62,6 +62,15 @@ properties:
     example: true
     readOnly: true
 
+  invite:
+    type: object
+    description: The invite details when the user was created
+    properties:
+      status:
+        type: boolean
+        example: false
+        readOnly: true
+
   import:
     type: object
     description: The import details when the user was created
@@ -93,3 +102,4 @@ required:
   - role
   - enabled
   - import
+  - invite
