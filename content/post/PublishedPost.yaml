@@ -126,19 +126,6 @@ properties:
         description: If the post is reported
         example: true
         readOnly: true
-      user:
-        anyOf:
-          - type: string
-            nullable: true
-            example: "dev0001"
-          - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
-          - $ref: "../../user/user-view/NotFoundUserView.yaml"
-      message:
-        type: string
-        description: The reason for reporting the post
-        nullable: true
-        example: "This post is not visible to the public"
-        readOnly: true
 
   formId:
     description: The id of the form associated with this post
