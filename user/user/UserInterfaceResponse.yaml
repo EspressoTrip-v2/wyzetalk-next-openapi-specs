@@ -59,6 +59,22 @@ properties:
       type: string
     readOnly: true
 
+  emailVerified:
+    type: object
+    description: The email verification details
+    properties:
+      verified:
+        type: boolean
+        description: Whether the email is verified
+        example: true
+        readOnly: true
+      pin:
+        type: string
+        nullable: true
+        description: the hashed verification pin
+        example: EF92B778BAFE771E89245B89ECBC08A44A4E166C06659911881F383D4473E94
+        readOnly: true
+
   preferredComm:
     type: object
     description: The preferred communication methods
@@ -82,5 +98,6 @@ required:
   - role
   - defaultGroups
   - editing
+  - emailVerified
   - socialFilter
   - preferredComm
