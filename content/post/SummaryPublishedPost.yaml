@@ -60,6 +60,30 @@ properties:
       - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
       - $ref: "../../user/user-view/NotFoundUserView.yaml"
 
+  reporting:
+    type: object
+    description: The reporting status of the post
+    properties:
+      status:
+        type: boolean
+        description: If the post is reported
+        example: true
+        readOnly: true
+      user:
+        anyOf:
+          - type: string
+            nullable: true
+            example: "dev0001"
+          - $ref: "../../user/user-view/SummaryUserViewNoFilter.yaml"
+          - $ref: "../../user/user-view/NotFoundUserView.yaml"
+
+      message:
+        type: string
+        description: The reason for reporting the post
+        nullable: true
+        example: "This post is not visible to the public"
+        readOnly: true
+
   publishedDate:
     description: The date the post was published in milliseconds
     type: number
