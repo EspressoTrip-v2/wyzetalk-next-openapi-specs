@@ -63,6 +63,7 @@ properties:
       by:
         anyOf:
           - type: string
+            nullable: true
             example: t1234-5567
           - $ref: "../user-view/SummaryUserViewNoFilter.yaml"
 
