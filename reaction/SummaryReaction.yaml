@@ -11,6 +11,7 @@ properties:
     description: The posts database id
     example: "63b590409eb7f4187911328c"
     readOnly: true
+
   user:
     $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
 
