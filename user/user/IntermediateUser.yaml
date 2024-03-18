@@ -67,8 +67,8 @@ properties:
     description: The invite details when the user was created
     properties:
       status:
-        type: boolean
-        example: false
+        type: string
+        enum: [invite, pending, complete]
         readOnly: true
 
   import:
