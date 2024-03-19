@@ -52,6 +52,10 @@ properties:
     type: object
     description: The invite details when the user was created
     properties:
+      tempPassword:
+        type: string
+        nullable: true
+        example: "%tYmMaap"
       status:
         type: string
         enum: [invite, pending, complete]
