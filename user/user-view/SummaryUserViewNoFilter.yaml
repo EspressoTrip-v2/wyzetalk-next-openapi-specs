@@ -38,5 +38,3 @@ required:
   - firstName
   - lastName
   - avatar
-  - department
-  - position
