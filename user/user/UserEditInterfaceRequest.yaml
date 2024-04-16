@@ -24,6 +24,10 @@ properties:
             type: boolean
             example: true
 
+  email:
+    type: string
+    description: Updated user email
+    example: "john@wyzetalknext.com"
 
   language:
     type: string
