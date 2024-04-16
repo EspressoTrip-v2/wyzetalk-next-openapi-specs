@@ -32,17 +32,6 @@ properties:
     description: User email
     example: jason.peck@wyzetalk.com
 
-  preferredComm:
-    type: object
-    description: The preferred communication methods
-    properties:
-      email:
-        type: boolean
-        example: true
-      push:
-        type: boolean
-        example: true
-
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
 

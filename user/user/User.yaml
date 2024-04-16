@@ -121,16 +121,37 @@ properties:
     example: t1234-5567
     readOnly: true
 
-  preferredComm:
+  communication:
     type: object
     description: The preferred communication methods
     properties:
       email:
-        type: boolean
-        example: true
+        type: object
+        properties:
+          enabled:
+            type: boolean
+            example: true
+          invalid:
+            type: boolean
+            example: false
       push:
-        type: boolean
-        example: true
+        type: object
+        properties:
+          enabled:
+            type: boolean
+            example: true
+          invalid:
+            type: boolean
+            example: false
+      sms:
+        type: object
+        properties:
+          enabled:
+            type: boolean
+            example: true
+          invalid:
+            type: boolean
+            example: false
 
   socialFilter:
     type: array
@@ -162,5 +183,5 @@ required:
   - import
   - editing
   - socialFilter
-  - preferredComm
+  - communication
   - version

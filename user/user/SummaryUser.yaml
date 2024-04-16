@@ -37,6 +37,29 @@ properties:
     example: true
     readOnly: true
 
+  communication:
+    type: object
+    description: The preferred communication methods
+    properties:
+      email:
+        type: object
+        properties:
+          invalid:
+            type: boolean
+            example: false
+      push:
+        type: object
+        properties:
+          invalid:
+            type: boolean
+            example: false
+      sms:
+        type: object
+        properties:
+          invalid:
+            type: boolean
+            example: false
+
   import:
     type: object
     description: The import details when the user was created
@@ -65,3 +88,4 @@ required:
   - avatar
   - enabled
   - import
+  - communication

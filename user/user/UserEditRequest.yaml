@@ -28,7 +28,7 @@ properties:
     description: User email
     example: jason.peck@wyzetalk.com
 
-  preferredComm:
+  communication:
     type: object
     description: The preferred communication methods
     properties:

@@ -75,16 +75,22 @@ properties:
         example: EF92B778BAFE771E89245B89ECBC08A44A4E166C06659911881F383D4473E94
         readOnly: true
 
-  preferredComm:
+  communication:
     type: object
     description: The preferred communication methods
     properties:
       email:
-        type: boolean
-        example: true
+        type: object
+        properties:
+          enabled:
+            type: boolean
+            example: true
       push:
-        type: boolean
-        example: true
+        type: object
+        properties:
+          enabled:
+            type: boolean
+            example: true
 
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
@@ -100,4 +106,4 @@ required:
   - editing
   - emailVerified
   - socialFilter
-  - preferredComm
+  - communication
