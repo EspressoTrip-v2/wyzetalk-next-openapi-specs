@@ -36,7 +36,7 @@ properties:
   gender:
     type: string
     description: Users gender
-    enum: [male, female, undisclosed]
+    enum: [male, female, neither]
   country:
     type: string
     description: User country in alpha 3 format

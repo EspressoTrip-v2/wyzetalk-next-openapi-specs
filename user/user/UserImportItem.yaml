@@ -61,7 +61,7 @@ properties:
 
   gender:
     type: string
-    enum: ["male", "female", "undisclosed"]
+    enum: ["male", "female", "neither"]
 
   country:
     type: string
