@@ -1,11 +1,4 @@
 type: object
-
-  #    "type": "bulk",
-  #    "skippedImports": 0,
-  #    "totalImports": 1000,
-  #    "supportRaised": false,
-#    "version": 0,
-#    "id": "6662c8225a5ecdaa4bdc1a13"
 properties:
   id:
     type: string
