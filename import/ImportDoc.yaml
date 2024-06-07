@@ -1,0 +1,132 @@
+type: object
+
+  #    "type": "bulk",
+  #    "skippedImports": 0,
+  #    "totalImports": 1000,
+  #    "supportRaised": false,
+#    "version": 0,
+#    "id": "6662c8225a5ecdaa4bdc1a13"
+properties:
+  id:
+    type: string
+    description: Database ID
+    example: 65a62a5e4e8de30ecae2f015
+    readOnly: true
+
+  tenant:
+    type: string
+    description: The tenants domain name
+    example: wtdev
+    readOnly: true
+
+  importer:
+    type: string
+    description: The importers employee ID
+    example: dev0001
+    readOnly: true
+
+  type:
+    type: string
+    description: The import type
+    enum: ["single", "bulk"]
+    readOnly: true
+
+  skippedImports:
+    type: number
+    description: Number of skipped users
+    example: 0
+    readOnly: true
+
+  totalImports:
+    type: number
+    description: Number of total users in import
+    example: 100
+    readOnly: true
+
+  supportRaised:
+    type: boolean
+    description: Weather a support ticket has been raised for the import
+    example: false
+    readOnly: true
+
+
+  groupings:
+    type: object
+    description: Grouping import stats
+    properties:
+      failedImports:
+        type: number
+        example: 0
+        readOnly: true
+      addedImports:
+        type: number
+        example: 1000
+        readOnly: true
+      failedUsers:
+        type: array
+        example: ["dev0001", "dev0002"]
+        items:
+          type: string
+        readOnly: true
+
+  identities:
+    type: object
+    description: Identity import stats
+    properties:
+      failedImports:
+        type: number
+        example: 0
+        readOnly: true
+      addedImports:
+        type: number
+        example: 1000
+        readOnly: true
+      overwrittenImports:
+        type: number
+        example: 1000
+        readOnly: true
+      importStrategy:
+        type: string
+        enum: ["SKIP"]
+        readOnly: true
+      failedUsers:
+        type: array
+        example: ["dev0001", "dev0002"]
+        items:
+          type: string
+        readOnly: true
+
+  importTime:
+    type: object
+    description: Import time stats
+    properties:
+      start:
+        type: number
+        example: 1717749794844
+        readOnly: true
+      end:
+        type: number
+        example: 1717749802830
+        readOnly: true
+      total:
+        type: number
+        example: 7986
+        readOnly: true
+  version:
+    type: integer
+    description: The version of the user document
+    example: 1
+    readOnly: true
+
+required:
+  - id
+  - tenant
+  - importer
+  - type
+  - skippedImports
+  - totalImports
+  - supportRaised
+  - groupings
+  - identities
+  - version
+  - importTime
