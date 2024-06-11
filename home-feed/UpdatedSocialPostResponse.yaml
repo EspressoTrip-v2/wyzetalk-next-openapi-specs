@@ -38,11 +38,7 @@ properties:
 
   content:
     description: Content that will be displayed in the post
-    example: '[{
-        "type": "image",
-        "url": "https://some-storage/images/et35339983hhdkdkd.png",
-        "variant": "portrait"
-    }]'
+    example: '[{"type": "image", "url": "https://some-storage/images/et35339983hhdkdkd.png", "variant": "portrait" }]'
     type: array
     items:
       anyOf:
