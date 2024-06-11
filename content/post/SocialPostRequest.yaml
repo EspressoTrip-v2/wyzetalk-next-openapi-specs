@@ -20,6 +20,11 @@ properties:
 
   content:
     description: Content that will be displayed in the post
+    example: '[{
+        "type": "image",
+        "url": "https://some-storage/images/et35339983hhdkdkd.png",
+        "variant": "portrait"
+    }]'
     anyOf:
       - $ref: "../shared/PostContentForm.yaml"
       - $ref: "../shared/PostContentVideo.yaml"
