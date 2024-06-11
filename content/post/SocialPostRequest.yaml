@@ -19,11 +19,13 @@ properties:
     enum: [image, text, video]
 
   content:
-    description: Content that will be displayed in the post, video or multiple image links
-    type: array
-    example: ["https://some-storage/images/et35339983hhdkdkd.png"]
-    items:
-      type: string
+    description: Content that will be displayed in the post
+    anyOf:
+      - $ref: "../shared/PostContentForm.yaml"
+      - $ref: "../shared/PostContentVideo.yaml"
+      - $ref: "../shared/PostContentImage.yaml"
+      - $ref: "../shared/PostContentLink.yaml"
+
   postDescription:
     description: A description for the post in the feed
     type: string

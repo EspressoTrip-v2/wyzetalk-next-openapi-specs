@@ -1,0 +1,17 @@
+description: Post content link data
+type: object
+properties:
+  type:
+    type: string
+    enum: [link]
+    example: image
+  url:
+    type: string
+    example: "https://some-external.com"
+  linkTitle:
+    type: string
+    example: "My link"
+required:
+  - type
+  - url
+  - linkTitle
