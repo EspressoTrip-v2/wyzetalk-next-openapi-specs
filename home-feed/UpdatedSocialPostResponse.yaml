@@ -37,13 +37,19 @@ properties:
     readOnly: true
 
   content:
-    description: Array of image urls for display in the users feed
+    description: Content that will be displayed in the post
+    example: '[{
+        "type": "image",
+        "url": "https://some-storage/images/et35339983hhdkdkd.png",
+        "variant": "portrait"
+    }]'
     type: array
-    minLength: 1
-    example: ["https://fakeimg.pl/800/600/", "https://fakeimg.pl/800/600/"]
     items:
-      type: string
-    readOnly: true
+      anyOf:
+        - $ref: "../content/shared/PostContentForm.yaml"
+        - $ref: "../content/shared/PostContentVideo.yaml"
+        - $ref: "../content/shared/PostContentImage.yaml"
+        - $ref: "../content/shared/PostContentLink.yaml"
 
   postDescription:
     description: The description of the feed item that will be displayed in the users feed
