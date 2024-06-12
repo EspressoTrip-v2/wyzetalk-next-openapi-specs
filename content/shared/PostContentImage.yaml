@@ -11,6 +11,4 @@ properties:
     type: string
     enum: ["portrait", "landscape", "square"]
 required:
-  - id
-  - url
   - imageVariant
