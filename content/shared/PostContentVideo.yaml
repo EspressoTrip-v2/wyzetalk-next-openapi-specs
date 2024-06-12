@@ -1,6 +1,9 @@
 description: Post content video data
 type: object
 properties:
+  id:
+    type: string
+    example: "2cdc28f0-017a-49c4-9ed7-87056c83901"
   url:
     type: string
     example: "https://some-external.com"
@@ -8,5 +11,6 @@ properties:
     type: string
     enum: ["portrait", "landscape", "square"]
 required:
+  - id
   - url
   - videoVariant
