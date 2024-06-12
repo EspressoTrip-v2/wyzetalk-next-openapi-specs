@@ -3,6 +3,7 @@ type: object
 properties:
   id:
     type: string
+    nullable: true
     example: "2cdc28f0-017a-49c4-9ed7-87056c83901"
   url:
     type: string
