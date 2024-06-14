@@ -131,7 +131,7 @@ properties:
       variant:
         type: string
         description: The image variant
-        enum: [square]
+        enum: [avatar]
         readOnly: true
 
   button:
