@@ -2,6 +2,7 @@ type: object
 
 properties:
   avatar:
+    description: If you supply an ID the application will build a URL for you without the variant. If you supply a URL the ID will be ignored.
     type: object
     properties:
       id:
