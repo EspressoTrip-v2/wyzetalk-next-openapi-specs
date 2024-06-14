@@ -18,10 +18,22 @@ properties:
     example: Peck
 
   avatar:
-    type: string
-    nullable: true
-    description: User avatar
-    example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+    type: object
+    properties:
+      id:
+        type: string
+        nullable: true
+        description: The image id that the cloud provider issues
+        example: wtdev-1a477983-847e-42b7-bf9b-b2956a8c6b10
+      url:
+        type: string
+        nullable: true
+        description: Tenant logo
+        example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+      variant:
+        type: string
+        description: The image variant
+        enum: [square]
 
   email:
     type: string
