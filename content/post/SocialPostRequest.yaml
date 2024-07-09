@@ -35,7 +35,7 @@ properties:
   postDescription:
     description: A description for the post in the feed
     type: string
-    minLength: 6
+    nullable: true
     example: A new social post
 
   styling:
@@ -46,5 +46,4 @@ required:
   - tags
   - template
   - content
-  - postDescription
   - styling
