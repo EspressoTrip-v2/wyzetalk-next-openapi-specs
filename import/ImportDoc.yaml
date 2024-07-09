@@ -38,10 +38,15 @@ properties:
 
   supportRaised:
     type: boolean
-    description: Weather a support ticket has been raised for the import
+    description: Whether a support ticket has been raised for the import
     example: false
     readOnly: true
 
+  retry:
+    type: boolean
+    description: Whether a retry has been initiated
+    example: false
+    readOnly: true
 
   groupings:
     type: object
@@ -116,7 +121,7 @@ required:
   - tenant
   - importer
   - type
-  - skippedImports
+  - retry
   - totalImports
   - supportRaised
   - groupings

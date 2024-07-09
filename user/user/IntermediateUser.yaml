@@ -97,6 +97,16 @@ properties:
         description: The status of the import
         enum: [pending, completed, error]
         readOnly: true
+      error:
+        type: object
+        description: The error details if the import failed
+        properties:
+          identity:
+            type: boolean
+            example: false
+          grouping:
+            type: boolean
+            example: false
       skipped:
         type: array
         description: If user was skipped in any other import, the importId will be added to this array
