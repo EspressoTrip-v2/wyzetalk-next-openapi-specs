@@ -96,6 +96,14 @@ properties:
     example: "507f191e810c19729de860ea"
     readOnly: true
 
+  editing:
+    type: string
+    nullable: true
+    description: The user id of the user who is currently editing the user
+    pattern: "^[a-z0-9-#]+$"
+    example: t1234-5567
+    readOnly: true
+
   permanent:
     description: Marks the post as permanent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
     type: boolean
@@ -109,6 +117,7 @@ required:
   - subCategory
   - type
   - owner
+  - editing
   - author
   - permanent
   - grouping

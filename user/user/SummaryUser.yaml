@@ -101,6 +101,13 @@ properties:
         description: If user was skipped in any other import, the importId will be added to this array
         items:
           type: string
+  editing:
+    type: string
+    nullable: true
+    description: The user id of the user who is currently editing the user
+    pattern: "^[a-z0-9-#]+$"
+    example: t1234-5567
+    readOnly: true
 
 required:
   - id
@@ -108,6 +115,7 @@ required:
   - firstName
   - lastName
   - avatar
+  - editing
   - enabled
   - import
   - communication

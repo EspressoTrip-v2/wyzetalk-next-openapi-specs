@@ -66,6 +66,14 @@ properties:
     type: boolean
     enum: [true, false]
 
+  editing:
+    type: string
+    nullable: true
+    description: The user id of the user who is currently editing the user
+    pattern: "^[a-z0-9-#]+$"
+    example: t1234-5567
+    readOnly: true
+
   dateCreated:
     description: The date the post was created in milliseconds
     type: number
@@ -88,6 +96,7 @@ required:
   - type
   - owner
   - author
+  - editing
   - permanent
   - dateCreated
   - grouping
