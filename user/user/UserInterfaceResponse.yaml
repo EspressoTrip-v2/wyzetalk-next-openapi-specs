@@ -3,14 +3,14 @@ properties:
   id:
     type: string
     description: User ID
-    pattern: "^[a-z0-9-#]+$"
+    
     example: t1234-5567
     readOnly: true
 
   employeeId:
     type: string
     description: Unique employee number
-    pattern: "^[a-z0-9-#]+$"
+    
     example: t1234-5567
     readOnly: true
 
@@ -60,7 +60,7 @@ properties:
     type: string
     nullable: true
     description: The user id of the user who is currently editing the user
-    pattern: "^[a-z0-9-#]+$"
+    
     example: t1234-5567
     readOnly: true
 

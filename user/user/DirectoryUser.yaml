@@ -5,7 +5,7 @@ properties:
   id:
     type: string
     description: User ID
-    pattern: "^[a-z0-9-#]+$"
+    
     example: t1234-5567
     readOnly: true
 

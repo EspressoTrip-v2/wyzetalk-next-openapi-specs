@@ -3,7 +3,7 @@ type: object
 properties:
   id:
     type: string
-    pattern: "^[a-z0-9-#]+$"
+    
     example: t1234-5567
     readOnly: true
   firstName:
