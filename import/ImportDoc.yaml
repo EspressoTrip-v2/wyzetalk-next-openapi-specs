@@ -13,10 +13,10 @@ properties:
     readOnly: true
 
   importer:
-    type: string
-    description: The importers employee ID
-    example: dev0001
-    readOnly: true
+    anyOf:
+      - type: string
+        example: t1234-5567
+      - $ref: "./SummaryUser.yaml"
 
   type:
     type: string

@@ -1,0 +1,121 @@
+type: object
+properties:
+  id:
+    type: string
+    description: User ID
+    
+    example: t1234-5567
+    readOnly: true
+  employeeId:
+    type: string
+    description: Unique employee number
+    
+    example: t1234-5567
+    readOnly: true
+
+  firstName:
+    type: string
+    description: User first name
+    example: Jason
+    readOnly: true
+  lastName:
+    type: string
+    description: User last name
+    example: Peck
+    readOnly: true
+
+  avatar:
+    type: object
+    properties:
+      id:
+        type: string
+        nullable: true
+        description: The image id that the cloud provider issues
+        example: wtdev-1a477983-847e-42b7-bf9b-b2956a8c6b10
+      url:
+        type: string
+        nullable: true
+        description: Tenant logo
+        example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+      variant:
+        type: string
+        description: The image variant
+        enum: [avatar]
+    readOnly: true
+
+  enabled:
+    type: boolean
+    description: Whether the user is enabled
+    example: true
+    readOnly: true
+
+  communication:
+    type: object
+    description: The preferred communication methods
+    properties:
+      email:
+        type: object
+        properties:
+          invalid:
+            type: boolean
+            example: false
+      push:
+        type: object
+        properties:
+          invalid:
+            type: boolean
+            example: false
+      sms:
+        type: object
+        properties:
+          invalid:
+            type: boolean
+            example: false
+
+  import:
+    type: object
+    description: The import details when the user was created
+    properties:
+      importId:
+        type: string
+        description: The associated import id if the user was imported
+        example: 507f191e810c19729de860ea
+        readOnly: true
+      importStatus:
+        type: string
+        description: The status of the import
+        enum: [pending, completed, error]
+        readOnly: true
+      error:
+        type: object
+        description: The error details if the import failed
+        properties:
+          identity:
+            type: boolean
+            example: false
+          grouping:
+            type: boolean
+            example: false
+      skipped:
+        type: array
+        description: If user was skipped in any other import, the importId will be added to this array
+        items:
+          type: string
+  editing:
+    type: string
+    nullable: true
+    description: The user id of the user who is currently editing the user
+    
+    example: t1234-5567
+    readOnly: true
+
+required:
+  - id
+  - employeeId
+  - firstName
+  - lastName
+  - avatar
+  - editing
+  - enabled
+  - import
+  - communication
