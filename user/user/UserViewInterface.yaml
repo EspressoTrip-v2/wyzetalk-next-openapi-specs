@@ -1,0 +1,117 @@
+type: object
+properties:
+  id:
+    type: string
+    description: User ID
+    
+    example: t1234-5567
+    readOnly: true
+
+  employeeId:
+    type: string
+    description: Unique employee number
+    
+    example: t1234-5567
+    readOnly: true
+
+  firstName:
+    type: string
+    description: User first name
+    example: Jason
+    readOnly: true
+  lastName:
+    type: string
+    description: User last name
+    example: Peck
+    readOnly: true
+
+  avatar:
+    type: object
+    properties:
+      id:
+        type: string
+        nullable: true
+        description: The image id that the cloud provider issues
+        example: wtdev-1a477983-847e-42b7-bf9b-b2956a8c6b10
+      url:
+        type: string
+        nullable: true
+        description: Tenant logo
+        example: https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50
+      variant:
+        type: string
+        description: The image variant
+        enum: [avatar]
+    readOnly: true
+
+  role:
+    type: string
+    description: User role
+    enum: [client:user, client:admin, client:owner]
+    readOnly: true
+
+  email:
+    type: string
+    description: User email
+    example: jason.peck@wyzetalk.com
+    readOnly: true
+
+  socialFilter:
+    type: array
+    example: [eastern cape]
+    items:
+      type: string
+    readOnly: true
+
+  lng:
+    type: string
+    description: The user's language
+    example: en
+    readOnly: true
+
+  position:
+    type: string
+    description: The user's position
+    example: Developer
+    readOnly: true
+
+  department:
+    type: string
+    description: The user's department
+    example: Development
+    readOnly: true
+
+  gender:
+    type: string
+    description: The users gender
+    enum: [ male, female, undefined ]
+    example: male
+    readOnly: true
+
+  emailVerified:
+    type: object
+    description: The email verification details
+    properties:
+      verified:
+        type: boolean
+        description: Whether the email is verified
+        example: true
+        readOnly: true
+      pin:
+        type: string
+        nullable: true
+        description: the hashed verification pin
+        example: EF92B778BAFE771E89245B89ECBC08A44A4E166C06659911881F383D4473E94
+        readOnly: true
+
+required:
+  - id
+  - employeeId
+  - firstName
+  - lastName
+  - avatar
+  - role
+  - gender
+  - lng
+  - emailVerified
+  - socialFilter
