@@ -56,19 +56,19 @@ properties:
       email:
         type: object
         properties:
-          invalid:
+          enabled:
             type: boolean
             example: false
       push:
         type: object
         properties:
-          invalid:
+          enabled:
             type: boolean
             example: false
       sms:
         type: object
         properties:
-          invalid:
+          enabled:
             type: boolean
             example: false
 
