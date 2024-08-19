@@ -89,9 +89,15 @@ properties:
 
   communication:
     type: object
-    description: The preferred communication methods
+    description: The communication methods
     properties:
       email:
+        type: object
+        properties:
+          enabled:
+            type: boolean
+            example: true
+      sms:
         type: object
         properties:
           enabled:
@@ -103,6 +109,10 @@ properties:
           enabled:
             type: boolean
             example: true
+          token:
+            type: string
+            nullable: true
+            example: dU8wCcO0t95rsTV-2clyvW:APA91bEQPQuNWZazIZU7Ck6ihtsCdWu-QUwf85cGZ1rV4fsdNlbvkB3Jxihzb2dzF40821zFHa-BES7ZOVkln3a-ZhYb0mHDdmdeACZBYtnS0IOf_bHgCJuo3EcDu23-Y3yn3BAMjA9e
 
   defaultGroups:
     $ref: "./UserDefaultGroups.yaml"
