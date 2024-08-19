@@ -87,6 +87,7 @@ properties:
     enum: [ male, female, undefined ]
     example: male
     readOnly: true
+
   communication:
     type: object
     description: The communication methods
