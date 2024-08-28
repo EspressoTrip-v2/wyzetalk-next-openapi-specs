@@ -74,6 +74,13 @@ properties:
           readOnly: true
     readOnly: true
 
+  actionUrl:
+    type: string
+    nullable: true
+    description: The url to call when the notification is clicked, used for push notifications
+    example: "https://mycompany.com/api/v1/posts"
+    readOnly: true
+
   readStatus:
     type: boolean
     description: The read status of the notification
@@ -84,12 +91,14 @@ properties:
     type: integer
     example: 0
     readOnly: true
+
 required:
   - id
   - userId
   - tenant
   - description
   - dateCreated
+  - actionUrl
   - origin
   - readStatus
   - action
