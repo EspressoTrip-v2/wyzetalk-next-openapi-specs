@@ -118,6 +118,12 @@ properties:
     description: The user id of the user who is currently editing the user
     example: t1234-5567
     readOnly: true
+
+  email:
+    type: string
+    description: User email
+    example: user@exampl.com
+
 required:
   - id
   - employeeId
