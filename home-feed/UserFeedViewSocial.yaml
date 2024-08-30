@@ -102,6 +102,12 @@ properties:
   styling:
     $ref: "../style/PostStyle.yaml"
 
+  allowComments:
+    description: Whether comments are allowed on the post
+    type: boolean
+    example: true
+    readOnly: true
+
   version:
     description: The version of the post
     type: integer
@@ -115,6 +121,7 @@ required:
   - tenant
   - category
   - subCategory
+  - allowComments
   - type
   - author
   - owner

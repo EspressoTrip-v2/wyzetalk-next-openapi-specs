@@ -114,6 +114,12 @@ properties:
   styling:
     $ref: "../style/PostStyle.yaml"
 
+  allowComments:
+    description: Whether comments are allowed on the post
+    type: boolean
+    example: true
+    readOnly: true
+
   version:
     description: The version of the post
     type: integer
@@ -132,6 +138,7 @@ required:
   - owner
   - content
   - interaction
+  - allowComments
   - myReaction
   - formId
   - styling
