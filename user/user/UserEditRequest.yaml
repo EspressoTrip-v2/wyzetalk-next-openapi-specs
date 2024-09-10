@@ -37,7 +37,6 @@ properties:
 
   email:
     type: string
-    nullable: true
     description: User email
     example: jason.peck@wyzetalk.com
 
