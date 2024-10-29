@@ -1,0 +1,139 @@
+description: Post insight
+type: object
+
+properties:
+  id:
+    type: string
+    description: The database id of the post in the content service
+    example: "507f191e810c19729de860ea"
+    readOnly: true
+  title:
+    description: Title of the post
+    type: string
+    example: "New safety post"
+    readOnly: true
+
+  tenant:
+    description: The name of the tenant the post belongs to
+    type: string
+    example: "mycompany"
+    readOnly: true
+
+  subCategory:
+    description: The main content sub category for the post
+    type: string
+    enum:
+      [
+        "announcements",
+        "health",
+        "hr",
+        "business strategy",
+        "opportunities",
+        "risk management",
+        "recognitions",
+        "customer success",
+        "events",
+        "social",
+      ]
+    readOnly: true
+
+  content:
+    description: Content that will be displayed in the post
+    example:
+       - type: image
+         url: https://some-storage/images/et35339983hhdkdkd.png
+         variant: portrait
+    type: array
+    items:
+      anyOf:
+        - $ref: "../shared/PostContentForm.yaml"
+        - $ref: "../shared/PostContentVideo.yaml"
+        - $ref: "../shared/PostContentImage.yaml"
+        - $ref: "../shared/PostContentLink.yaml"
+  postDescription:
+    description: A description for the post in the feed
+    type: string
+    nullable: true
+    example: A new safety document has been uploaded and is available in your explorer
+    readOnly: true
+
+  publishedDate:
+    description: The date the post was published in milliseconds
+    type: number
+    example: 1683115573509
+    readOnly: true
+
+  permanent:
+    description: Marks the post as permanent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
+    type: boolean
+    enum: [true, false]
+
+  template:
+    description: The type of template to be used for this post
+    type: string
+    enum: [image, text, video, link, poll]
+
+  styling:
+    $ref: "../../style/PostStyle.yaml"
+
+  expired:
+    description: Whether the post has expired
+    type: object
+    properties:
+        expired:
+            description: Whether the post has expired
+            type: boolean
+            example: false
+            readOnly: true
+        displayTime:
+            description: The the time period displayed
+            type: number
+            example: 1683115573509
+    readOnly: true
+
+  date:
+    description: The date the insight was created
+    type: number
+    example: 1683115573509
+    readOnly: true
+  audience:
+    type: number
+    description: The number of users that can see the post
+    example: 100
+  comments:
+    type: number
+    description: The number of comments on the post
+    example: 10
+  reactions:
+    type: number
+    description: The number of reactions on the post
+    example: 10
+  impressions:
+    type: number
+    description: The number of impressions on the post
+    example: 10
+  clicks:
+    type: number
+    description: The number of clicks on the post
+    example: 10
+
+required:
+  - id
+  - title
+  - tenant
+  - subCategory
+  - content
+  - postDescription
+  - scheduled
+  - permanent
+  - template
+  - styling
+  - version
+  - publishedDate
+  - expired
+  - date
+  - audience
+  - comments
+  - reactions
+  - impressions
+  - clicks
