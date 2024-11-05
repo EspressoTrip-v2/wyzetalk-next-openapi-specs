@@ -96,6 +96,12 @@ properties:
     example: 1683115573509
     readOnly: true
 
+  public:
+    description: Whether the post is public to all employees
+    type: boolean
+    example: true
+    readOnly: true
+
   scheduled:
     description: Whether the post was a scheduled content item
     type: boolean
@@ -148,6 +154,7 @@ required:
   - author
   - owner
   - content
+  - public
   - postDescription
   - grouping
   - dateCreated

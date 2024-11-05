@@ -100,6 +100,12 @@ properties:
     example: 1683115573509
     readOnly: true
 
+  public:
+    description: Whether the post is public to all employees
+    type: boolean
+    example: true
+    readOnly: true
+
   formId:
     description: The id of the form associated with this post
     type: string
@@ -141,6 +147,7 @@ required:
   - allowComments
   - myReaction
   - formId
+  - public
   - styling
   - template
   - postDescription

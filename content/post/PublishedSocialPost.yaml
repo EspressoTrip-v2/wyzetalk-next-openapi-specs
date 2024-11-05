@@ -95,6 +95,12 @@ properties:
     type: boolean
     readOnly: true
 
+  public:
+    description: Whether the post is public to all employees
+    type: boolean
+    example: true
+    readOnly: true
+
   permanent:
     description: Marks the post as permanent so any new users feed will include this post, 'true' makes the post only able to use 'persistent-saved' grouping type
     type: boolean
@@ -145,6 +151,7 @@ required:
   - postDescription
   - grouping
   - dateCreated
+  - public
   - scheduled
   - permanent
   - lastUpdated

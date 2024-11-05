@@ -76,6 +76,12 @@ properties:
     enum: [like, love, haha, celebrate, sad, wow, null]
     readOnly: true
 
+  public:
+    description: Whether the post is public to all employees
+    type: boolean
+    example: true
+    readOnly: true
+
   dateCreated:
     description: The date the post was created in milliseconds
     type: number
@@ -124,6 +130,7 @@ required:
   - allowComments
   - type
   - author
+  - public
   - owner
   - content
   - interaction

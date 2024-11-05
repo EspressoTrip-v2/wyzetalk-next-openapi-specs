@@ -90,6 +90,13 @@ properties:
     example: "507f191e810c19729de860ea"
     readOnly: true
 
+  public:
+    description: Whether the post is public to all employees
+    type: boolean
+    example: true
+    readOnly: true
+
+
   dateCreated:
     description: The date the post was created in milliseconds
     type: number
@@ -166,6 +173,7 @@ required:
   - content
   - postDescription
   - grouping
+  - public
   - dateCreated
   - scheduled
   - permanent
