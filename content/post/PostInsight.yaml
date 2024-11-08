@@ -104,6 +104,21 @@ properties:
     type: number
     description: The number of comments on the post
     example: 10
+  grouping:
+    description: The grouping id and type
+    type: object
+    properties:
+      id:
+        description: The id of the grouping
+        type: string
+        example: "507f191e810c19729de860ea"
+        readOnly: true
+      type:
+        description: The type of grouping
+        type: string
+        enum: [once-off, saved, system]
+        example: "saved"
+
   reactions:
     type: number
     description: The number of reactions on the post
@@ -130,6 +145,7 @@ required:
   - styling
   - version
   - publishedDate
+  - grouping
   - expired
   - date
   - audience
