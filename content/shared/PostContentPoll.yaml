@@ -1,11 +1,11 @@
-description: Post content form data
+description: Post content poll data
 type: object
 properties:
   id:
     type: string
   formType:
     type: string
-    enum: [standard]
+    enum: [poll]
 required:
   - id
   - formType

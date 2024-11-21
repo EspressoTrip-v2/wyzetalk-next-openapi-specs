@@ -62,6 +62,7 @@ properties:
     items:
       anyOf:
         - $ref: "../shared/PostContentForm.yaml"
+        - $ref: "../shared/PostContentPoll.yaml"
         - $ref: "../shared/PostContentVideo.yaml"
         - $ref: "../shared/PostContentImage.yaml"
         - $ref: "../shared/PostContentLink.yaml"
