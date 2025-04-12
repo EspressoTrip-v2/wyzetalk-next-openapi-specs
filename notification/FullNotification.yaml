@@ -9,9 +9,11 @@ properties:
     readOnly: true
 
   userId:
-    type: string
-    nullable: true
-    example: t1234-5567
+    anyOf:
+      - type: string
+        nullable: true
+        example: null
+      - $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
 
   senderId:
     anyOf:
