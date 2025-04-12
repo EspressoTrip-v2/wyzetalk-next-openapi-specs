@@ -13,14 +13,13 @@ properties:
       - $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
       - type: string
         nullable: true
-        example: null
 
   senderId:
     anyOf:
       - $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
       - type: string
         nullable: true
-        example: null
+
   tenant:
     type: string
     description: The name of the tenant the post belongs to
