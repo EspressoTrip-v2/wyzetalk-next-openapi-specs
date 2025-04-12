@@ -10,17 +10,17 @@ properties:
 
   userId:
     anyOf:
+      - $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
       - type: string
         nullable: true
         example: null
-      - $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
 
   senderId:
     anyOf:
+      - $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
       - type: string
         nullable: true
         example: null
-      - $ref: "../user/user-view/SummaryUserViewNoFilter.yaml"
   tenant:
     type: string
     description: The name of the tenant the post belongs to
